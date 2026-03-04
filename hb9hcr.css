@@ -1,0 +1,14 @@
+body {
+    background: #dfdfdf;
+    padding: 0;
+    margin: 0;
+}
+
+body > .container {
+    font-size: .75rem;
+}
+
+a, a:active, a:focus, a:hover, a:visited {
+    text-decoration: none;
+    color: #0dcaf0;
+}
