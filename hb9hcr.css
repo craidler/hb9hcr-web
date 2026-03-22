@@ -1,14 +1,11 @@
 body {
-    background: #dfdfdf;
+    background: #222;
     padding: 0;
     margin: 0;
-}
-
-body > .container {
-    font-size: .75rem;
+    color: #ccc;
 }
 
 a, a:active, a:focus, a:hover, a:visited {
     text-decoration: none;
-    color: #0dcaf0;
+    color: #eee;
 }
