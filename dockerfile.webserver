@@ -1,0 +1,18 @@
+FROM php:8.3-apache
+
+ENV APACHE_DOCUMENT_ROOT /var/www/html/www
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
+
+RUN echo "AddType application/x-httpd-php .phtml" > /etc/apache2/conf-available/php-phtml.conf \
+    && a2enconf php-phtml
+
+RUN echo "file_uploads = On" > /usr/local/etc/php/conf.d/docker-php-uploads.ini
+
+RUN apt-get update && apt-get install -y \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libpng-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install gd \
+    && rm -rf /var/scm/ /var/lib/apt/lists/*

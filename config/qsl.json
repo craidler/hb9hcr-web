@@ -1,0 +1,283 @@
+{
+    "background": "image/HB9HCR-Qsl.Background.jpg",
+    "elements": [
+        {
+            "filename": "image/HB9HCR-Sargeant.White.png",
+            "opacity": 0.75,
+            "type": "image",
+            "x": 285,
+            "y": 190
+        },
+        {
+            "filename": "image/HB9HCR-Bota.White.png",
+            "opacity": 0.8,
+            "resize": 1.25,
+            "type": "image",
+            "x": -25,
+            "y": -20
+        },
+        {
+            "align": "center",
+            "color": [100, 40, 90],
+            "type": "text",
+            "text": "HB9HCR",
+            "font": "Barlow-SemiBold",
+            "size": 48,
+            "x": 304,
+            "y": 60
+        },
+        {
+            "align": "center",
+            "type": "text",
+            "text": "SWITZERLAND",
+            "font": "Barlow-Medium",
+            "size": 12,
+            "x": 304,
+            "y": 85
+        },
+        {
+            "type": "text",
+            "text": "Confirming QSO with",
+            "x": 35,
+            "y": 135
+        },
+        {
+            "type": "text",
+            "text": "STATION",
+            "align": "center",
+            "x": 65,
+            "y": 165
+        },
+        {
+            "type": "text",
+            "text": "DATE",
+            "x": 165,
+            "y": 165
+        },
+        {
+            "type": "text",
+            "text": "GMT",
+            "x": 285,
+            "y": 165
+        },
+        {
+            "type": "text",
+            "text": "MHZ",
+            "x": 390,
+            "y": 165
+        },
+        {
+            "type": "text",
+            "text": "RST",
+            "x": 470,
+            "y": 165
+        },
+        {
+            "type": "text",
+            "text": "MODE",
+            "x": 535,
+            "y": 165
+        },
+        {
+            "type": "text",
+            "text": "Please QSL direct or via bureau",
+            "x": 80,
+            "y": 240
+        },
+        {
+            "type": "text",
+            "text": "TKS QSL.",
+            "x": 80,
+            "y": 260
+        },
+        {
+            "type": "text",
+            "text": "MNI TNX QSO",
+            "x": 305,
+            "y": 260
+        },
+        {
+            "type": "text",
+            "text": "73",
+            "x": 305,
+            "y": 280
+        },
+        {
+            "type": "text",
+            "text": "Christof (Chris) Raidler",
+            "x": 305,
+            "y": 335
+        },
+        {
+            "jitter": 2,
+            "color": [91, 97, 121],
+            "align": "center",
+            "angle": 2,
+            "type": "text",
+            "text": "{call}",
+            "font": "Raidler-Scribere-I",
+            "size": 16,
+            "x": 70,
+            "y": 205
+        },
+        {
+            "jitter": 2,
+            "color": [91, 97, 121],
+            "align": "center",
+            "angle": 1,
+            "type": "text",
+            "text": "{qso_date}",
+            "font": "Raidler-Scribere-I",
+            "size": 16,
+            "x": 175,
+            "y": 205
+        },
+        {
+            "jitter": 2,
+            "color": [91, 97, 121],
+            "align": "center",
+            "angle": 1,
+            "type": "text",
+            "text": "{time_on}",
+            "font": "Raidler-Scribere-I",
+            "size": 16,
+            "x": 290,
+            "y": 206
+        },
+        {
+            "jitter": 2,
+            "color": [91, 97, 121],
+            "align": "center",
+            "angle": 1,
+            "type": "text",
+            "text": "{freq}",
+            "font": "Raidler-Scribere-I",
+            "size": 16,
+            "x": 400,
+            "y": 205
+        },
+        {
+            "jitter": 2,
+            "color": [91, 97, 121],
+            "align": "center",
+            "angle": 1,
+            "type": "text",
+            "text": "{rst_sent}",
+            "font": "Raidler-Scribere-I",
+            "size": 16,
+            "x": 480,
+            "y": 205
+        },
+        {
+            "jitter": 2,
+            "color": [91, 97, 121],
+            "align": "center",
+            "angle": 1,
+            "type": "text",
+            "text": "{mode}",
+            "font": "Raidler-Scribere-I",
+            "size": 16,
+            "x": 545,
+            "y": 205
+        },
+        {
+            "jitter": 2,
+            "color": [91, 97, 121],
+            "angle": 0,
+            "type": "text",
+            "text": "é",
+            "font": "Raidler-Scribere-I",
+            "size": 18,
+            "x": 61,
+            "y": 260
+        },
+        {
+            "jitter": 5,
+            "color": [91, 97, 121],
+            "angle": 2,
+            "type": "text",
+            "text": "ö",
+            "font": "Raidler-Scribere-I",
+            "size": 48,
+            "x": 335,
+            "y": 320
+        },
+        {
+            "type": "line",
+            "x": [20, 588],
+            "y": [150, 150]
+        },
+        {
+            "type": "line",
+            "x": [20, 588],
+            "y": [170, 170]
+        },
+        {
+            "type": "line",
+            "x": [20, 588],
+            "y": [220, 220]
+        },
+        {
+            "type": "line",
+            "x": [115, 115],
+            "y": [153, 217]
+        },
+        {
+            "type": "line",
+            "x": [240, 240],
+            "y": [153, 217]
+        },
+        {
+            "type": "line",
+            "x": [345, 345],
+            "y": [153, 217]
+        },
+        {
+            "type": "line",
+            "x": [450, 450],
+            "y": [153, 217]
+        },
+        {
+            "type": "line",
+            "x": [510, 510],
+            "y": [153, 217]
+        },
+        {
+            "type": "rect",
+            "x": [60, 70],
+            "y": [230, 240]
+        },
+        {
+            "type": "rect",
+            "x": [60, 70],
+            "y": [250, 260]
+        },
+        {
+            "filename": "image/HB9HCR-Qsl.Stamp.png",
+            "opacity": 0.8,
+            "jitter": 10,
+            "resize": 1,
+            "type": "image",
+            "x": 480,
+            "y": 20
+        },
+        {
+            "filename": "image/HB9HCR-Qsl.ScotchTape.png",
+            "opacity": 0.25,
+            "jitter": 5,
+            "resize": 0.4,
+            "type": "image",
+            "x": 320,
+            "y": -30
+        },
+        {
+            "filename": "image/HB9HCR-Qsl.Verified.png",
+            "opacity": 0.5,
+            "jitter": 75,
+            "resize": 0.75,
+            "type": "image",
+            "x": 174,
+            "y": 100
+        }
+    ]
+}

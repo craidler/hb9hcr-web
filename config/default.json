@@ -1,0 +1,26 @@
+{
+    "default": {
+        "cards": [
+            "about",
+            "bota",
+            "cw",
+            "qsl",
+            "book",
+            "field",
+            "iono"
+        ]
+    },
+    "admin": {
+        "cards": [
+            "cam",
+            "log"
+        ]
+    },
+    "book": {
+        "filename": "../data/book.json"
+    },
+    "bota": {
+        "base": "https://api.wwbota.org",
+        "token": "https://wwbota.net/wp-json/wwbota/v1/token"
+    }
+}

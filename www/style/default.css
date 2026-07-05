@@ -1,0 +1,190 @@
+:root {
+    --bs-body-color: rgba(0, 0, 0, .5);
+    --bs-border-radius: .25rem;
+    --bs-info-rgb: 23, 162, 184;
+    --bs-link-color-rgb: 23, 162, 184;
+    --bs-link-hover-color-rgb: 23, 162, 184;
+}
+
+@font-face {
+  font-family: 'Raidler Scribere I';
+  src: url(../font/Raidler-Scribere-I.ttf);
+}
+
+body {
+    font-family: monospace;
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.callout {
+    background: rgba(0, 0, 0, .05);
+    border-left: .5rem solid rgba(0, 0, 0, .2);
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.card {
+    --bs-card-bg: rgba(0, 0, 0, .05);
+    --bs-card-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    background-color: var(--bs-card-bg);
+    background-image: url(/image/HB9HCR-Classified.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1rem) 1rem;
+    background-size: 10rem;
+    box-shadow: var(--bs-card-shadow);
+    border-radius: .5rem;
+    margin: 2rem 0;
+}
+
+.card-header {
+    border-bottom: 0;
+    background: none;
+}
+
+.card-footer {
+    background: none;
+    border-top: 0;
+}
+
+.card-title {
+    border-bottom: 3px solid rgba(0, 0, 0, .05);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: .75rem 0;
+}
+
+.card-footer span {
+    text-align: center;
+    font-size: 75%;
+    display: block;
+    opacity: .25;
+}
+
+.empty {
+    opacity: .5;
+    padding: 1rem 2rem;
+    display: table;
+    width: 100%;
+}
+
+.empty picture {
+    text-align: center;
+    position: relative;
+    display: table-cell;
+    border: 1px solid rgba(0, 0, 0, .3);
+    margin: 1rem;
+}
+
+.empty div {
+    font-size: 75%;
+    transform: rotate(-45deg);
+    position: relative;
+    margin: 3rem 1rem;
+}
+
+.polaroid {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    background: #fff;
+    padding: .5rem;
+    position: relative;
+    margin: 1rem;
+}
+
+.polaroid figcaption {
+    opacity: .75;
+    font-size: 75%;
+    text-align: center;
+    margin: .5rem 0 0 0;
+}
+
+.polaroid figcaption.onair {
+    animation: blinker 1s linear infinite;
+}
+
+.polaroid picture * {
+    border-radius: .25rem;
+    width: 100%;
+}
+
+.polaroid:before, .polaroid:after {
+    background-image: url(/image/HB9HCR-ScotchTape.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 100px;
+    display: block;
+    content: "";
+    /* background: hsl(40, 100%, 80%); */
+    position: absolute;  
+    z-index: 99;
+    opacity: .95;
+}
+
+.polaroid:before {
+    left: 0px;
+    bottom: -30px;
+    transform: rotate(-45deg);
+}
+
+.polaroid:after {
+    right: 0px;
+    top: -30px;
+    transform: rotate(135deg);
+}
+
+.polaroid.grayscale-5 picture *  {
+    filter: saturate(.5)
+}
+
+.dropshadow svg {
+    filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, .1));
+    max-width: 100%;
+    height: auto;
+}
+
+.table {
+    --bs-table-color: rgba(0, 0, 0, .75);
+}
+
+.table:last-child {
+    margin: 0;
+}
+
+.table tr th {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.table tr > * {
+    white-space: nowrap;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, .25);
+    font-size: 80%;
+    color: var(--bs-table-color);
+}
+
+.table>:not(caption)>*>* {
+    padding: .25rem;
+}
+
+.table .shrink {
+    width: 1%;
+}
+
+.text-airing {
+    animation: fadeBlink 2s infinite;
+}
+
+@keyframes fadeBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

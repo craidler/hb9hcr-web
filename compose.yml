@@ -1,0 +1,11 @@
+services:
+  webserver:
+    build:
+      context: .
+      dockerfile: dockerfile.webserver
+    container_name: webserver
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
