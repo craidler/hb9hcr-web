@@ -1,0 +1,244 @@
+<?php
+namespace HB9HCR;
+
+use DateTime, Exception;
+
+function bunkers(object $item) {
+    preg_match_all('#B/(HB-\d{4})#', $item->qslmsg, $m);
+    return $m[1];
+}
+
+if ($this->post->has('bota-refresh')) {
+    $options = json_decode(base64_decode($this->post->get('bota-refresh')));
+    $this->container->bota->{$options->method}($options->options ?? (object)[]);
+    $this->container->router->redirect();
+}
+
+if ($this->post->has('log-upload')) {
+    $data = $this->container->adif->parse($_FILES['log-file']['tmp_name']);
+    $data = array_reverse($data);
+
+    switch ($this->post->get('log-upload')) {
+        case 'today':
+            $data = array_filter($data, function ($item) {
+                return date('Ymd') == $item->qso_date;
+            });
+            break;
+
+        case 'last':
+            $data = array_slice($data, $this->post->get('log-last') * -1);
+            break;
+
+        default:
+    }
+
+    $this->container->session->set('log', $data);
+    $this->container->router->redirect();
+}
+
+if ($this->post->has('log-delete')) {
+    $log = $this->container->session->get('log');
+    unset($log[$this->post->get('log-delete')]);
+    $this->container->session->set('log', array_values($log));
+    $this->container->router->redirect();
+}
+
+if ($this->post->has('log-clear')) {
+    $this->container->session->clear('log');
+    $this->container->router->redirect();
+}
+
+if ($this->post->has('log-upsert')) {
+    $log = $this->container->session->get('log');
+    $this->container->adif->insert($log);
+    $this->container->session->clear('log');
+    $this->container->router->redirect();
+}
+
+if ($this->post->has('log-push')) {
+    try {
+        $log = $this->container->session->get('log');
+        $this->container->bota->pushLogs($log);
+        $this->container->adif->insert($log);
+        $this->container->session->clear('log');
+        $this->container->router->redirect();
+    }
+    catch (Exception $e) {
+        var_dump($e->getMessage());
+    }
+}
+
+if ($this->post->has('adab-upsert')) {
+    $this->container->adab->upsert($this->post);
+    $this->container->router->redirect();
+}
+
+$log = $this->container->session->get('log');
+?>
+<form method="post" action="/bota" id="adab"></form>
+<form method="post" action="/bota" id="bota"></form>
+<form method="post" action="/bota" id="log" enctype="multipart/form-data"></form>
+
+<h3>§ ADAB</h3>
+<table class="table table-hover table-borderless">
+    <thead>
+        <tr>
+            <th>Ref</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Lat</th>
+            <th>Lng</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="align-middle">
+        <tr>
+            <td>
+                <input form="adab" type="text" name="reference" pattern="[AFT]0[0-9]{4}" class="form-control form-control-sm" required>
+            </td>
+            <td>
+                <input form="adab" type="text" name="type" class="form-control form-control-sm" required>
+            </td>
+            <td>
+                <input form="adab" type="text" name="name" class="form-control form-control-sm" required>
+            </td>
+            <td>
+                <input form="adab" type="number" name="lat" step=".0000001" class="form-control form-control-sm" required>
+            </td>
+            <td>
+                <input form="adab" type="number" name="lng" step=".0000001" class="form-control form-control-sm" required>
+            </td>
+            <td class="w-100 text-end">
+                <button form="adab" type="submit" name="adab-upsert" class="btn btn-sm btn-primary">upsert</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h3>§ Import</h3>
+<table class="table table-hover table-borderless">
+    <tbody class="align-middle">
+        <tr>
+            <td>Activations</td>
+            <td>/logs/activations</td>
+            <td class="text-end">
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshActivations', 'options' => ['start' => 'P1D']])) ?>" class="btn btn-sm btn-outline-primary">Day</button>
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshActivations', 'options' => ['start' => 'P1W']])) ?>" class="btn btn-sm btn-outline-primary">Week</button>
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshActivations', 'options' => ['start' => 'P1M']])) ?>" class="btn btn-sm btn-outline-primary">Month</button>
+            </td>
+            <td class="text-end">
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshActivations'])) ?>" class="btn btn-sm btn-primary">all</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Awards</td>
+            <td>/awards</td>
+            <td class="text-end">
+            </td>
+            <td class="text-end">
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshAwards'])) ?>" class="btn btn-sm btn-primary">all</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Logs</td>
+            <td>/logs/activator</td>
+            <td class="text-end">
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshLogs', 'options' => ['start' => 'P1D']])) ?>" class="btn btn-sm btn-outline-primary">day</button>
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshLogs', 'options' => ['start' => 'P1W']])) ?>" class="btn btn-sm btn-outline-primary">week</button>
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshLogs', 'options' => ['start' => 'P1M']])) ?>" class="btn btn-sm btn-outline-primary">month</button>
+            </td>
+            <td class="text-end">
+                <button form="bota" type="submit" name="ota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshLogs'])) ?>" class="btn btn-sm btn-primary">all</button>
+            </td>
+        </tr>
+        <tr>
+            <td>References</td>
+            <td>/bunkers/?format=GEOJSON&scheme={scheme}</td>
+            <td class="text-end">
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshReferences', 'options' => ['scheme' => 'HBBOTA']])) ?>" class="btn btn-sm btn-outline-primary">HBBOTA</button>
+            </td>
+            <td class="text-end">
+            </td>
+        </tr>
+        <tr>
+            <td>Statistics</td>
+            <td>/stats/activations/{role}</td>
+            <td class="text-end">
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshStatistics', 'options' => ['role' => 'activator']])) ?>" class="btn btn-sm btn-outline-primary">activator</button>
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshStatistics', 'options' => ['role' => 'activator']])) ?>" class="btn btn-sm btn-outline-primary">hunter</button>
+            </td>
+            <td class="text-end">
+                <button form="bota" type="submit" name="bota-refresh" value="<?= base64_encode(json_encode(['method' => 'refreshStatistics'])) ?>" class="btn btn-sm btn-primary">all</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>§ Upload</h3>
+<?php if ($log): ?>
+<table class="table table-hover table-borderless align-middle">
+    <thead>
+        <tr>
+            <th>Datetime</th>
+            <th>Call</th>
+            <th>Band</th>
+            <th>Freq</th>
+            <th>Mode</th>
+            <th>RST</th>
+            <th class="w-100">REF</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($log as $i => $item): ?>
+        <tr>
+            <td><?= (DateTime::createFromFormat('Ymd His', $item->qso_date . ' ' . $item->time_on, null))->format('Y-m-d H:i:s') ?>
+            <td><?= $item->call ?>
+            <td><?= $item->band ?>
+            <td><?= $item->freq ?>
+            <td><?= $item->mode ?>
+            <td><?= sprintf('%d/%d', $item->rst_sent, $item->rst_rcvd) ?>
+            <td><?= implode(',', bunkers($item)) ?></td>
+            <td class="w-100 text-end">
+                <button type="submit" form="log" name="log-delete" value="<?= $i ?>" class="btn btn-sm btn-outline-primary"><i class="fa fa-times-circle"></i></button>
+            </td>
+        </tr>
+        <?php endforeach ?>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="6">
+                <button type="submit" form="log" name="log-clear" class="btn btn-sm btn-outline-primary">clear</button>
+            </td>
+            <td class="text-end">
+                <button type="submit" form="log" name="log-upsert" class="btn btn-sm btn-outline-primary">upsert</button>
+            </td>
+            <td>
+                <button type="submit" form="log" name="log-push" class="btn btn-sm btn-primary">push</button>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<?php else: ?>
+<table class="table table-borderless align-middle">
+    <tbody>
+        <tr>
+            <td class="position-relative w-100">
+                <div class="form-file">
+                    <i class="fa fa-file me-3"></i><span>No file chosen</span>
+                    <input form="log" name="log-file" class="form-control form-control-sm" type="file" accept=".adi,.adi.txt" required>
+                </div>
+            </td>
+            <td class="pe-0">
+                <input form="log" name="log-last" type="number" min="1" step="1" value="1" class="form-control form-control-sm">
+            </td>
+            <td>
+                <button form="log" name="log-upload" value="last" type="submit" class="btn btn-sm btn-outline-primary">last</button>
+                <button form="log" name="log-upload" value="today" type="submit" class="btn btn-sm btn-outline-primary">today</button>
+            </td>
+            <td>
+                <button form="log" name="log-upload" value="all" type="submit" class="btn btn-sm btn-primary">all</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<?php endif ?>

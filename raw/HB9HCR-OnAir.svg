@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="208"
+   viewBox="0 0 512 208"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="HB9HCR-OnAir.svg"
+   inkscape:export-filename="../www/image/page/onair.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="1.4492187"
+     inkscape:cx="230.12399"
+     inkscape:cy="175.26685"
+     inkscape:window-width="1728"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g19" />
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter19"
+       x="-0.048248404"
+       y="-0.12785084"
+       width="1.0964968"
+       height="1.2557017">
+      <feGaussianBlur
+         stdDeviation="10 10"
+         result="blur"
+         id="feGaussianBlur19" />
+    </filter>
+  </defs>
+  <g
+     id="g19"
+     transform="translate(0,-152)">
+    <rect
+       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:14.573;stroke-linejoin:round;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2"
+       width="497.42697"
+       height="187.71786"
+       x="7.2865281"
+       y="162.14107" />
+    <path
+       id="rect3"
+       style="display:none;fill:#000000;fill-opacity:0.234855;stroke-width:14.573;stroke-linejoin:round;stroke-miterlimit:8"
+       d="M 7.2871094,162.14062 V 349.85937 H 504.71289 V 162.14062 Z M 71.417969,201.83397 H 438.51172 c 10.13028,0 18.28516,8.15488 18.28516,18.28516 0,10.13029 -8.15488,18.28516 -18.28516,18.28516 H 71.417969 c -10.130286,0 -18.285157,-8.15487 -18.285157,-18.28516 0,-10.13028 8.154871,-18.28516 18.285157,-18.28516 z m 0,71.76172 H 438.51172 c 10.13028,0 18.28516,8.15683 18.28516,18.28712 0,10.13029 -8.15488,18.28515 -18.28516,18.28515 H 71.417969 c -10.130286,0 -18.285157,-8.15486 -18.285157,-18.28515 0,-10.13029 8.154871,-18.28712 18.285157,-18.28712 z"
+       sodipodi:insensitive="true" />
+    <path
+       id="rect3-5"
+       style="display:inline;fill:#000000;fill-opacity:0.200678;stroke-width:14.573;stroke-linejoin:round;stroke-miterlimit:8;filter:url(#filter19)"
+       d="M 7.2871063,162.14063 V 349.85938 H 504.71289 V 162.14063 Z M 71.417966,201.83398 H 438.51172 c 10.13028,0 18.28516,8.15488 18.28516,18.28516 0,10.13029 -8.15488,18.28516 -18.28516,18.28516 H 71.417966 c -10.130286,0 -18.285157,-8.15487 -18.285157,-18.28516 0,-10.13028 8.154871,-18.28516 18.285157,-18.28516 z m 0,71.76172 H 438.51172 c 10.13028,0 18.28516,8.15683 18.28516,18.28712 0,10.13029 -8.15488,18.28515 -18.28516,18.28515 H 71.417966 c -10.130286,0 -18.285157,-8.15486 -18.285157,-18.28515 0,-10.13029 8.154871,-18.28712 18.285157,-18.28712 z"
+       sodipodi:insensitive="true" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:144.873px;line-height:1;font-family:Oswald;-inkscape-font-specification:'Oswald, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;display:none;fill:#ffffff;fill-opacity:1;stroke-width:3.46615;stroke-miterlimit:8"
+       x="52.960392"
+       y="314.60114"
+       id="text1"
+       sodipodi:insensitive="true"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         x="52.960392"
+         y="314.60114"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:3.46615">ON AIR</tspan></text>
+    <path
+       d="m 94.538943,316.19474 q -12.893697,0 -20.427093,-4.63594 -7.533396,-4.63593 -10.865475,-13.18344 -3.187206,-8.69238 -3.187206,-20.71684 v -43.75165 q 0,-12.02446 3.187206,-20.57196 3.332079,-8.54751 10.865475,-13.03857 7.533396,-4.49107 20.427093,-4.49107 13.038567,0 20.571967,4.63594 7.67827,4.49106 10.86547,13.03857 3.33208,8.40263 3.33208,20.42709 v 43.75165 q 0,12.02446 -3.33208,20.71684 -3.1872,8.54751 -10.86547,13.18344 -7.5334,4.63594 -20.571967,4.63594 z m 0,-17.23989 q 4.635936,0 6.809027,-2.02822 2.1731,-2.1731 2.89746,-5.65005 0.72437,-3.62182 0.72437,-7.67827 v -55.48636 q 0,-4.05644 -0.72437,-7.53339 -0.72436,-3.47695 -2.89746,-5.50518 -2.173091,-2.17309 -6.809027,-2.17309 -4.34619,0 -6.519285,2.17309 -2.173095,2.02823 -2.89746,5.50518 -0.724365,3.47695 -0.724365,7.53339 v 55.48636 q 0,4.05645 0.579492,7.67827 0.724365,3.47695 2.89746,5.65005 2.173095,2.02822 6.664158,2.02822 z m 50.705577,15.64629 V 197.254 h 16.6604 l 26.07714,61.13641 V 197.254 h 19.70273 v 117.34714 h -15.93604 l -26.07714,-64.90311 v 64.90311 z m 110.6831,0 22.74506,-117.34714 h 26.51176 l 22.60019,117.34714 h -22.16557 l -4.20132,-25.7874 H 282.874 l -4.49106,25.7874 z m 29.11947,-40.41957 h 14.05269 L 292.001,226.8081 Z m 54.90688,40.41957 V 197.254 h 23.75917 v 117.34714 z m 41.72356,0 V 197.254 h 30.42333 q 11.87958,0 20.28222,2.75259 8.54751,2.60772 13.03857,9.41675 4.63593,6.80903 4.63593,18.83349 0,7.24365 -1.30385,12.89369 -1.15899,5.50518 -4.34619,9.70649 -3.04234,4.05645 -8.69238,6.51929 l 16.22577,57.22484 H 427.4574 l -13.47319,-53.1684 h -8.40264 v 53.1684 z m 23.90404,-67.36595 h 6.95391 q 5.79492,0 9.127,-1.88335 3.33208,-1.88335 4.63593,-5.65005 1.44873,-3.91157 1.44873,-9.56161 0,-8.11289 -3.04233,-12.31421 -2.89746,-4.34619 -11.01035,-4.34619 h -8.11289 z"
+       id="text19"
+       style="font-weight:600;font-size:144.873px;line-height:1;font-family:Oswald;-inkscape-font-specification:'Oswald, Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:3.46615;stroke-miterlimit:8"
+       aria-label="ON AIR" />
+    <rect
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:14.573;stroke-linejoin:round;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="497.42697"
+       height="187.71786"
+       x="7.2865281"
+       y="162.14107"
+       sodipodi:insensitive="true" />
+  </g>
+</svg>

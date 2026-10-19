@@ -1,0 +1,523 @@
+A00100;ROC CHAMPION;caverne, Kaverne;46.20499, 7.07031
+A00101;MARTINETS III;caverne, Kaverne;46.20875, 7.07132
+A00102;MARTINETS II;caverne, Kaverne;46.20917, 7.07109
+A00103;MARTINETS I;caverne, Kaverne;46.20971, 7.0708
+A00104;PERRIS BLANCS;caverne, Kaverne;46.2144, 7.07405
+A00105;PRE FLEURI II;caverne, Kaverne;46.22304, 7.07561
+A00106;PRE FLEURI I;caverne, Kaverne;46.22335, 7.0754
+A00107;CROIX DE JAVERNE;position d'arme permanente, PWS;46.22522, 7.0567
+A00108;LA TOURCHE;caverne, Kaverne;46.21454, 7.06157
+A00109;LE MARTENOT;caverne, Kaverne;46.21463, 7.04926
+A00110;BELLEVUE;abri, Unterstand;46.21788, 7.05312
+A00111;LES TETES;abri, Unterstand;46.2061, 7.05191
+A00115;GROS PLAN;abri, Unterstand;46.19444, 7.03742
+A00130;PETIT MONT;ouvrage d'artillerie, Artilleriewerk;46.2322, 7.03293
+A00131;PETIT MONT;caverne, Kaverne;46.23239, 7.03422
+A00134;PETIT MONT CRIP I;abri, Unterstand;46.22786, 7.03814
+A00135;PETIT MONT CRIP II;abri, Unterstand;46.2279, 7.03737
+A00140;TOVEYRES;fort d'infanterie, Infanteriefort;46.22537, 7.03285
+A00145;EN LA PELAUX;abri, Unterstand;46.22436, 7.00564
+A00193;LAVEY;Zuckerstock;46.22044, 7.01487
+A00195;CANAL DE FUITE;position d'arme permanente, PWS;46.21648, 7.01445
+A00196;LES ESSERTS;position d'arme permanente, PWS;46.2154, 7.01413
+A00197;GRANDE COMBE NORD;position d'arme permanente, PWS;46.211, 7.01443
+A00198;GRANDE COMBE SUD;position d'arme permanente, PWS;46.20983, 7.01495
+A00199;FRT BASTIONNE-LES ESSERTS;magasin barricade ac, TB-Magazin;46.21284, 7.01364
+A00200;SAVATAN;fort d'artillerie, Artilleriefort;46.20913, 7.02014
+A00202;SAVATAN SUP, N;fortin d'infanterie, Infanteriebunker;46.21261, 7.02621
+A00204;SAVATAN SUP, ABRI 1;abri, Unterstand;46.21315, 7.02594
+A00205;SAVATAN SUP, ABRI ROCHER;abri, Unterstand;46.20735, 7.0243
+A00206;SAVATAN SUP, ABRI 9;abri, Unterstand;46.20698, 7.02366
+A00208;SAVATAN SUP, S;fortin d'infanterie, Infanteriebunker;46.20546, 7.02522
+A00210;SAVATAN MOYEN, SUD;ouvrage PC, KP Anlage;46.20716, 7.02249
+A00211;SAVATAN MOYEN,ABRI EXT IV;abri, Unterstand;46.21067, 7.0235
+A00212;SAVATAN MOYEN, ABRI 2;abri, Unterstand;46.21157, 7.02349
+A00216;SAVATAN MOYEN, AVAILLAZ;magasin munition, Mun. Magazin;46.20859, 7.02131
+A00217;SAVATAN MOYEN, ABRI EXT I;magasin munition, Mun. Magazin;46.20877, 7.02105
+A00218;SAVATAN INF, BAINS;magasin munition, Mun. Magazin;46.20778, 7.02054
+A00220;SAVATAN INF;magasin, Magazin;46.2107, 7.02033
+A00222;SAVATAN INF;buanderie, Wascherei;46.21066, 7.02007
+A00225;SAVATAN INF, ABRI EXT III;magasin munition, Mun. Magazin;46.2076, 7.02054
+A00226;SAVATAN INF, GAL NORD;fortin d'infanterie, Infanteriebunker;46.21192, 7.02025
+A00228;SAVATAN INF, ABRI 4;abri, Unterstand;46.2112, 7.01961
+A00231;SAVATAN INF, ABRI EXT II;abri, Unterstand;46.20831, 7.01885
+A00232;SAVATAN INF, ABRI 3;abri, Unterstand;46.21111, 7.01948
+A00234;SAVATAN INF, ABRI 8;abri, Unterstand;46.20634, 7.02107
+A00236;SAVATAN INF, ABRI 7;abri, Unterstand;46.20553, 7.02095
+A00238;SAVATAN INF;position d'arme permanente, PWS;46.20616, 7.01978
+A00240;SAVATAN INF, ABRI 5;caverne, Kaverne;46.20893, 7.016
+A00242;SAVATAN INF, ABRI 6;abri, Unterstand;46.20723, 7.01821
+A00250;DAILLY;fort d'artillerie, Artilleriefort;46.21146, 7.0319
+A00251;DAILLY SUP, STAGHOUND 4;position d'arme permanente, PWS;46.21838, 7.04223
+A00252;DAILLY SUP, PLANAUX;abri, Unterstand;46.21946, 7.04157
+A00253;DAILLY SUP, STAGHOUND 3;position d'arme permanente, PWS;46.22009, 7.04131
+A00254;DAILLY SUP, PLANAUX;abri, Unterstand;46.21928, 7.04119
+A00256;DAILLY SUP, STAGHOUND 2;position d'arme permanente, PWS;46.21909, 7.03937
+A00257;DAILLY SUP, OULIVAZ;abri, Unterstand;46.21782, 7.03679
+A00258;DAILLY SUP, STAGHOUND 1;position d'arme permanente, PWS;46.21746, 7.03628
+A00259;DAILLY SUP, T 2 SUP.;abri, Unterstand;46.21811, 7.0412
+A00260;DAILLY MOYEN, AIGUILLE;fortin d'infanterie, Infanteriebunker;46.21205, 7.03217
+A00261;DAILLY MOYEN, ABRI 19;abri pour projecteur, Scheinwerferunterst.;46.21359, 7.03423
+A00262;DAILLY MOYEN, AIGUILLE;abri, Unterstand;46.21295, 7.0332
+A00263;DAILLY MOYEN, ABRI 18;abri pour projecteur, Scheinwerferunterst.;46.21269, 7.03372
+A00264;DAILLY MOYEN, AIGUILLE;abri, Unterstand;46.21169, 7.03282
+A00265;DAILLY MOYEN, LM 3;abri, Unterstand;46.21151, 7.0314
+A00266;DAILLY MOYEN, C 15;abri, Unterstand;46.21106, 7.03179
+A00267;DAILLY MOYEN, ABRI 1;abri, Unterstand;46.21197, 7.0336
+A00268;DAilly MOYEN, ANC. BARAQUE 7;abri, Unterstand;46.21079, 7.03127
+A00269;DAILLY MOYEN, FORCLETTAZ;abri, Unterstand;46.21566, 7.03629
+A00270;DAILLY MOYEN, AIGUILLE;ouvrage d'artillerie, Artilleriewerk;46.2135, 7.0341
+A00271;DAILLY MOYEN, CASERNE XIV;cantonement, Unterkunft;46.21187, 7.03204
+A00272;DAILLY MOYEN, BTTR GOLEZE;abri, Unterstand;46.21052, 7.03179
+A00273;DAILLY MOYEN, GOLEZE;fortin d'infanterie, Infanteriebunker;46.21278, 7.03333
+A00274;DAILLY MOY.MUR DE MORCLES;position d'arme permanente, PWS;46.20836, 7.03051
+A00275;DAILLY MOY,MUR DE MORCLES;position d'arme permanente, PWS;46.20881, 7.0309
+A00276;DAILLY MOYEN, ABRI 4;magasin munition, Mun. Magazin;46.20863, 7.03012
+A00277;DAILLY MOYEN;caverne, Kaverne;46.20863, 7.02986
+A00278;DAILLY MOYEN, ABRI 6;magasin munition, Mun. Magazin;46.20862, 7.02961
+A00280;DAILLY INF, E 3;caverne, Kaverne;46.20844, 7.02922
+A00281;DAILLY INF;position d'arme permanente, PWS;46.20827, 7.03
+A00282;DAILLY INF, ABRI 22;position d'arme permanente, PWS;46.20809, 7.03039
+A00283;DAILLY INF, ABRI CAS GF;abri, Unterstand;46.20764, 7.03013
+A00284;DAILLY INF;position d'arme permanente, PWS;46.20737, 7.03
+A00285;DAILLY INF, FRONT NORD;ouvrage PC, KP Anlage;46.21033, 7.02804
+A00286;DAILLY INF;centrale électrique, Maschinen-Kaverne;46.20799, 7.02728
+A00287;DAILLY INF.ABRI COLOMBIER;abri, Unterstand;46.20826, 7.02715
+A00288;DAILLY INF, ABRI 11;abri pour projecteur, Scheinwerferunterst.;46.20798, 7.02676
+A00289;DAILLY INF, ABRI 13;abri pour projecteur, Scheinwerferunterst.;46.20682, 7.02742
+A00290;DAILLY INF, ABRI 21;abri, Unterstand;46.207, 7.02826
+A00291;DAILLY INF.;ouvrage d'artillerie, Artilleriewerk;46.20629, 7.02988
+A00293;DAILLY INF;magasin, Magazin;46.20736, 7.02884
+A00294;DAILLY INF;boulangerie souterraine, Unterirdische Bäckerei;46.20736, 7.02897
+A00295;DAILLY INF. OBSERVATOIRE;abri, Unterstand;46.20592, 7.02911
+A00296;DAILLY INF. BTTR.EX 10,5;fortin d'artillerie, Artilleriebunker;46.20889, 7.02766
+A00297;DAILLY SUP.BTTR. EX 15 CM;fortin d'artillerie, Artilleriebunker;46.21106, 7.0314
+A00298;DAILLY, LES PLANAUX;fortin d'artillerie, Artilleriebunker;46.21811, 7.04003
+A00303;GRYON GARE;fortin d'infanterie, Infanteriebunker;46.27295, 7.05856
+A00304;HUEMOZ;fortin d'infanterie, Infanteriebunker;46.29531, 7.03505
+A00305;LES CURNAUX;fortin d'infanterie, Infanteriebunker;46.29776, 7.02984
+A00306;LES ECOVETS;fortin d'infanterie, Infanteriebunker;46.30271, 7.03058
+A00307;PANEX LES BUITS;fortin d'infanterie, Infanteriebunker;46.31032, 7.02105
+A00310;PANEX;fortin d'infanterie, Infanteriebunker;46.30847, 7.00756
+A00315;SAUDAN SUP;position d'arme permanente, PWS;46.34872, 7.20482
+A00316;SAUDAN INF;position d'arme permanente, PWS;46.34962, 7.20481
+A00317;COL DU PILLON;fortin d'infanterie, Infanteriebunker;46.35291, 7.2061
+A00322;LA PIERRE DU MOELLE;fortin d'infanterie, Infanteriebunker;46.39136, 7.04538
+A00323;COMMUN DU LEYZAY;fortin d'infanterie, Infanteriebunker;46.38931, 7.04962
+A00324;LARZEY SUP;obs & abri, Beob. & Unterstand;46.38582, 7.06791
+A00325;LARZEY INF;abri, Unterstand;46.38559, 7.06856
+A00326;CHAUDET;abri, Unterstand;46.38357, 7.06935
+A00327;CHAUDET;abri, Unterstand;46.38364, 7.0778
+A00328;LA COMBALLAZ S/ CRETTION;abri, Unterstand;46.38292, 7.07638
+A00332;LA COMBALLAZ-CRETTION;abri, Unterstand;46.37866, 7.07959
+A00333;LA COMBALLAZ-DRADEY;position d'arme permanente, PWS;46.37615, 7.06875
+A00335;LA COMBALLAZ-PLANET DES TRONCS INF.;abri, Unterstand;46.37262, 7.091
+A00336;LA COMBALLAZ-PLANET DES TRONCS SUP.;obs & abri, Beob. & Unterstand;46.37217, 7.09178
+A00337;LA COMBALLAZ-LOEX ES CHAMOZ SUP.;abri, Unterstand;46.37083, 7.0927
+A00338;LA COMBALLAZ-LES ROCHERS;abri, Unterstand;46.37083, 7.09335
+A00341;LA SARSE;caverne, Kaverne;46.36475, 6.95721
+A00342;SCEX DE LA SARSE;fortin d'infanterie, Infanteriebunker;46.36476, 6.95981
+A00343;LES NOMBRIEUX;fortin d'infanterie & PC, Inf bkr & KP;46.36586, 6.96435
+A00347;LEYSIN-GILLIERE;abri, Unterstand;46.35036, 7.02541
+A00348;VUARGNY;fortin d'infanterie, Infanteriebunker;46.33652, 7.02669
+A00349;VUARGNY SUP;fortin d'infanterie, Infanteriebunker;46.33652, 7.02721
+A00350;VUARGNY SOUS ROUTE;fortin d'infanterie, Infanteriebunker;46.33571, 7.02747
+A00351;LARREVOIN;fortin d'infanterie, Infanteriebunker;46.3251, 7.00535
+A00352;LARREVOIN;fortin d'infanterie, Infanteriebunker;46.32537, 7.00574
+A00356;VEIGES DRAPEL EST;position d'arme permanente, PWS;46.3239, 6.98484
+A00357;VEIGES DRAPEL OUEST;fortin d'infanterie, Infanteriebunker;46.32389, 6.98225
+A00358;ROC DES VEIGES;ouvrage PC, KP Anlage;46.32814, 6.97864
+A00359;ROC DES VEIGES;ouvrage PC, KP Anlage;46.32747, 6.97832
+A00360;ROC DES VEIGES;ouvrage PC, KP Anlage;46.32702, 6.97833
+A00361;CORBEYRIER-RAVIN;position d'arme permanente, PWS;46.3459, 6.96518
+A00362;CORBEYRIER-CHATILLON;fortin d'infanterie, Infanteriebunker;46.34614, 6.95959
+A00363;CORBEYRIER SUP;fortin d'infanterie, Infanteriebunker;46.3517, 6.95434
+A00366;CHAMPILLON NORD;abri, Unterstand;46.34242, 6.95027
+A00367;CHAMPILLON ENTREE;abri, Unterstand;46.34197, 6.95222
+A00368;CHAMPILLON, DAILLY;observatoire, Beobachter;46.34061, 6.94899
+A00380;SONCHAUD;position d'arme permanente, PWS;46.41888, 6.95257
+A00381;SONCHAUD NORD;fortin d'infanterie, Infanteriebunker;46.41915, 6.95218
+A00382;CHAMP BABAU;fortin d'infanterie, Infanteriebunker;46.41493, 6.93374
+A00383;CHILLON;fortin d'infanterie, Infanteriebunker;46.41419, 6.92946
+A00384;CHILLON;fortin d'infanterie, Infanteriebunker;46.41438, 6.93037
+A00385;MONTAGNETTE;fortin d'infanterie, Infanteriebunker;46.41473, 6.92984
+A00386;CHILLON;fortin d'infanterie, Infanteriebunker;46.41608, 6.93048
+A00387;CHILLON;fortin d'infanterie, Infanteriebunker;46.41635, 6.92944
+A00388;CHILLON;fortin d'infanterie, Infanteriebunker;46.41563, 6.92893
+A00389;ROCHER DE VEYTAUX;fortin d'infanterie, Infanteriebunker;46.41761, 6.92878
+A00390;CHILLON;magasin munition, Mun. Magazin;46.415, 6.9288
+A00390;CHILLON;ouvrage d'artillerie, Artilleriewerk;46.415, 6.9288
+A00391;MONTAGNETTE;magasin munition, Mun. Magazin;46.41492, 6.93095
+A00392;CHILLON;abri, Unterstand;46.41599, 6.9297
+A00397;ST. TRIPHON NORD;fortin d'infanterie, Infanteriebunker;46.28171, 6.97391
+A00398;ST. TRIPHON SUD;fortin d'infanterie, Infanteriebunker;46.28162, 6.97403
+A00500;LA COMBAZ EST;bouclier pour can d'inf, IK-Schild;46.872, 6.63454
+A00501;LA COMBAZ OUEST;bouclier pour can d'inf, IK-Schild;46.87333, 6.63203
+A00502;LA MAGNENAZ;bouclier pour can d'inf, IK-Schild;46.8585, 6.60327
+A00505;COTE DE VUITEBOEUF;caverne, Kaverne;46.81418, 6.54236
+A00506;CARRIERES DU CHATEAU;caverne, Kaverne;46.81641, 6.53918
+A00507;CHATEAU STE CROIX EST;fortin d'infanterie, Infanteriebunker;46.8184, 6.53522
+A00508;CHATEAU STE CROIX OUEST;fortin d'infanterie, Infanteriebunker;46.81794, 6.53431
+A00509;CHATEAU STE CROIX COLLEGE;caverne, Kaverne;46.81839, 6.53338
+A00514;LES PRAISES;position d'arme permanente, PWS;46.82997, 6.50854
+A00517;COL DES ETROITS CARRIERE;caverne, Kaverne;46.8304, 6.49569
+A00518;COL DES ETROITS EST;fortin d'infanterie, Infanteriebunker;46.83022, 6.49523
+A00519;COL DES ETROITS OUEST;fortin d'infanterie, Infanteriebunker;46.82967, 6.49439
+A00521;COL DES ETROITS MONT DES CERFS;position d'arme permanente, PWS;46.82904, 6.49361
+A00522;COL DES ETROITS RTE AUBERSON;fortin d'infanterie, Infanteriebunker;46.83009, 6.49097
+A00523;VERS LE BOIS;fortin d'infanterie, Infanteriebunker;46.82547, 6.48686
+A00524;LES ENVERS EST;fortin d'infanterie, Infanteriebunker;46.82238, 6.48325
+A00525;LES ENVERS OUEST;fortin d'infanterie, Infanteriebunker;46.81819, 6.4765
+A00527;;fortin d'infanterie, Infanteriebunker;46.81211, 6.48081
+A00528;MONT MOSSU;fortin d'infanterie, Infanteriebunker;46.80624, 6.47882
+A00529;GITTAZ DESSUS;fortin d'infanterie, Infanteriebunker;46.79927, 6.47363
+A00530;VERS LE PARC;fortin d'infanterie, Infanteriebunker;46.79493, 6.47116
+A00531;SUR LE TOUR;fortin d'infanterie, Infanteriebunker;46.79128, 6.46546
+A00532;COL DE L'AIGUILLON;fortin d'infanterie, Infanteriebunker;46.79056, 6.46521
+A00533;GALERIE DES AIGUILLES OUE;fortin d'infanterie, Infanteriebunker;46.78905, 6.46701
+A00534;GALERIE DES AIGUILLES EST;abri, Unterstand;46.78861, 6.4678
+A00535;LA JOUGNENAZ NORD;fortin d'infanterie, Infanteriebunker;46.78712, 6.4673
+A00536;LA JOUGNENAZ SUD;fortin d'infanterie, Infanteriebunker;46.78548, 6.47028
+A00537;LES PRAZ;position d'arme permanente, PWS;46.78757, 6.47836
+A00538;CREBILLONS NORD;bouclier pour can d'inf, IK-Schild;46.79236, 6.48588
+A00539;CREBILLONS SUD;bouclier pour can d'inf, IK-Schild;46.78949, 6.48671
+A00541;ROCHETTAZ;emplacement infanterie, Schützenstellung;46.79715, 6.52143
+A00542;GRANGE NEUVE;fortin d'infanterie, Infanteriebunker;46.78088, 6.46879
+A00543;LES ERVUINES;fortin d'infanterie, Infanteriebunker;46.77764, 6.47376
+A00544;LA SAGNE NORD;fortin d'infanterie, Infanteriebunker;46.76713, 6.45477
+A00545;LA SAGNE SUD;fortin d'infanterie, Infanteriebunker;46.76511, 6.4552
+A00546;LA POYETTAZ EST;position d'arme permanente, PWS;46.76186, 6.45395
+A00547;LA POYETTAZ OUEST;fortin d'infanterie, Infanteriebunker;46.76112, 6.45187
+A00548;LA POYETTAZ PUITS NORD;fortin d'infanterie, Infanteriebunker;46.76181, 6.44799
+A00549;LA POYETTAZ PUITS SUD;fortin d'infanterie, Infanteriebunker;46.75821, 6.44799
+A00550;LA POYETTAZ RTE LIGNEROLL;position d'arme permanente, PWS;46.75786, 6.44879
+A00554;LES MOUILLES;fortin d'infanterie, Infanteriebunker;46.72481, 6.44534
+A00554;LES MOUILLES;fortin d'infanterie, Infanteriebunker;46.72481, 6.44534
+A00556;JOUX DES COTEAUX;fortin d'infanterie, Infanteriebunker;46.75459, 6.4461
+A00557;ROCHASSET NORD;bouclier pour can d'inf, IK-Schild;46.75353, 6.44834
+A00558;ROCHASSET SUD;fortin d'infanterie, Infanteriebunker;46.75255, 6.44888
+A00559;SUR LES ROCHES;fortin d'infanterie, Infanteriebunker;46.74997, 6.45194
+A00560;SUR LE MARAIS;fortin d'infanterie, Infanteriebunker;46.74498, 6.45818
+A00561;LIGNEROLLE VILLAGE;fortin d'infanterie, Infanteriebunker;46.74047, 6.45644
+A00562;LES ROGETS;fortin d'infanterie, Infanteriebunker;46.74162, 6.44856
+A00563;LIGNEROLLE LA VAUX;fortin d'infanterie, Infanteriebunker;46.73662, 6.44826
+A00564;TUNNEL DE LA CULA EST;fortin d'infanterie, Infanteriebunker;46.72859, 6.44488
+A00565;TUNNEL DE LA CULA OUEST;bouclier, Schild;46.72857, 6.44337
+A00566;LA CULA;bouclier, Schild;46.72682, 6.4385
+A00567;BALLAIGUES LES COMMUNS;fortin d'infanterie, Infanteriebunker;46.73303, 6.40855
+A00568;BALLAIGUES CENTRE;fortin d'infanterie, Infanteriebunker;46.73097, 6.40924
+A00569;BALLAIGUES JOLIMONT;fortin d'infanterie, Infanteriebunker;46.7278, 6.40786
+A00571;CHIVES A BARBET EST;bouclier, Schild;46.71422, 6.40786
+A00572;CHIVES A BARBET OUEST;position d'arme permanente, PWS;46.71464, 6.40484
+A00573;LE DAY CHAMP DU BOIS;fortin d'infanterie, Infanteriebunker;46.71405, 6.4044
+A00574;LA COTETTE;abri, Unterstand;46.71097, 6.40596
+A00575;LE DAY SUR LES CHIVES;position d'arme permanente, PWS;46.71614, 6.40141
+A00576;LE DAY;fortin d'infanterie, Infanteriebunker;46.71587, 6.40168
+A00591;LE PONT;bouclier pour can d'inf, IK-Schild;46.66524, 6.33143
+A00595;LA ROCHE PERCEE;fortin d'infanterie, Infanteriebunker;46.66493, 6.33255
+A00596;PETRA FELIX CH A CARLIN E;bouclier, Schild;46.6625, 6.34593
+A00597;PETRA FELIX CH A CARLIN O;bouclier, Schild;46.66231, 6.34528
+A00598;PETRA FELIX CH A CARLIN S;bouclier, Schild;46.66155, 6.34562
+A00599;PETRA FELIX CH DES CROISE;bouclier, Schild;46.65925, 6.34515
+A00600;PETRA FELIX CH DE L'AOUIL;position d'arme permanente, PWS;46.66013, 6.34741
+A00601;PETRA FELIX EST;fortin d'infanterie, Infanteriebunker;46.65941, 6.34795
+A00602;PETRA FELIX OUEST;fortin d'infanterie, Infanteriebunker;46.65918, 6.34711
+A00603;PETRA FELIX SUP;position d'arme permanente, PWS;46.65873, 6.34699
+A00604;PETRA FELIX CENTRE;bouclier, Schild;46.65843, 6.3483
+A00605;PETRA FELIX CENTRE;caverne, Kaverne;46.65824, 6.34778
+A00606;PETRA FELIX SUD;caverne, Kaverne;46.65635, 6.34743
+A00610;LE CUNAY PT 1609;position d'arme permanente, PWS;46.58101, 6.28815
+A00611;LE CUNAY LES COMBES;position d'arme permanente, PWS;46.58, 6.27812
+A00612;LE CUNAY CREUX D'ENFER;bouclier, Schild;46.57652, 6.28903
+A00613;BOIS DE LA SAUGE;position d'arme permanente, PWS;46.56164, 6.28589
+A00620;LA MEYLANDE CHALET INF;position d'arme permanente, PWS;46.56907, 6.23074
+A00621;LA MEYLANDE ROUTE EST;bouclier pour can d'inf, IK-Schild;46.56789, 6.22946
+A00622;LA MEYLANDE ROUTE OUEST;bouclier, Schild;46.56701, 6.2272
+A00623;LA MEYLANDE CHALET SUP;bouclier, Schild;46.56828, 6.23206
+A00624;FONTAINE FROIDE;position d'arme permanente, PWS;46.55964, 6.25299
+A00625;MARCHAIRUZ NORD EST;bouclier pour can d'inf, IK-Schild;46.55794, 6.25395
+A00626;MARCHAIRUZ NORD;fortin d'infanterie, Infanteriebunker;46.55644, 6.25241
+A00628;MARCHAIRUZ CH DE LA CRETE;caverne, Kaverne;46.55374, 6.2526
+A00629;MARCHAIRUZ ASILE;caverne, Kaverne;46.5514, 6.25233
+A00640;PRE D'AUBONNE;bouclier, Schild;46.54916, 6.25362
+A00641;LA ST GEORGE OUEST;fortin d'infanterie, Infanteriebunker;46.53381, 6.26543
+A00642;LA ST GEORGE EST;fortin d'infanterie, Infanteriebunker;46.53259, 6.26852
+A00644;BIERE BELLEVUE;fortin d'infanterie, Infanteriebunker;46.53601, 6.31304
+A00645;GAYROUX;fortin d'infanterie, Infanteriebunker;46.52764, 6.32175
+A00646;LE TOLEURE OUEST;fortin d'infanterie, Infanteriebunker;46.52054, 6.34979
+A00647;LE TOLEURE EST;fortin d'infanterie, Infanteriebunker;46.52021, 6.35293
+A00648;ESSERTS DE VAUX NORD;fortin d'infanterie, Infanteriebunker;46.51268, 6.3751
+A00651;EN VOLAILLE EST;fortin d'infanterie, Infanteriebunker;46.50661, 6.38031
+A00654;AUBONNE VILLE;fortin d'infanterie, Infanteriebunker;46.49685, 6.39457
+A00657;MOULIN DE LA VAUX;bouclier, Schild;46.4871, 6.40564
+A00659;BELLEVUE ETOY;fortin d'infanterie, Infanteriebunker;46.47814, 6.40887
+A00680;PETIT COTTENS;position d'arme permanente, PWS;46.44054, 6.25764
+A00681;LES SALES NORD;position d'arme permanente, PWS;46.4376, 6.2607
+A00682;LES SALES SUD;bouclier pour can d'inf, IK-Schild;46.43737, 6.26077
+A00683;RIONBOSSON;position d'arme permanente, PWS;46.43635, 6.26177
+A00684;SOUMILLOUD NORD;position d'arme permanente, PWS;46.43436, 6.26474
+A00685;SOUMILLOUD SUD;bouclier, Schild;46.43217, 6.26661
+A00687;LES PLATETS NORD;ouvrage pour mitrailleuse, Mg-Stand;46.47258, 6.22177
+A00688;LES PLATETS SUD;bouclier, Schild;46.47227, 6.22158
+A00689;MOINSEL;fortin d'infanterie, Infanteriebunker;46.46925, 6.21293
+A00693;BASSINS VILLAGE;position d'arme permanente, PWS;46.46248, 6.23131
+A00695;BASSINS CIMETIERE OUEST;bouclier pour can d'inf, IK-Schild;46.46193, 6.23119
+A00696;BASSINS COMBAZ;bouclier pour can d'inf, IK-Schild;46.45458, 6.23357
+A00701;BASSINS CHATELARD;bouclier pour can d'inf, IK-Schild;46.44877, 6.2363
+A00703;LA CEZILLE SUD;position d'arme permanente, PWS;46.44594, 6.23311
+A00704;LE RAVIN;position d'arme permanente, PWS;46.44625, 6.23701
+A00705;CHATELARD;fortin d'infanterie, Infanteriebunker;46.44512, 6.23626
+A00708;CHATEAU DE COTTENS;bouclier pour can d'inf, IK-Schild;46.44023, 6.25446
+A00713;VICH SUD;fortin d'infanterie, Infanteriebunker;46.42655, 6.2532
+A00714;GLAND OUEST;fortin d'infanterie, Infanteriebunker;46.42279, 6.25536
+A00715;FONTANA;fortin d'infanterie, Infanteriebunker;46.41836, 6.25774
+A00716;PONT FARBEL;position d'arme permanente, PWS;46.41144, 6.25418
+A00717;GLAND SUD;fortin d'infanterie, Infanteriebunker;46.41411, 6.25985
+A00718;VERTELIN CFF NORD;bouclier pour can d'inf, IK-Schild;46.41351, 6.2622
+A00722;VERTELIN CFF CENTRE;position d'arme permanente, PWS;46.4127, 6.26222
+A00723;VERTELIN CFF SUD;position d'arme permanente, PWS;46.41242, 6.26157
+A00726;LES AVOUILLONS;fortin d'infanterie, Infanteriebunker;46.40893, 6.26731
+A00728;LA BERGERIE ROUTE;fortin d'infanterie, Infanteriebunker;46.40784, 6.27078
+A00729;LA BERGERIE CENTRE;fortin d'infanterie, Infanteriebunker;46.40554, 6.27486
+A00730;LA BERGERIE LAC;fortin d'infanterie, Infanteriebunker;46.40227, 6.28026
+A00770;BIOLEY-MAGNOUX STAND;abri, Unterstand;46.73216, 6.70723
+A00772;AUX COTES, OGENS;magasin barricade ac, TB-Magazin;46.70088, 6.71739
+A00773;LE MARTINET, BERCHER;caverne, Kaverne;46.69437, 6.71317
+A00774;LES ENGRINS;magasin barricade ac, TB-Magazin;46.66859, 6.69731
+A00970;LE QUARTERON;fortin d'infanterie, Infanteriebunker;46.89177, 6.69868
+A00971;LE QUARTERON;fortin d'infanterie, Infanteriebunker;46.89038, 6.69883
+A00972;LE QUARTERON;fortin d'infanterie, Infanteriebunker;46.88675, 6.70105
+A00977;LES PRISES;position d'arme permanente, PWS;46.90118, 6.7269
+A01100;BOIS DE LA VILLE;position d'arme permanente, PWS;46.93556, 6.99673
+A01101;VERS LE GIBET, NORD;fortin d'infanterie, Infanteriebunker;46.94801, 7.00648
+A01102;VERS LE GIBET, SUD;fortin d'infanterie, Infanteriebunker;46.94681, 7.00964
+A01104;PLANCHE A LA TANNAZ, NORD;fortin d'infanterie, Infanteriebunker;46.93977, 7.016
+A01105;PLANCHE A LA TANNAZ, SUD;fortin d'infanterie, Infanteriebunker;46.93891, 7.01555
+A01106;BAS DE TRIMBLE;fortin d'infanterie, Infanteriebunker;46.93943, 7.02047
+A01108;BAS DE TRIMBLE;fortin d'infanterie, Infanteriebunker;46.93971, 7.02323
+A01111;BAS DE TRIMBLE;fortin d'infanterie, Infanteriebunker;46.93513, 7.0272
+A01112;BAS DE TRIMBLE;ouvrage PC, KP Anlage;46.93559, 7.02877
+A01113;;ouvrage PC, KP Anlage;46.93506, 7.0314
+A01115;BOIS DE LA LOUR, NORD;position d'arme permanente, PWS;46.93437, 7.03338
+A01117;;fortin d'infanterie, Infanteriebunker;46.93408, 7.03378
+A01118;SUR LE RUZ;position d'arme permanente, PWS;46.93368, 7.03476
+A01120;VALLAMAND-DESSOUS;fortin d'infanterie, Infanteriebunker;46.93205, 7.04462
+A01651;TINE, RIVE GAUCHE;ouvrage d'artillerie, Artilleriewerk;46.47418, 7.04009
+A01652;TINE, RIVE DROITE;ouvrage d'artillerie, Artilleriewerk;46.47401, 7.04165
+A01655;PETITE SCHIAZ;abri, Unterstand;46.47636, 7.0445
+A01656;PETITE SCHIAZ;abri, Unterstand;46.47672, 7.04424
+A01657;PETITE SCHIAZ;abri, Unterstand;46.47731, 7.0456
+A01658;PETITE SCHIAZ;abri, Unterstand;46.4788, 7.04839
+A01666;BRA;abri, Unterstand;46.48748, 7.0618
+A01667;BRA;abri, Unterstand;46.48771, 7.06258
+A01668;BRA;abri, Unterstand;46.48731, 7.06395
+A01669;BRA;abri, Unterstand;46.48776, 7.06603
+A01670;BRA;abri, Unterstand;46.48867, 7.06655
+A01671;;abri, Unterstand;46.48453, 7.06593
+A01672;BRA;position d'arme permanente, PWS;46.4829, 7.06464
+A01677;LES TEISEJEURS;fortin d'infanterie, Infanteriebunker;46.44385, 7.11709
+A01680;BRAYE;fort d'artillerie, Artilleriefort;46.45279, 7.12888
+A01691;VANEL, RIVE GAUCHE;fortin d'infanterie, Infanteriebunker;46.48431, 7.22285
+A01692;VANEL-NORD;fortin d'infanterie, Infanteriebunker;46.49043, 7.22726
+A01694;VANEL-SUD;fortin d'infanterie, Infanteriebunker;46.48728, 7.2274
+A01695;VANEL-SUD-EST;fortin d'infanterie, Infanteriebunker;46.48819, 7.22909
+A01696;VANEL-EST;fortin d'infanterie, Infanteriebunker;46.489, 7.23091
+F01000;Romairon;abri, Unterstand;46.87289, 6.63361
+F01001;mauborget;abri, Unterstand;46.85017, 6.61369
+F01002;mauborget;abri, Unterstand;46.85824, 6.60393
+F01003;Fontaines-sur-Grands;abri, Unterstand;46.85639, 6.60278
+F01004;Fontaines-sur-Grands;abri, Unterstand;46.85589, 6.60252
+F01040;Sainte-Croix;abri, Unterstand;46.81983, 6.53441
+F01045;Le Château-de-Ste-Croix;ouvrage PC, KP Anlage;46.81415, 6.54335
+F01046;la Sagne;abri, Unterstand;46.81273, 6.52365
+F01047;Le Château-de-Ste-Croix;abri, Unterstand;46.81405, 6.54269
+F01130;Ballaigues;abri, Unterstand;46.73282, 6.41522
+F01132;Ballaigues;abri, Unterstand;46.73181, 6.41289
+F01180;L’Abotcha ouest;ouvrage PC, KP Anlage;46.75092, 6.47333
+F01201;Vallorbe;abri, Unterstand;46.70163, 6.35102
+F01225;Vaulion;ouvrage PC, KP Anlage;46.69285, 6.4122
+F01300;l’abbaye;abri, Unterstand;46.66522, 6.33463
+F01304;l’abbaye;abri, Unterstand;46.6634, 6.33735
+F01326;Mont-La-Ville;ouvrage PC, KP Anlage;46.65009, 6.3697
+F01327;Mont-La-Ville;abri, Unterstand;46.64968, 6.36958
+F01329;Mont-La-Ville;abri, Unterstand;46.64846, 6.36451
+F01400;gimel;abri, Unterstand;46.54223, 6.28774
+F01400;Marchissy;abri, Unterstand;46.50035, 6.20668
+F01401;gimel;abri, Unterstand;46.54097, 6.28757
+F01410;Gimel;abri, Unterstand;46.55302, 6.25288
+F01411;Le Brassus;abri, Unterstand;46.57285, 6.21434
+F01412;Le Brassus;abri, Unterstand;46.57123, 6.2303
+F01415;Le Brassus;abri, Unterstand;46.568, 6.23128
+F01417;gimel;abri, Unterstand;46.55492, 6.25349
+F01421;Gimel;abri, Unterstand;46.5548, 6.25538
+F01427;SAINT-GEORGE;abri, Unterstand;46.53511, 6.26514
+F01428;saint-george;abri, Unterstand;46.53337, 6.27033
+F01431;Saint-George;abri, Unterstand;46.53155, 6.25961
+F01511;;abri, Unterstand;46.52711, 6.32313
+F01512;biere;abri, Unterstand;46.52106, 6.34763
+F01520;st-Livres;ouvrage PC, KP Anlage;46.50628, 6.38344
+F01522;St-Livres;abri, Unterstand;46.50298, 6.38572
+F01524;aubonne;abri, Unterstand;46.49728, 6.38218
+F01525;lavigny;abri, Unterstand;46.49844, 6.4006
+F01536;allaman;abri, Unterstand;46.47662, 6.40017
+F01537;Buchillon;abri, Unterstand;46.46702, 6.41234
+F01600;Bassins;abri, Unterstand;46.48119, 6.19859
+F01601;longirod;abri, Unterstand;46.49788, 6.26133
+F01602;longirod;abri, Unterstand;46.52466, 6.22541
+F01606;Le Vaud;ouvrage PC, KP Anlage;46.48183, 6.22794
+F01607;le vaud;abri, Unterstand;46.48332, 6.22882
+F01610;Le Vaud;abri, Unterstand;46.49746, 6.20564
+F01612;Le Vaud;centrale transmission, Uem Anlage;46.48267, 6.22714
+F01613;le vaud;abri, Unterstand;46.48105, 6.22301
+F01621;Bassins;ouvrage PC, KP Anlage;46.46683, 6.2344
+F01622;Bassins;abri, Unterstand;46.46683, 6.23434
+F01628;bassins;abri, Unterstand;46.48379, 6.20191
+F01630;Arzier;abri, Unterstand;46.4665, 6.20452
+F01631;arzier;abri, Unterstand;46.46464, 6.1905
+F01700;begnins;abri, Unterstand;46.44867, 6.26156
+F01703;Gland;abri, Unterstand;46.4329, 6.26724
+F01707;bassins;abri, Unterstand;46.44904, 6.23643
+F01712;begnins;ouvrage PC, KP Anlage;46.4429, 6.24691
+F01715;begnins;abri, Unterstand;46.4427, 6.25343
+F01718;begnins;ouvrage PC, KP Anlage;46.44661, 6.26232
+F01719;bassins;centrale transmission, Uem Anlage;46.44886, 6.26208
+F01720;Gland;ouvrage PC, KP Anlage;46.43198, 6.25627
+F01721;Begnins;abri, Unterstand;46.43779, 6.26141
+F01723;Vich;abri, Unterstand;46.43083, 6.24972
+F01823;Gland;ouvrage PC, KP Anlage;46.40878, 6.27921
+F01839;Dully;centrale transmission, Uem Anlage;46.43257, 6.29659
+F01841;Dully;abri, Unterstand;46.43275, 6.29639
+F01842;Dully;ouvrage PC, KP Anlage;46.43145, 6.29668
+F01843;Dully;ouvrage PC, KP Anlage;46.43177, 6.2972
+F01847;Luins;abri, Unterstand;46.43226, 6.2748
+F02690;mutrux;abri, Unterstand;46.88605, 6.71031
+F02692;provence;abri, Unterstand;46.89145, 6.69731
+F02695;provence;ouvrage PC, KP Anlage;46.89116, 6.7084
+F10278;Lavey-Morcles;position d'arme permanente, PWS;46.20782, 7.03019
+F10287;Lavey-Morcles;abri, Unterstand;46.21865, 7.04158
+F10750;Vextaux;abri, Unterstand;46.4554, 6.97267
+T00020;LE COURSET;obstacle ac terrain, GPH;46.22259, 7.01226
+T00023;ST-MAURICE, RTE CANT NO 9;bar ac sur route, Pz Bar in Strasse;46.22436, 7.00395
+T00024;ST-MAURICE, RTE LAVEY;bar ac sur route, Pz Bar in Strasse;46.22436, 7.00421
+T00034;ST-TRIPHON;obstacle ac terrain, GPH;46.27709, 6.96461
+T00051;PANEX;bar ac sur route, Pz Bar in Strasse;46.30829, 7.00652
+T00060;COL DU PILLON;bar ac sur route, Pz Bar in Strasse;46.35199, 7.19701
+T00065;LA COMBALLAZ;obstacle ac terrain, GPH;46.37861, 7.07978
+T00066;LA PERRAUSAZ;bar ac sur route, Pz Bar in Strasse;46.37303, 7.07696
+T00067;BOIS DES CAUDERAYS;bar ac sur route, Pz Bar in Strasse;46.36853, 7.07673
+T00069;ILLARSAZ - AIGLE;bar ac sur route, Pz Bar in Strasse;46.31275, 6.93366
+T00070;CORBEYRIER, VERS LA CRETA;obstacle ac terrain, GPH;46.34653, 6.96517
+T00081;CHILLON SUD;obstacle ac terrain, GPH;46.4132, 6.92973
+T00082;CHILLON NORD;obstacle ac terrain, GPH;46.41868, 6.92747
+T00083;VEYTAUX, CHEMIN DU CIMETIERE;bar ac sur route, Pz Bar in Strasse;46.41851, 6.92903
+T00084;GRANDCHAMP, RTE.CANTONALE;bar ac sur route, Pz Bar in Strasse;46.41042, 6.93119
+T00085;GRANDCHAMP, CFF;bar ac voie ferrée, Pz Bar Bahnlinie;46.41042, 6.93093
+T00086;GRANDCHAMP, CHEMIN QUAI;bar ac sur route, Pz Bar in Strasse;46.41042, 6.9308
+T00087;CHILLON NORD, CFF;bar ac voie ferrée, Pz Bar Bahnlinie;46.42002, 6.92576
+T00088;CHILLON NORD, CHEMIN QUAI;bar ac sur route, Pz Bar in Strasse;46.41975, 6.92524
+T00150;LA COMBAZ;obstacle ac terrain, GPH;46.87302, 6.63256
+T00151;LA COMBAZ OUEST CHEMIN;bar ac sur route, Pz Bar in Strasse;46.8738, 6.62835
+T00152;LA MAGNENAZ EST;obstacle ac terrain, GPH;46.85896, 6.60457
+T00153;LA MAGNENAZ OUEST;obstacle ac terrain, GPH;46.85442, 6.59874
+T00157;COTE DE VUITEBOEUF RTE;bar ac sur route, Pz Bar in Strasse;46.81555, 6.53939
+T00158;CHATEAU STE CROIX RTE;bar ac sur route, Pz Bar in Strasse;46.81749, 6.53431
+T00159;CHATEAU STE CROIX;obstacle ac terrain, GPH;46.81775, 6.53287
+T00160;CHATEAU STE CROIX NORD;obstacle ac terrain, GPH;46.81838, 6.53279
+T00166;COL DES ETROITS;obstacle ac terrain, GPH;46.83023, 6.49648
+T00167;SUARD DES ENVERS;bar ac sur route, Pz Bar in Strasse;46.81329, 6.47685
+T00169;CULLIAIRY;obstacle ac terrain, GPH;46.80443, 6.48815
+T00170;LA GITTAZ DESSUS;obstacle ac terrain, GPH;46.79878, 6.47895
+T00171;SUR LE TOUR;obstacle ac terrain, GPH;46.792, 6.46545
+T00172;COL DE L'AIGUILLON;obstacle ac terrain, GPH;46.78957, 6.46523
+T00173;LA JOUGNENAZ;obstacle ac terrain, GPH;46.78717, 6.46842
+T00174;LES NAZ RTE;bar ac sur route, Pz Bar in Strasse;46.79863, 6.50424
+T00180;LA POYETTAZ;obstacle ac terrain, GPH;46.76329, 6.45353
+T00181;LANGUETINE NORD RTE;bar ac sur route, Pz Bar in Strasse;46.75334, 6.4469
+T00182;LANGUETINE SUD RTE;bar ac sur route, Pz Bar in Strasse;46.75316, 6.44652
+T00195;LES ROGETS - LA VAUX;obstacle ac terrain, GPH;46.74164, 6.44594
+T00196;LA CULA EST RTE;bar ac sur route, Pz Bar in Strasse;46.7277, 6.44699
+T00197;LA CULA EST CHF;bar ac voie ferrée, Pz Bar Bahnlinie;46.72761, 6.44699
+T00199;LA CULA OUEST CHF;bar ac voie ferrée, Pz Bar Bahnlinie;46.72618, 6.43753
+T00200;COTE DE LA MONTAGNE RTE;bar ac sur route, Pz Bar in Strasse;46.71877, 6.43355
+T00211;BALLAIGUES;obstacle ac terrain, GPH;46.72693, 6.4105
+T00212;LE CREUX RTE CT;bar ac sur route, Pz Bar in Strasse;46.73119, 6.38503
+T00215;LE DAY - GRANGE NEUVE;obstacle ac terrain, GPH;46.71596, 6.40155
+T00216;MONTOUGY RTE COMMUNALE;bar ac sur route, Pz Bar in Strasse;46.70985, 6.40232
+T00218;POIMBOEUF - LES EPOISATS;bar ac sur route, Pz Bar in Strasse;46.70246, 6.39122
+T00220;PROVENCE PASSAGE S/VOIES;bar ac sur route, Pz Bar in Strasse;46.70834, 6.3894
+T00221;PROVENCE PASSAGE S/VOIES NORD-EST;bar ac sur route, Pz Bar in Strasse;46.70711, 6.3874
+T00222;PROVENCE PASSAGE S/VOIES SUED-EST;bar ac sur route, Pz Bar in Strasse;46.70564, 6.38448
+T00224;LES EPOISATS RTE;bar ac sur route, Pz Bar in Strasse;46.68981, 6.34675
+T00225;LES EPOISATS CHF;bar ac sur route, Pz Bar in Strasse;46.68945, 6.34741
+T00230;MOULIN DE VAULION OUEST;obstacle ac terrain, GPH;46.69353, 6.39793
+T00231;MOULIN DE VAULION EST;bar ac sur route, Pz Bar in Strasse;46.69288, 6.40056
+T00232;RETAILLON;bar ac sur route, Pz Bar in Strasse;46.69173, 6.39796
+T00233;DENT DE VAULION;bar ac sur route, Pz Bar in Strasse;46.68027, 6.35576
+T00235;LA SCIE;bar ac sur route, Pz Bar in Strasse;46.69522, 6.41516
+T00246;BERCHER;obstacle ac terrain, GPH;46.69361, 6.71337
+T00269;LAC BRENET CHF;bar ac voie ferrée, Pz Bar Bahnlinie;46.67388, 6.32759
+T00271;PONT ENTRE LES 2 LACS RT;bar ac sur route, Pz Bar in Strasse;46.66705, 6.32407
+T00272;PONT ENTRE LES 2 LACS CHF;bar ac voie ferrée, Pz Bar Bahnlinie;46.66705, 6.32407
+T00276;PETRA FELIX;obstacle ac terrain, GPH;46.66045, 6.34826
+T00277;PETRA FELIX RTE MOL'DRUZ;bar ac sur route, Pz Bar in Strasse;46.65753, 6.34897
+T00278;COL DU MOLLENDRUZ;bar ac sur route, Pz Bar in Strasse;46.6504, 6.36479
+T00279;CHARDEVAZ;obstacle ac terrain, GPH;46.6399, 6.35834
+T00280;COMBE DE LA NEIGE;obstacle ac terrain, GPH;46.63782, 6.35695
+T00281;COMBE DE LA VERRIERE;obstacle ac terrain, GPH;46.61868, 6.34943
+T00285;L'ABBAYE LAC;obstacle ac terrain, GPH;46.65084, 6.31801
+T00286;L'ABBAYE FABRIQUE;bar ac sur route, Pz Bar in Strasse;46.6494, 6.31765
+T00290;L'ABBAYE SCIERIE;bar ac sur route, Pz Bar in Strasse;46.64853, 6.32067
+T00291;LE CARROZ;bar ac sur route, Pz Bar in Strasse;46.54917, 6.15997
+T00292;LA LANDE;bar ac sur route, Pz Bar in Strasse;46.57335, 6.21427
+T00293;LE CUNAY LES COMBES;bar ac sur route, Pz Bar in Strasse;46.57909, 6.28545
+T00294;LE CUNAY CREUX D'ENFER;obstacle ac terrain, GPH;46.57706, 6.28928
+T00295;MARCHAIRUZ ANC RTE;bar ac sur route, Pz Bar in Strasse;46.55558, 6.25178
+T00296;MARCHAIRUZ NORD RTE CT;Bar mi perm, Perm Minensperre;46.55784, 6.25343
+T00297;MARCHAIRUZ SUD RTE CT;Bar mi perm, Perm Minensperre;46.55599, 6.25229
+T00298;GRAND FUEY;Bar mi perm, Perm Minensperre;46.54171, 6.28925
+T00300;LA ST GEORGE - MARCHAIRUZ;obstacle ac terrain, GPH;46.53447, 6.26776
+T00301;LA ST GEORGE - MARCHAIRUZ;bar ac sur route, Pz Bar in Strasse;46.53371, 6.26869
+T00302;LA ST GEORGE - GIMEL;obstacle ac terrain, GPH;46.53286, 6.2691
+T00303;LA ST GEORGE - ST GEORGE;obstacle ac terrain, GPH;46.5304, 6.2659
+T00305;BOIS DE MONT SUP;bar ac sur route, Pz Bar in Strasse;46.52049, 6.35403
+T00310;BIERE BELLEVUE - LES PLAGNES;obstacle ac terrain, GPH;46.53505, 6.31182
+T00311;SERMARETS;obstacle ac terrain, GPH;46.50006, 6.39158
+T00312;AUBONNE - LAVIGNY;bar ac sur route, Pz Bar in Strasse;46.49803, 6.39585
+T00313;AUBONNE - ES COTES;obstacle ac terrain, GPH;46.49718, 6.39613
+T00314;LAVIGNY BARBAYRE;obstacle ac terrain, GPH;46.49564, 6.39928
+T00315;BRACHERES NORD;obstacle ac terrain, GPH;46.49208, 6.40346
+T00316;BRACHERES SUD;obstacle ac terrain, GPH;46.49051, 6.40446
+T00318;FARRABOSSAZ;obstacle ac terrain, GPH;46.48557, 6.40553
+T00319;AU GALETAS;obstacle ac terrain, GPH;46.48303, 6.40754
+T00320;NOUVEAU CHEMIN D'ETOY;bar ac sur route, Pz Bar in Strasse;46.48048, 6.40882
+T00323;NOYER GIROD CFF;obstacle ac terrain, GPH;46.47655, 6.40766
+T00324;PONT D'ALLAMAN;obstacle ac terrain, GPH;46.47408, 6.40803
+T00326;LA DAILLE RIVIERE NORD;bar ac sur route, Pz Bar in Strasse;46.47016, 6.40681
+T00328;LA DAILLE RIVIERE SUD;bar ac sur route, Pz Bar in Strasse;46.46953, 6.40682
+T00330;BEGNINS - DULLIVE;obstacle ac terrain, GPH;46.44043, 6.25575
+T00331;DULLIVE - FILATURE;obstacle ac terrain, GPH;46.42531, 6.29057
+T00335;PERROY N1;obstacle ac terrain, GPH;46.4743, 6.3687
+T00336;LA CRAUSE;bar ac sur route, Pz Bar in Strasse;46.479, 6.37108
+T00337;SIGNAL DE BOUGY;bar ac sur route, Pz Bar in Strasse;46.48494, 6.35286
+T00342;LA PERROUDAZ DU VAUD NORD;obstacle ac terrain, GPH;46.50097, 6.20556
+T00343;LA PERROUDAZ DU VAUD SUD;obstacle ac terrain, GPH;46.49961, 6.20468
+T00344;LA DUNANCHE SUD;obstacle ac terrain, GPH;46.47922, 6.19954
+T00345;LA DUNANCHE NORD;bar ac sur route, Pz Bar in Strasse;46.48106, 6.19917
+T00350;MOINSEL;obstacle ac terrain, GPH;46.46996, 6.21669
+T00355;LA FEUILLEUSE;obstacle ac terrain, GPH;46.44939, 6.23206
+T00357;MOULIN A COLET - MOULIN CREUX;obstacle ac terrain, GPH;46.44299, 6.2391
+T00358;BEGNINS RTE DE BURTIGNY;Bar mi perm, Perm Minensperre;46.44106, 6.24767
+T00363;MOULIN DU CREUX;obstacle ac terrain, GPH;46.43318, 6.24693
+T00365;LIGNE CFF VERTELIN - LAC;obstacle ac terrain, GPH;46.41224, 6.26158
+T00380;LE FOCHAU;obstacle ac terrain, GPH;46.7385, 6.44679
+T00625;LE QUARTERON;obstacle ac terrain, GPH;46.88841, 6.69978
+T00710;CUDREFIN, LAC;obstacle ac terrain, GPH;46.95081, 6.99772
+T00711;CUDREFIN;obstacle ac terrain, GPH;46.94711, 7.0053
+T00712;;obstacle ac terrain, GPH;46.93322, 7.03273
+T00713;VALLAMAND-DESSOUS;obstacle ac terrain, GPH;46.932, 7.04272
+T00718;FAOUG, N1;obstacle ac terrain, GPH;46.89878, 7.07643
+T01004;TINE, VIEILLE RTE;bar ac sur route, Pz Bar in Strasse;46.47293, 7.04192
+T01009;PISSOT, RTE CT;bar ac sur route, Pz Bar in Strasse;46.44062, 7.12244
+T01013;LE VANEL, CHF;bar ac voie ferrée, Pz Bar Bahnlinie;46.48737, 7.22492
+T01016;VANEL, RIVE GAUCHE;obstacle ac terrain, GPH;46.48314, 7.22416
+T01017;VANELS;bar ac sur route, Pz Bar in Strasse;46.48854, 7.22453

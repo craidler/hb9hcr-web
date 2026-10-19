@@ -1,0 +1,9 @@
+FROM mysql:8.4
+
+# Optional: custom config tweaks (only if you need them)
+# COPY my.cnf /etc/mysql/conf.d/custom.cnf
+
+# Optional: seed/init scripts run automatically on first boot
+COPY init/ /docker-entrypoint-initdb.d/
+
+EXPOSE 3306

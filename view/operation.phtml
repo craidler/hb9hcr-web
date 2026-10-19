@@ -1,0 +1,10 @@
+<?php
+    $path = ucfirst(basename($this->container->request->path));
+    $operation = null;
+
+    foreach ($this->container->operations as $o) {
+        if ($path == $o->name) $operation = $o;
+    }
+?>
+
+<?= $operation ? $this->partial('operation.phtml', ['operation' => $operation]) : '' ?>

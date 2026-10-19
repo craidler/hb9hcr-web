@@ -1,0 +1,164 @@
+<?php
+
+namespace HB9HCR;
+
+$ops = $this->container->operations;
+
+$m = (object)[
+    'ops' => count($ops),
+    'ref' => 0,
+    'set' => 0,
+];
+
+foreach ($ops as $o) {
+    $m->ref += $o->ref;
+    $m->set += count($o->set);
+}
+
+$obs = $this->container->adab->collection(['reference' => 'A%']);
+
+$c = function (object $o) {
+    $c = match($o) {
+        'F' == $o->reference[0] => 'yellow',
+        'T' == $o->reference[0] => 'green',
+        default => '#ff6052',
+    };
+
+    $c = $o->bota ? '#b14137ff' : $c;
+    $c = 0 < $o->qso_count ? '#2a81cbff' : $c;
+
+    return $c;
+};
+
+$pcs = [1, 2, 3, 4];
+shuffle($pcs);
+
+$stp = [1, 2, 3, 4, 5, 6, 7, 8];
+shuffle($stp);
+
+?>
+<div class="row">
+    <div class="col-12 col-md-6">
+        <p class="my-3">
+            Switzerland built one of the densest defensive networks in Europe, and most of it went quiet after 1945.
+            Every activation brings one of these objects back on the air for a few hours.
+            Same place, new signal. No fuss, no traces, just a callsign on air.
+        </p>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="emplace mt-1 pb-0">
+            <div class="row">
+                <?php foreach ($stp as $s): ?>
+                <div class="col-12 col-md-3 mb-3">
+                    <img src="/image/postal/stamp.0<?= $s ?>.png">
+                </div>
+                <?php endforeach ?>
+            </div>
+        </div>
+    </div>
+</div>
+<figure class="polaroid grayscale">
+    <picture>
+    <?php if ($this->get->has('qrz')): ?>
+        <img src="/image/map/Map.Switzerland.png" alt="Map Switzerland" style="width:100%;height:550px">
+    <?php else: ?>
+        <div class="map" data-source="#map-switzerland-data" data-screenshot="Map.Switzerland.png" data-info=".map-info" style="width:100%;height:550px"></div>
+        <div class="map-info d-none">
+            <p><span class="map-info-coordinates">0</span><i class="fa fa-times map-info-close"></i></p>
+            <p><span>Objects:</span> <span class="map-info-count">0</span></p>
+            <p class="map-info-list"></p>
+        </div>
+        <img src="/image/page/mittheilungen.png" alt="Mittheilungen" class="mittheilungen">
+    <?php endif ?>
+    </picture>
+    <figcaption class="text-start">
+        <span class="count-switzerland"><?= number_format(count($obs), 0, '.', '\'') ?></span> WWII objects in switzerland
+        <span class="float-end">
+            <i class="fa fa-circle" style="color: #ff6052ff"></i> ADAB
+            <i class="fa fa-circle" style="color: #b14137ff"></i> ADAB + BOTA
+            <i class="fa fa-circle" style="color: #2a81cbff"></i> Activated by HB9HCR
+        </span>
+    </figcaption>
+</figure>
+<p class="opacity-25">
+    The red stamp on the map reads: 
+    <i>No information to third parties.</i>
+    Today it is the other way round, the objects get documented and shared - and remembered in frequency!
+</p>
+<h3>§ Selected objects</h3>
+<p>
+    From the <?= number_format(count($obs), 0, '.', '\'') ?> objects across the country, I select the ones worth revisiting and form them into my campaign.
+    I organise them into smaller <a href="/operations" class="accent" target="_blank">Operations</a>, each a group of objects in the same area that can be activated together in sets.
+</p>
+<div class="emplace text-center">
+  <div class="row">
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $m->ops ?>"><?= $m->ops ?></p>
+      <p class="accent-1 m-0">Operations</p>
+    </div>
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $m->set ?>"><?= $m->set ?></p>
+      <p class="accent-1 m-0">Sets</p>
+    </div>
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $m->ref ?>"><?= $m->ref ?></p>
+      <p class="accent-1 m-0">Bunkers</p>
+    </div>
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0"><span class="counter-element" data-target="<?= round(($m->ref / count($obs)) * 100) ?>"><?= round(($m->ref / count($obs)) * 100) ?></span>%</p>
+      <p class="accent-1 m-0">Complete</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-6">
+        <h3>§ Rules of engagement</h3>
+        <dl>
+            <dt>Respect The Object</dt>
+            <dd>From the outside</dd>
+            <dt>Leave No Trace</dt>
+            <dd>Carried in is carried out</dd>
+            <dt>No Damage</dt>
+            <dd>Nothing is opened, moved or modified</dd>
+            <dt>Low Profile</dt>
+            <dd>Wildlife first</dd>
+            <dt>Safety First</dt>
+            <dd>Routes, weather and daylight planned</dd>
+        </dl>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3>§ Historical context</h3>
+        <dl>
+            <dt>01 Sep 1939</dt>
+            <dd>General mobilisation</dd>
+            <dt>04 Oct 1939</dt>
+            <dd>Operationsbefehl Nr. 2 issued</dd>
+            <dt>1939 - 1940</dt>
+            <dd>Border and Limmat positions built</dd>
+            <dt>Summer 1940</dt>
+            <dd>Strategic shift towards Réduit national</dd>
+            <dt>Today</dt>
+            <dd>Thousands of objects remain</dd>
+        </dl>
+    </div>
+</div>
+<div class="emplace pb-0">
+    <div class="row">
+        <?php for ($i = 0; $i < 4; $i++): ?>
+        <div class="col-12 col-md-3 mb-3">
+            <img src="/image/postal/card.0<?= $pcs[$i] ?>.png">
+        </div>
+        <?php endfor ?>
+    </div>
+</div>
+<div class="emplace text-center">
+    <p class="display-6 fw-bold m-0">SI VIS PACEM PARA BELLUM</p>
+    <p class="accent-1 m-0">if you want peace prepare for war</p>
+</div>
+<table id="map-switzerland-data" class="d-none">
+    <tbody>
+        <?php foreach ($obs as $o): ?>
+        <tr data-object="<?= base64_encode(json_encode(array_merge((array)$o, ['color' => $c($o), 'popup' => '<div><strong>' . $o->reference . ' ' . $o->name . '</strong></div><div>' . $o->lat . '/' . $o->lng . '</div>' . ($o->bota ? '<div>' . $o->bota . '</div>' : '')]))) ?>"></tr>
+        <?php endforeach ?>
+    </tbody>
+</table>

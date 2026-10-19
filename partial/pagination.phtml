@@ -1,0 +1,15 @@
+<nav>
+    <ul class="d-flex justify-content-center mt-3">
+        <li class="page-item" data-target="0">
+            <a class="page-link px-2" href="#">&laquo;</a>
+        </li>
+        <?php for ($i = 0; $i < count($this->collection); $i++): ?>
+        <li class="page-item" data-target="<?= $i ?>">
+            <a class="page-link px-2" href="#"><?= $i ?></a>
+        </li>
+        <?php endfor; ?>
+        <li class="page-item" data-target="<?= count($this->collection) - 1 ?>">
+            <a class="page-link px-2" href="#">&raquo;</a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,338 @@
+A01020;ERLACH, EST;Infanteriebunker, fortin d'infanterie;47.04456, 7.094
+A01021;ERLACH, OUEST;Infanteriebunker, fortin d'infanterie;47.04383, 7.09256
+A01022;NEUHAUS, EST;Infanteriebunker, fortin d'infanterie;47.03819, 7.0718
+A01023;NEUHAUS, OUEST;Infanteriebunker, fortin d'infanterie;47.03828, 7.07049
+A01027;GALSBERG, EST;Infanteriebunker, fortin d'infanterie;47.02346, 7.05007
+A01028;GALSBERG, OUEST;Infanteriebunker, fortin d'infanterie;47.02327, 7.04915
+A01029;HOHLENREBEN;Infanteriebunker, fortin d'infanterie;47.01913, 7.04839
+A01030;WEIHERMATTEN, NORD-OUEST;Beobachter, observatoire;47.0187, 7.04987
+A01031;WEIHERMATTEN, CENTRE;Infanteriebunker, fortin d'infanterie;47.01788, 7.05103
+A01032;WEIHERMATTEN, SUD-EST;Infanteriebunker, fortin d'infanterie;47.01672, 7.05209
+A01033;VANELWALD;Infanteriebunker, fortin d'infanterie;47.01093, 7.04214
+A01034;VANELWALD;Infanteriebunker, fortin d'infanterie;47.01057, 7.04247
+A01035;VANELWALD;Infanteriebunker, fortin d'infanterie;47.00949, 7.04307
+A01036;VANELWALD;Infanteriebunker, fortin d'infanterie;47.00962, 7.04136
+A01037;VANELWALD;Infanteriebunker, fortin d'infanterie;47.00845, 7.04078
+A01038;VANELWALD;Infanteriebunker, fortin d'infanterie;47.00732, 7.04045
+A01041;KLOSTERWALD;Infanteriebunker, fortin d'infanterie;47.03938, 7.07844
+A01044;NEUHAUS;Infanteriebunker, fortin d'infanterie;47.03731, 7.07681
+A01045;NEUHAUS;Infanteriebunker, fortin d'infanterie;47.03649, 7.07563
+A01046;NEUHAUS;Infanteriebunker, fortin d'infanterie;47.03505, 7.07301
+A01047;NEUHAUS;Infanteriebunker, fortin d'infanterie;47.03469, 7.07275
+A01048;NEUHAUS;Infanteriebunker, fortin d'infanterie;47.03468, 7.07209
+A01065;WARTWALD;Infanteriebunker, fortin d'infanterie;47.02312, 7.05625
+A01066;WARTWALD;Infanteriebunker, fortin d'infanterie;47.02249, 7.05639
+A01067;JOLIMONT;Infanteriebunker, fortin d'infanterie;47.02275, 7.05488
+A01068;WARTWALD;Infanteriebunker, fortin d'infanterie;47.02177, 7.05534
+A01069;WARTWALD;Infanteriebunker, fortin d'infanterie;47.02113, 7.05456
+A01070;LANDHOLZ;KP Anlage, ouvrage PC;47.02122, 7.05232
+A01071;LANDHOLZ;Infanteriebunker, fortin d'infanterie;47.01996, 7.05259
+A01073;LANDHOLZ;KP Anlage, ouvrage PC;47.01901, 7.05146
+A01086;RIEDERNSTAUDEN;Beobachter, observatoire;47.01604, 7.11295
+A01087;GEICHWALD;Beobachter, observatoire;47.01402, 7.12378
+A01270;MARFELDINGEN, NORD;Schild, bouclier;46.96802, 7.25441
+A01271;MARFELDINGEN, SUD;Schild, bouclier;46.96235, 7.25377
+A01273;GUEMMENEN;Schild, bouclier;46.94408, 7.2453
+A01274;EGGENBERGVIADUKT, NORD;Schild, bouclier;46.93517, 7.24507
+A01275;EGGENBERGVIADUKT, SUD;Schild, bouclier;46.93382, 7.2435
+A01277;LAUPENWALD;KP Anlage, ouvrage PC;46.90262, 7.24663
+A01279;BAERENKLAUE;KP Anlage, ouvrage PC;46.89287, 7.28301
+A01281;TANNHOLZWEID;Beobachter, observatoire;46.90673, 7.29518
+A01282;KAPFHOLZ;Beobachter, observatoire;46.90334, 7.31291
+A01283;SCHOREN;Beobachter, observatoire;46.89769, 7.3305
+A01439;LA ROSSMATTE SUD EST;Kaverne, caverne;47.30241, 7.49814
+A01440;LA ROSSMATTE SUD EST;Infanteriebunker, fortin d'infanterie;47.30313, 7.49774
+A01441;LA ROSSMATTE SUD OUEST;Infanteriebunker, fortin d'infanterie;47.3021, 7.49655
+A01446;MOUTIER NORD;Infanteriebunker, fortin d'infanterie;47.29198, 7.38007
+A01481;LE PICHOUX NORD;Infanteriebunker, fortin d'infanterie;47.27948, 7.22902
+A01482;LE PICHOUX SUD;Infanteriebunker, fortin d'infanterie;47.27939, 7.22889
+A01493;PLAIN FAYEN;Infanteriebunker, fortin d'infanterie;47.27618, 7.3115
+A01495;GORGES DE COURT NORD;Kaverne, caverne;47.26299, 7.34958
+A01496;GORGES DE COURT NORD EST;Geschützstand, position pour canon;47.25994, 7.35025
+A01497;GORGES DE COURT CENTRE;Tankabwehrgeschützstand, pos. canon ac;47.25156, 7.34273
+A01498;GORGES DE COURT SUD;Infanteriebunker, fortin d'infanterie;47.24644, 7.34552
+A01499;GORGES DE COURT SUD EST;Kaverne, caverne;47.24743, 7.34631
+A01558;DROIT DE RENAN;Unterstand, abri;47.12374, 6.91241
+A01562;MONT SOLEIL SUD EST;Infanteriebunker, fortin d'infanterie;47.1609, 6.99909
+A01563;LES PONTINS NORD OUEST;Kaverne, caverne;47.13685, 6.99177
+A01564;LES PONTINS NORD OUEST;Infanteriebunker, fortin d'infanterie;47.13649, 6.99224
+A01565;LES PONTINS NORD;Infanteriebunker, fortin d'infanterie;47.13668, 6.99309
+A01566;EGASSE NORD;Infanteriebunker, fortin d'infanterie;47.13269, 7.03412
+A01567;EGASSE SUD;Infanteriebunker, fortin d'infanterie;47.13085, 7.03426
+A01569;MONT CROSIN SUD OUEST;Kaverne, caverne;47.17503, 7.0272
+A01570;PETITE DOUANNE OUEST;Infanteriebunker, fortin d'infanterie;47.15086, 7.08672
+A01571;PETITE DOUANNE EST;Infanteriebunker, fortin d'infanterie;47.15086, 7.08831
+A01572;LES GOGUELISSES EST;Infanteriebunker, fortin d'infanterie;47.16122, 7.12226
+A01573;LES GOGUELISSES EST CHEMI;Infanteriebunker, fortin d'infanterie;47.16085, 7.12128
+A01574;PONT DES ANABAPTISTES S-E;Infanteriebunker, fortin d'infanterie;47.16512, 7.13714
+A01575;PONT DES ANABAPTISTES S-O;Infanteriebunker, fortin d'infanterie;47.16476, 7.13675
+A01576;ST IMIER FOURCHAUX OUEST;Kaverne, caverne;47.14713, 6.97573
+A01577;ST IMIER FOURCHAUX EST;Kaverne, caverne;47.14731, 6.97613
+A01578;EGASSE NORD EST;Kaverne, caverne;47.13378, 7.03549
+A01579;MONT SOLEIL SUD EST;Kaverne, caverne;47.16026, 6.99817
+A01580;TOURNEDOS SUD;Infanteriebunker, fortin d'infanterie;47.18988, 7.18002
+A01581;TOURNEDOS EST;Infanteriebunker, fortin d'infanterie;47.1906, 7.18134
+A01582;TOURNEDOS OUEST;Infanteriebunker, fortin d'infanterie;47.19095, 7.17975
+A01583;VIGNEROLLE SUD;Infanteriebunker, fortin d'infanterie;47.18286, 7.18005
+A01585;VIGNEROLLE EST;Infanteriebunker, fortin d'infanterie;47.18661, 7.18954
+A01586;MONT SOLEIL;Kaverne, caverne;47.16292, 6.99999
+A01589;REUCHENETTE ROUTE;TB Magazin, magasin barricade ac;47.18705, 7.25135
+A01590;REUCHENETTE EST;Infanteriebunker, fortin d'infanterie;47.18822, 7.25233
+A01592;FRINVILLIER NORD;Infanteriebunker, fortin d'infanterie;47.17005, 7.25424
+A01593;FRINVILLIER NORD OUEST;Infanteriebunker, fortin d'infanterie;47.16969, 7.25161
+A01594;FRINVILLIER N TUN.ROUTIER;Unterstand, abri;47.17131, 7.25134
+A01595;FRINVILLIER N TUN ROUT.3;TB Magazin, magasin barricade ac;47.17023, 7.25437
+A01686;GRUND, RIVE GAUCHE;Infanteriebunker, fortin d'infanterie;46.42709, 7.26861
+A01687;GRUND, RIVE DROITE;Infanteriebunker, fortin d'infanterie;46.42718, 7.27056
+A01688;SAANEN VILLAGE;KP Anlage, ouvrage PC;46.4904, 7.26281
+A01700;SAANENMOESER;Infanteriebunker, fortin d'infanterie;46.52006, 7.31093
+A01702;SCHLUENDIBACH;Infanteriebunker, fortin d'infanterie;46.52737, 7.33307
+A01703;SCHLUENDIBACH;Infanteriebunker, fortin d'infanterie;46.52755, 7.33359
+A01704;Manried;KP Anlage, ouvrage PC;46.56968, 7.38033
+A01705;GRUBENWALD;Mun. Magazin, magasin munition;46.57355, 7.38555
+A01706;BOLTIGEN;Infanteriebunker, fortin d'infanterie;46.62779, 7.39764
+A01707;TUBETAL;Telefonzentrale, centrale téléphonique;46.6358, 7.38836
+A01710;JAUNPASS;Telefonzentrale, centrale téléphonique;46.59178, 7.34612
+A01717;JAUNPASS-OUEST;Geschützstand, position pour canon;46.58808, 7.33308
+A01725;FLUHALP;Infanteriebunker, fortin d'infanterie;46.61983, 7.32505
+A01727;ROTEN KASTEN;Infanteriebunker, fortin d'infanterie;46.64466, 7.32957
+A01728;STIERENBERG;Infanteriebunker, fortin d'infanterie;46.64736, 7.33688
+A01729;RICHISALP;Infanteriebunker, fortin d'infanterie;46.66075, 7.37958
+A01730;RICHISALP;Infanteriebunker, fortin d'infanterie;46.6635, 7.38376
+A01731;RICHISALP-HOHMAD;Infanteriebunker, fortin d'infanterie;46.66373, 7.39166
+A01732;RICHISALP;Infanteriebunker, fortin d'infanterie;46.66556, 7.37925
+A01758;Weissenburg;Infanteriebunker, fortin d'infanterie;46.65909, 7.48515
+A01759;WEISSENBURG;Infanteriebunker, fortin d'infanterie;46.65909, 7.48515
+A01780;GSTAAD;KP Anlage, ouvrage PC;46.47336, 7.29385
+A01853;AARESCHLUCHT;Kaverne, caverne;46.71725, 8.21428
+A01854;WILLIGEN E;Infanteriebunker, fortin d'infanterie;46.71594, 8.19575
+A01855;WILLIGEN W;Infanteriebunker, fortin d'infanterie;46.71733, 8.18818
+A01860;GOLDSWIL;Artilleriewerk, ouvrage d'artillerie;46.69704, 7.87206
+A01862;WILDERSWIL;Artilleriewerk, ouvrage d'artillerie;46.65886, 7.85869
+A01864;KAMMFLUH;Artilleriewerk, ouvrage d'artillerie;46.6922, 7.8426
+A01866;KL RUGEN SUED;Telefonzentrale, centrale téléphonique;46.67441, 7.86135
+A01868;BALMHOLZ;Sprengstollen, ouvrage d'essai;46.68307, 7.77495
+A01870;GRUENENBERG PASS;Infanteriebunker, fortin d'infanterie;46.76377, 7.85309
+A01871;GRUENENBERG FALL;Infanteriebunker, fortin d'infanterie;46.77262, 7.8432
+A01872;SICHEL E 1;Infanteriebunker, fortin d'infanterie;46.75007, 7.8077
+A01873;SICHEL E 2;Infanteriebunker, fortin d'infanterie;46.74953, 7.80691
+A01874;SICHEL W 3;Infanteriebunker, fortin d'infanterie;46.7517, 7.80444
+A01875;SICHEL W 4;Infanteriebunker, fortin d'infanterie;46.75116, 7.80352
+A01876;SICHEL W 5;Kaverne, caverne;46.75081, 7.80247
+A01879;GROEN;Telefonzentrale, centrale téléphonique;46.71333, 7.76063
+A01881;SCHMOCKENFLUH;Artilleriefort, fort d'artillerie;46.68619, 7.75184
+A01882;BEATENBUCHT;Felsmagazin, magasin sous roc;46.68756, 7.74518
+A01884;BEATENBUCHT;Beobachter, observatoire;46.68423, 7.74634
+A01885;WEISSENTHAL;Schild, bouclier;46.70601, 7.74358
+A01886;KIENIGRABEN;Schild, bouclier;46.7097, 7.74151
+A01887;MERLIGEN;Infanteriebunker, fortin d'infanterie;46.70112, 7.73826
+A01888;MERLIGEN KIRCHSTRASSE;Schild, bouclier;46.70009, 7.73727
+A01889;MERLIGEN SEE;Schild, bouclier;46.69928, 7.7357
+A01892;GUNTEN HANG;Schild, bouclier;46.71492, 7.70309
+A01893;GUNTEN BACH;Schild, bouclier;46.71501, 7.70257
+A01894;OERTLI;Infanteriebunker, fortin d'infanterie;46.71666, 7.68891
+A01896;LAENGENSCHACHEN AESCHLENS;Schild, bouclier;46.72468, 7.68351
+A01897;LAENGENSCHACHEN FUSSWEG;Schild, bouclier;46.72369, 7.68377
+A01898;LAENGENSCHACHEN;Infanteriebunker, fortin d'infanterie;46.72572, 7.68332
+A01903;STALDEN 1;Schild, bouclier;46.75574, 7.70983
+A01904;STALDEN 2;Schild, bouclier;46.75647, 7.70905
+A01906;MEHLBAUMEN 1;Schild, bouclier;46.74659, 7.70298
+A01907;MEHLBAUMEN 2;Schild, bouclier;46.74713, 7.70115
+A01908;DENKMALPASSAGE 1;Schild, bouclier;46.75178, 7.69463
+A01909;DENKMALPASSAGE 2;Schild, bouclier;46.75092, 7.6941
+A01910;DENKMALPASSAGE 3;Schild, bouclier;46.75201, 7.69228
+A01911;BEI DER GASSE 1;Schild, bouclier;46.75282, 7.69006
+A01912;BEI DER GASSE 2;Schild, bouclier;46.75264, 7.68927
+A01913;BEI DER GASSE 3;Schild, bouclier;46.75237, 7.68848
+A01914;MULTENEGG 1;Infanteriebunker, fortin d'infanterie;46.75965, 7.69454
+A01915;MULTENEGG 2;Infanteriebunker, fortin d'infanterie;46.75866, 7.69283
+A01916;MULTENEGG 3;Infanteriebunker, fortin d'infanterie;46.75741, 7.68942
+A01917;MULTENEGG 4;Infanteriebunker, fortin d'infanterie;46.75719, 7.68733
+A01918;BEI DER GASSE 1;Infanteriebunker, fortin d'infanterie;46.7504, 7.68487
+A01919;BEI DER GASSE 2;Infanteriebunker, fortin d'infanterie;46.75292, 7.68469
+A01920;HALTEN;Infanteriebunker, fortin d'infanterie;46.75023, 7.67997
+A01923;ASPIWALD;Infanteriebunker, fortin d'infanterie;46.74937, 7.66341
+A01924;KOHLEREN;Infanteriebunker, fortin d'infanterie;46.75569, 7.65172
+A01925;EICHBUEHL 1;Infanteriebunker, fortin d'infanterie;46.74579, 7.65351
+A01927;EICHBUEHL 3;Infanteriebunker, fortin d'infanterie;46.74435, 7.65194
+A01928;EICHBUEHL 4;Infanteriebunker, fortin d'infanterie;46.74094, 7.65218
+A01929;EICHBUEHL 5;Infanteriebunker, fortin d'infanterie;46.74292, 7.6499
+A01938;STR GROEN BEATENBERG;Unterstand, abri;46.69555, 7.75241
+A01950;EYBACH;Infanteriebunker, fortin d'infanterie;46.65874, 7.79009
+A01953;HENTSCHENRIED, Krattigen;Geschützstand, position pour canon;46.66449, 7.71075
+A01955;HONDRICH;Artilleriefort, fort d'artillerie;46.67736, 7.68591
+A01956;HEINRICH;KP Anlage, ouvrage PC;46.67468, 7.67937
+A01957;FAULENSEEWALD;Telefonzentrale, centrale téléphonique;46.66818, 7.69005
+A01958;HONDRICH S;Beobachter, observatoire;46.66731, 7.67672
+A01960;HEUSTRICH 1;Geschützstand, position pour canon;46.65687, 7.67798
+A01961;HEUSTRICH 2;Geschützstand, position pour canon;46.6566, 7.6768
+A01962;HEUSTRICH 3;Geschützstand, position pour canon;46.65399, 7.67823
+A01963;HEUSTRICH 4;Geschützstand, position pour canon;46.65444, 7.67692
+A01964;HEUSTRICH 5;Unterstand, abri;46.65579, 7.6785
+A01965;HEUSTRICH 6;Unterstand, abri;46.65354, 7.67901
+A01966;SANDGRUBE 1;Geschützstand, position pour canon;46.64836, 7.70459
+A01967;SANDGRUBE 2;Geschützstand, position pour canon;46.64845, 7.70342
+A01969;SANDGRUBE 4;Geschützstand, position pour canon;46.64683, 7.70302
+A01970;MUELENEN BERGFUSS 1;Geschützstand, position pour canon;46.63817, 7.69523
+A01971;MUELENEN BERGFUSS 2;Geschützstand, position pour canon;46.63812, 7.69592
+A01972;MUELENEN BERGFUSS 3;Geschützstand, position pour canon;46.63812, 7.69599
+A01973;MUELENEN STRASSE;Geschützstand, position pour canon;46.64029, 7.6928
+A01974;MUELENEN BERGFUSS 4;Kaverne, caverne;46.63816, 7.69592
+A01975;MUELENEN SULDSCHLUCHT;Infanteriebunker, fortin d'infanterie;46.63838, 7.6988
+A01976;MUELENEN BERGFUSS 5;Infanteriebunker, fortin d'infanterie;46.63785, 7.69507
+A01978;MUELENEN KANDER;Infanteriebunker, fortin d'infanterie;46.63926, 7.68907
+A01982;FRUTIGEN B KP;Funk-Stand, station radio;46.59568, 7.64378
+A01983;GRASSI 1;Funk-Stand, station radio;46.58362, 7.64634
+A01984;GRASSI 2;Funk-Stand, station radio;46.58309, 7.64504
+A01985;GRASSI 3;Funk-Stand, station radio;46.58246, 7.64425
+A01986;GRASSI 4;Funk-Stand, station radio;46.58156, 7.64346
+A01988;GRASSI 6;Funk-Stand, station radio;46.58013, 7.63955
+A02006;SPIEZMOOS 4;Schild, bouclier;46.69045, 7.66427
+A02010;EINIGEN BAHN;Tankabwehrgeschützstand, pos. canon ac;46.70893, 7.64415
+A02011;EINIGEN TERRASSE;Tankabwehrgeschützstand, pos. canon ac;46.71002, 7.63977
+A02015;EINIGEN STATION;Infanteriebunker, fortin d'infanterie;46.71083, 7.63886
+A02016;EINIGEN STRANDWEG W;Unterstand, abri;46.71344, 7.63808
+A02018;EINIGEN HPTSTR. 3;Tankabwehrgeschützstand, pos. canon ac;46.71333, 7.63671
+A02019;EINIGEN HOLEEWEG;Infanteriebunker, fortin d'infanterie;46.71218, 7.63625
+A02020;EINIGEN WALDWEG;Infanteriebunker, fortin d'infanterie;46.7102, 7.63741
+A02021;EINIGEN BAHNBRUECKE;Infanteriebunker, fortin d'infanterie;46.71254, 7.63533
+A02022;EINIGEN SCHLUCHT 1;Unterstand, abri;46.71119, 7.63513
+A02023;EINIGEN SCHLUCHT 2;Infanteriebunker, fortin d'infanterie;46.71074, 7.63506
+A02024;KANDER TERRASSE 1;Unterstand, abri;46.70872, 7.63414
+A02025;KANDER TERRASSE 2;Bttr Stellung, position d'artillerie;46.70409, 7.63452
+A02030;AUWALD 1;Infanteriebunker, fortin d'infanterie;46.6977, 7.63475
+A02031;AUWALD 2;Infanteriebunker, fortin d'infanterie;46.69716, 7.63475
+A02032;AUWALD 3;Infanteriebunker, fortin d'infanterie;46.6933, 7.63395
+A02033;AUWALD 4;Infanteriebunker, fortin d'infanterie;46.69095, 7.63512
+A02034;AUWALD 1 A;Unterstand, abri;46.69761, 7.63606
+A02035;AUWALD 2 A;Unterstand, abri;46.69689, 7.63593
+A02036;AUWALD 3 A;Unterstand, abri;46.6932, 7.63539
+A02038;AUWALD 4 A;Unterstand, abri;46.69221, 7.63539
+A02039;AUWALD 4 B;Unterstand, abri;46.69131, 7.63682
+A02040;AUWALD 5;Infanteriebunker, fortin d'infanterie;46.68961, 7.6342
+A02041;AUWALD 5 A;Unterstand, abri;46.6892, 7.6342
+A02042;AUWALD 6;Infanteriebunker, fortin d'infanterie;46.6852, 7.63405
+A02043;SATTELEGG 1;TB Magazin, magasin barricade ac;46.68543, 7.63196
+A02044;SATTELEGG 2;Infanteriebunker, fortin d'infanterie;46.68484, 7.63177
+A02045;SCHATTIGWALD;Infanteriebunker, fortin d'infanterie;46.6861, 7.63157
+A02050;BURG;Artilleriefort, fort d'artillerie;46.67081, 7.63074
+A02051;WIMMISWEHR LK UFER 1;Infanteriebunker, fortin d'infanterie;46.67415, 7.62474
+A02052;WIMMISWEHR LK UFER 2;Infanteriebunker, fortin d'infanterie;46.67361, 7.6229
+A02053;WIMMISWEHR RT UFER 1;Infanteriebunker, fortin d'infanterie;46.67244, 7.62551
+A02054;WIMMISWEHR RT UFER 2;Infanteriebunker, fortin d'infanterie;46.6719, 7.62447
+A02055;WIMMISWEHR LK UFER 3;TB Magazin, magasin barricade ac;46.67263, 7.62186
+A02056;BURGMATTE;Infanteriebunker, fortin d'infanterie;46.66344, 7.62705
+A02057;BURGFLUH 1;Infanteriebunker, fortin d'infanterie;46.66484, 7.62418
+A02058;BURGFLUH 2;TB Magazin, magasin barricade ac;46.66525, 7.62497
+A02059;CHIREL 1;Infanteriebunker, fortin d'infanterie;46.56666, 7.5615
+A02061;Chirel 2;Infanteriebunker, fortin d'infanterie;46.56693, 7.56124
+A02070;KRUEMMELWEGE AELPETLI;Kaverne, caverne;46.70548, 7.52494
+A02072;BERET;Telefonzentrale, centrale téléphonique;46.69111, 7.49014
+A02075;WEISSENBURG BAD;Infanteriebunker, fortin d'infanterie;46.67133, 7.46111
+A02076;LEITERNPASS;Kaverne, caverne;46.7048, 7.45668
+A02077;GANTRISCH;Infanteriebunker, fortin d'infanterie;46.70498, 7.45511
+A02078;NUENENENFLUH;Kaverne, caverne;46.70498, 7.45877
+A02079;MORGETENGRAT;Infanteriebunker, fortin d'infanterie;46.69967, 7.44681
+A02080;MORGETENPASS;Infanteriebunker, fortin d'infanterie;46.69958, 7.43916
+A02081;KUMMLI;Infanteriebunker, fortin d'infanterie;46.7048, 7.43838
+A02082;BUERGLEN;Artilleriewerk, ouvrage d'artillerie;46.70246, 7.43184
+A02083;WIDDERSGRIND;Artilleriewerk, ouvrage d'artillerie;46.67835, 7.40309
+A02084;SCHEIBE;Infanteriebunker, fortin d'infanterie;46.67924, 7.39655
+A02085;MAEHRE;Artilleriewerk, ouvrage d'artillerie;46.67618, 7.38505
+A02092;SCHWARZENBUEHL;Infanteriebunker, fortin d'infanterie;46.73906, 7.39186
+A02096;BURST KOENIZ;Beobachter, observatoire;46.89385, 7.3666
+A02099;SAND SCHOENBUEHL;Uebungsstand, fortin d'exercice;47.0098, 7.50939
+A02378;FLUH;Infanteriebunker, fortin d'infanterie;46.80351, 7.94562
+A02379;MAST;Infanteriebunker, fortin d'infanterie;46.80244, 7.94391
+A02380;MUERLI;Kaverne, caverne;46.80127, 7.94351
+A02381;MUERLI;Infanteriebunker, fortin d'infanterie;46.8009, 7.94508
+A02382;VORDERHUEBELI KRETE;Unterstand, abri;46.80029, 7.94022
+A02383;VORDERHUEBELI HINTERHANG;Unterstand, abri;46.79956, 7.94369
+A02384;COULOIR;Infanteriebunker, fortin d'infanterie;46.79918, 7.93798
+A02385;BAUMGARTENFLUH UNTEN;Infanteriebunker, fortin d'infanterie;46.79613, 7.9449
+A02386;BAUMGARTENFLUH OBEN;Infanteriebunker, fortin d'infanterie;46.79481, 7.93821
+A02387;FELSENWEG;Telefonzentrale, centrale téléphonique;46.78982, 7.9487
+A02388;WENGIPASS;Kaverne, caverne;46.78857, 7.90593
+A02400;TRUBSCHACHEN;Infanteriebunker, fortin d'infanterie;46.9205, 7.843
+A02406;AESCHAU W;Infanteriebunker, fortin d'infanterie;46.91756, 7.74662
+A03675;STUDENWEIDWALD E;Unterstand, abri;47.18509, 7.74196
+A03676;STUDENWEIDWALD W;Unterstand, abri;47.18276, 7.73838
+A08752;SUSTEN WEST C;Infanteriebunker, fortin d'infanterie;46.72552, 8.44311
+A08753;SUSTEN WEST D;Infanteriebunker, fortin d'infanterie;46.72877, 8.44173
+A08755;STEINGLETSCHER;KP Anlage, ouvrage PC;46.73132, 8.42803
+A08900;GRIMSEL;Artilleriefort, fort d'artillerie;46.57463, 8.32905
+A08901;NOLLEN;Infanteriebunker, fortin d'infanterie;46.57244, 8.33289
+A08902;GRIMSEL I;Kaverne, caverne;46.57501, 8.32973
+A08903;GRIMSEL II;Kaverne, caverne;46.57446, 8.33026
+A08904;GRIMSEL III;Kaverne, caverne;46.57274, 8.32732
+A08905;GRIMSEL IV;Kaverne, caverne;46.5712, 8.33074
+A08906;GRIMSEL V;Kaverne, caverne;46.57109, 8.33146
+A08907;CHESSIBIDMER;Infanteriebunker, fortin d'infanterie;46.57696, 8.33035
+A08908;SOMMERLOCH;Kaverne, caverne;46.57736, 8.33714
+A08909;SEEUFEREGG OST;Infanteriebunker, fortin d'infanterie;46.57463, 8.3414
+A08910;SEEUFEREGG WEST;Infanteriebunker, fortin d'infanterie;46.5719, 8.33379
+A08912;GRIMSELPASS WEST;Infanteriebunker, fortin d'infanterie;46.56108, 8.33381
+A08923;TRUEBTENSEELUECKE;Kaverne, caverne;46.54927, 8.30577
+A08924;BAERENEGG I;Kaverne, caverne;46.54944, 8.2836
+A08925;BAERENEGG II;Kaverne, caverne;46.55034, 8.28362
+A08926;HAUSEGG;Kaverne, caverne;46.56019, 8.32421
+A08927;WASSERSCHLOSS;Kaverne, caverne;46.56077, 8.33074
+A08929;GRIMSEL TOTENKAMMER;Kaverne, caverne;46.57311, 8.32833
+F02950;Neuenegg;Unterstand, abri;46.88988, 7.3481
+F16325;Groenbach;KP Anlage, ouvrage PC;46.69827, 7.74158
+T00700;ERLACH;GPH, obstacle ac terrain;47.04662, 7.09043
+T00705;GAMPELEN;GPH, obstacle ac terrain;47.01842, 7.04997
+T00715;GUEMMENEN;Pz Bar in Strasse, bar ac sur route;46.94543, 7.24818
+T00730;MARFELDIGEN;GPH, obstacle ac terrain;46.96568, 7.25363
+T00731;GUEMMENEN, MISTELSTUDEN;GPH, obstacle ac terrain;46.934, 7.2435
+T00733;LAUPENMUEHLE;GPH, obstacle ac terrain;46.91201, 7.24607
+T00736;FREIBURGHAUS;GPH, obstacle ac terrain;46.89573, 7.26949
+T00799;SAND-SCHOENBUEHL;Pz Bar Bahnlinie, bar ac sur voie ferrée;47.01106, 7.50373
+T00834;MOUTIER ROCHES ROUTE;Pz Bar in Strasse, bar ac sur route;47.29234, 7.38073
+T00875;LE PICHOUX ROUTE AMONT;Pz Bar in Strasse, bar ac sur route;47.27921, 7.22909
+T00876;LA NOZ;Pz Bar in Strasse, bar ac sur route;47.26091, 7.14849
+T00878;PLAIN FAYEN;GPH, obstacle ac terrain;47.27559, 7.31077
+T00879;PLAIN FAYEN CHEMIN;Pz Bar in Strasse, bar ac sur route;47.27596, 7.31269
+T00925;RENAN LA CIBOURG ROUTE;Pz Bar in Strasse, bar ac sur route;47.12347, 6.91281
+T00935;EGASSE CHASSERAL;GPH, obstacle ac terrain;47.13296, 7.0328
+T00941;PETITE DOUANE;GPH, obstacle ac terrain;47.15131, 7.08791
+T00944;PONT DES ANABAPTISTES CHE;Pz Bar in Strasse, bar ac sur route;47.16566, 7.13694
+T00945;CORTEBERT PRES D.C.CHEMIN;Pz Bar in Strasse, bar ac sur route;47.17921, 7.12539
+T00946;CORGEMONT BOV. ANC.CHEMIN;Pz Bar in Strasse, bar ac sur route;47.1787, 7.13456
+T00947;CORGEMONT BOV.NOUV.CHEMIN;Pz Bar in Strasse, bar ac sur route;47.18045, 7.14999
+T00954;TOURNEDOS OUEST;GPH, obstacle ac terrain;47.19095, 7.1787
+T00960;VIGNEROLLE EST AMONT;GPH, obstacle ac terrain;47.18684, 7.18835
+T00962;PORTE DES ENFERS;GPH, obstacle ac terrain;47.18021, 7.20249
+T00965;FRINVILLIER RONDCHATEL CH;Pz Bar in Strasse, bar ac sur route;47.17068, 7.25134
+T00970;FRINVILLIER TUN.3 ROU.AVA;Pz Bar in Strasse, bar ac sur route;47.16987, 7.25563
+T00971;FRINVILLIER SUD EST CHF;Pz Bar in Strasse, bar ac sur route;47.167, 7.25953
+T00972;REUCHENETTE BIENNE TUNNEL;Pz Bar in Strasse, bar ac sur route;47.17166, 7.24712
+T00973;LA MILLIERE E;Pz Bar in Strasse, bar ac sur route;47.16761, 7.24937
+T01015;GRUND;GPH, obstacle ac terrain;46.42718, 7.26913
+T01020;BOLTIGEN;GPH, obstacle ac terrain;46.63175, 7.40273
+T01100;STOCKMAETTELI S;Pz Bar in Strasse, bar ac sur route;46.67504, 8.25537
+T01101;STOCKMAETTELI N;Pz Bar in Strasse, bar ac sur route;46.67648, 8.25487
+T01106;WILLIGEN;GPH, obstacle ac terrain;46.71626, 8.19431
+T01118;BRUENIG MEIRINGEN;Pz Bar in Strasse, bar ac sur route;46.7482, 8.14404
+T01126;BRUENIGSTR BRIENZWILER;Pz Bar in Strasse, bar ac sur route;46.74986, 8.10781
+T01130;GRUENENBERG PASS;Pz Bar in Strasse, bar ac sur route;46.76539, 7.85284
+T01131;GRUENENBERG FALL;Pz Bar in Strasse, bar ac sur route;46.77351, 7.84426
+T01140;BEATENBUCHT;Pz Bar in Strasse, bar ac sur route;46.68783, 7.74453
+T01143;MERLIGEN;GPH, obstacle ac terrain;46.70152, 7.73807
+T01150;DENKMALPASSAGE;GPH, obstacle ac terrain;46.75245, 7.69418
+T01151;BEI DER GASSE;GPH, obstacle ac terrain;46.75381, 7.68993
+T01154;HALTEN HEILIGENSCHWENDI;GPH, obstacle ac terrain;46.75068, 7.6801
+T01156;ASPIWALD;GPH, obstacle ac terrain;46.74915, 7.66295
+T01157;EICHBUEHL;GPH, obstacle ac terrain;46.74602, 7.65273
+T01158;GRUESIBERGWALD;GPH, obstacle ac terrain;46.75479, 7.65158
+T01160;KANDERBRUECKE;Pz Bar Bahnlinie, bar ac sur voie ferrée;46.67263, 7.6672
+T01177;KIEN;Pz Bar in Strasse, bar ac sur route;46.61574, 7.6885
+T01180;EINIGEN;GPH, obstacle ac terrain;46.71095, 7.6433
+T01181;CHANDERBRUEGG, KT STRASSE;Pz Bar in Strasse, bar ac sur route;46.71479, 7.63331
+T01191;BURGFLUH BURGMATTE;GPH, obstacle ac terrain;46.66376, 7.62744
+T01197;WIMMISWEHR LK UFER;Pz Bar in Strasse, bar ac sur route;46.67263, 7.6229
+T01384;OBERSCHWENDIWALD;Pz Bar in Strasse, bar ac sur route;46.75388, 8.15747
+T01423;KEMMERLIKOPF;GPH, obstacle ac terrain;46.80558, 7.92494
+T01431;AESCHAU;GPH, obstacle ac terrain;46.92205, 7.74875
+T04512;SUSTEN WEST 1;Pz Bar in Strasse, bar ac sur route;46.72895, 8.44212
+T04513;SUSTEN WEST 2;Pz Bar in Strasse, bar ac sur route;46.72919, 8.44003

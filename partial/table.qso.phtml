@@ -1,0 +1,36 @@
+<h3>§ Recent QSO</h3>
+<table class="table table-hover table-paginate map-qso-data">
+    <caption class="<?= $this->get->has('qrz') ? 'd-none' : '' ?>">
+        <?= $this->partial('pagination.phtml', ['collection' => $this->collection]) ?>
+    </caption>
+    <thead>
+        <tr>
+            <th>UTC</th>
+            <th class="d-none d-md-table-cell">Band</th>
+            <th class="d-none d-md-table-cell">Frequency</th>
+            <th>Callsign</th>
+            <th>Mode</th>
+            <th class="d-none d-md-table-cell">RST S/R</th>
+        </tr>
+    </thead>
+    <?php foreach ($this->collection as $i => $page): ?>
+    <tbody class="<?= 0 == $i ? '' : 'd-none' ?>">
+        <?php foreach ($page as $item): ?>
+            <tr class="qso-data" data-lat_a="46.87" data-lon_a="8.12" data-lat_b="<?= $item->lat ?>" data-lon_b="<?= $item->lon ?>">
+                <td><?= $item->qso_at ?></td>
+                <td class="d-none d-md-table-cell"><?= $item->band ?></td>
+                <td class="d-none d-md-table-cell"><?= $item->freq ?></td>
+                <td><a href="<?= $item->qrz ?>" target="_blank"><?= $item->callsign ?></a></td>
+                <td><?= $item->mode ?></td>
+                <td class="d-none d-md-table-cell"><?= $item->rst ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+    <?php endforeach; ?>
+</table>
+<figure class="polaroid grayscale<?= $this->get->has('qrz') ? ' d-none' : '' ?>">
+    <picture>
+        <div class="map-qso" data-target=".map-qso-data" style="height:300px;width:100%"></div>
+        <img src="/image/page/mittheilungen.png" alt="Mittheilungen" class="mittheilungen">
+    </picture>
+</figure>

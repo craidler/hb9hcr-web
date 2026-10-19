@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="220mm"
+   height="60mm"
+   viewBox="0 0 220 60"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="HB9HCR-Part.Battery.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="0.93481342"
+     inkscape:cx="441.26453"
+     inkscape:cy="97.345629"
+     inkscape:window-width="1728"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path13"
+       style="font-variation-settings:'wght' 700;vector-effect:non-scaling-stroke;fill:none;fill-opacity:0.05;stroke:#ff0000;stroke-width:0.264583;stroke-miterlimit:8;stroke-opacity:1;-inkscape-stroke:hairline"
+       d="M 17.999935 9.9999064 C 17.999935 9.9999064 9.9999064 9.9999351 9.9999064 17.999935 L 9.9999064 40.000142 C 9.9999976 50.000142 19.999813 50.000049 19.999813 50.000049 L 19.999813 30.000236 L 200.0002 30.000236 L 200.0002 50.000049 C 200.0002 50.000049 210.0001 50.000142 210.0001 40.000142 L 210.0001 17.999935 C 210.0001 9.9999351 202.00007 9.9999064 202.00007 9.9999064 L 193.00011 9.9999064 L 193.00011 19.999813 L 187.99989 19.999813 L 187.99989 9.9999064 L 32.000114 9.9999064 L 32.000114 19.999813 L 26.999902 19.999813 L 26.999902 9.9999064 L 17.999935 9.9999064 z M 17.999935 16.000057 C 19.104409 16.000124 19.999746 16.895461 19.999813 17.999935 C 19.999746 19.104409 19.104409 19.999746 17.999935 19.999813 C 16.895461 19.999746 16.000124 19.104409 16.000057 17.999935 C 16.000124 16.895461 16.895461 16.000124 17.999935 16.000057 z M 110 16.000057 A 1.9999999 1.9999999 0 0 1 111.99988 17.999935 A 1.9999999 1.9999999 0 0 1 110 19.999813 A 1.9999999 1.9999999 0 0 1 107.99961 17.999935 A 1.9999999 1.9999999 0 0 1 110 16.000057 z M 202.00007 16.000057 C 203.10455 16.000123 203.99988 16.89546 203.99995 17.999935 C 203.99988 19.10441 203.10455 19.999747 202.00007 19.999813 C 200.8956 19.999741 200.00026 19.104406 200.0002 17.999935 C 200.00026 16.895464 200.8956 16.000129 202.00007 16.000057 z " />
+  </g>
+</svg>

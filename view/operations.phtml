@@ -1,0 +1,26 @@
+<?php
+
+namespace HB9HCR;
+
+$ops = $this->container->operations;
+
+?>
+<p>The Limmatstellung doesn't give up its concrete easily. Every clasp below is an operation. A handful of bunkers activated together, set by set, log to log. <?= count($ops) ?> operations consisting of <?= 0 ?> bunkers grouped in <?= 0 ?> sets. And the valley still has more silent positions waiting to be remembered in frequency.</p>
+<div class="emplace emplace-flex">
+<?php foreach ($ops as $o): ?>
+    <figure class="clasp">
+        <a href="/operation/<?= strtolower($o->name) ?><?= $this->get->has('qrz') ? '?qrz=true' : '' ?>">
+            <picture>
+                <img src="/image/ribbon/campaign.clasp.png" alt="Clasp">
+            </picture>
+            <div><?= $o->name ?></div>
+        </a>
+        <figcaption>
+            <span><?= $o->ref ?> Bunkers</span>
+        </figcaption>
+    </figure>
+<?php endforeach ?>
+</div>
+<?php foreach ($ops as $op): ?>
+    <?= $this->partial('operation.phtml', ['operation' => $op, 'compact' => true]) ?>
+<?php endforeach ?>

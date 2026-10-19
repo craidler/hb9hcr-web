@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="HB9HCR-Sargeant.svg"
+   width="500"
+   height="500"
+   viewBox="0 0 499.99999 500"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="0.43722769"
+     inkscape:cx="116.64403"
+     inkscape:cy="180.68389"
+     inkscape:window-width="1728"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <g
+     transform="matrix(0.45938207,0,0,0.45938207,-112.91184,-44.004525)"
+     id="g3"
+     inkscape:export-filename="../res/qsl/watermark.sargeant.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96"
+     style="fill:#ffffff;fill-opacity:0.40000001">
+    <path
+       d="M 246,557 V 377.5 L 790,198 1334,377.5 V 557 L 790,377.5 Z"
+       fill-rule="evenodd"
+       id="path1"
+       style="fill:#ffffff;fill-opacity:0.40000001;stroke:none" />
+    <path
+       d="M 246,819 V 639.5 L 790,460 1334,639.5 V 819 L 790,639.5 Z"
+       fill-rule="evenodd"
+       id="path2"
+       style="fill:#ffffff;fill-opacity:0.40000001;stroke:none" />
+    <path
+       d="M 246,1082 V 902 l 544,-180 544,180 v 180 L 790,902 Z"
+       fill-rule="evenodd"
+       id="path3"
+       style="fill:#ffffff;fill-opacity:0.40000001;stroke:none" />
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<?php
+
+namespace HB9HCR;
+
+use HB9HCR\Mvc\Parameters;
+
+?>
+<ul class="nav nav-navbar">
+    <li>
+        <img src="/image/page/sargeant.svg">
+    </li>
+    <?php foreach ($this->container->routes as $page): ?>
+    <?php if (isset($page->label)): ?>
+    <li>
+        <a href="<?= $page->route ?><?= $this->get->has('qrz') ? '?qrz=true' : '' ?>" class="nav-link <?= $this->container->request->path == $page->route ? 'active' : '' ?>"><?= $page->label ?></a>
+    </li>
+    <?php endif ?>
+    <?php endforeach ?>
+</ul>

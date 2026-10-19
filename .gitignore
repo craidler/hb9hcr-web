@@ -1,5 +1,6 @@
-**/local.json
+config/database.php
 **/*.adi
+init
 cache/*
 !cache/.gitkeep
 www/cam/*.jpg

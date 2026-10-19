@@ -1,0 +1,145 @@
+<?php
+
+$months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+];
+
+?>
+<div class="row">
+    <div class="col-12 col-md-8">
+        <p>
+            Activating bunkers for the BOTA programme has become my favorite radio activity. I have set my personal <a href="/campaign" class="accent" target="_blank">campaign</a> to personally activate as many objects as possible in the <a href="/limmatstellung" class="accent" target="_blank">Limmatstellung</a>.
+            Doing so, I learn a lot about geography and history of the <a href="/urdorf" class="accent" target="_blank">region</a> I live in.
+        </p>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <figure class="emplace">
+                    <picture>
+                        <img src="/image/page/sergeant.svg" alt="Sergeant">
+                    </picture>
+                </figure>
+            </div>
+            <div class="col-12 col-md-10">
+                <p>
+                    A few years serving the Swiss Armed Forces as a combat engineer sergeant with a specialisation in demolition, initially with the Festungspionier Battalion 13, connected me with these historical sites — some of them became a home for a while.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <figure class="emplace">
+            <picture>
+                <img src="/image/page/festpibat.13.svg" alt="Festungspionier Batallion 13">
+            </picture>
+        </figure>
+    </div>
+    <div class="d-none col-md-6">
+        <figure class="emplace m-0">
+            <picture>
+                <img src="/image/page/sargeant.svg" alt="Sargeant">
+            </picture>
+        </figure>
+    </div>
+</div>
+<div>
+    <h3>§ Awards</h3>
+    <div class="emplace emplace-flex">
+    <?php foreach ($this->container->bota->awards() as $award): ?>
+        <figure class="ribbon <?= $award->level ? '' : 'ribbon-empty' ?>" title="Score: <?= $award->score ?> <?= $award->level ? 'Level: ' . ucfirst($award->level) : '' ?>">
+            <picture>
+            <?php if ($award->level): ?>
+                <img src="/image/ribbon/<?= $award->image ?>.svg" alt="Ribbon">
+            <?php else: ?>
+                <div><?= $award->score ?></div>
+            <?php endif; ?>
+            </picture>
+            <?php if ($award->level): ?>
+                <img src="/image/ribbon/level.<?= $award->level ?>.png" alt="Level">
+            <?php endif; ?>
+            <figcaption>
+                <p><?= $award->description[0] ?></p>
+                <p><?= $award->description[1] ?></p>
+                <p><?= $award->description[2] ?></p>
+            </figcaption>
+        </figure>
+    <?php endforeach; ?>
+    </div>
+</div>
+<div class="row">
+<?php foreach (['activator' => 'hunters', 'hunter' => 'activators'] as $role => $subject): ?>
+    <div class="col-12 col-md-6">
+        <h3>§ <?= ucfirst($role) ?> Stats</h3>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Month</th>
+                    <th class="text-end">Bunkers</th>
+                    <th class="text-end"><?= ucfirst($subject) ?></th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($this->container->bota->statistics(['role' => $role]) as $item): ?>
+                <tr>
+                    <td><?= $item->year ?></td>
+                    <td><?= $months[$item->month - 1] ?></td>
+                    <td class="text-end"><?= $item->bunkers ?></td>
+                    <td class="text-end"><?= $item->subjects ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+<?php endforeach ?>
+</div>
+<div class="row">
+<?php foreach (['Activations', 'B2Bs'] as $l): ?>
+    <div class="col-12 col-md-6">
+        <h3>§ Recent <?= $l ?></h3>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th class="w-25">Date</th>
+                    <th>Reference</th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($this->container->bota->{strtolower($l)}() as $a): ?>
+                <tr>
+                    <td><?= $a->date ?></td>
+                    <td><?= $a->reference ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>        
+<?php endforeach ?>
+</div>
+<div class="emplace text-center d-none">
+    <?php $stats = (object)['activations' => 0, 'bunkers' => 0, 'hunters' => 0] // $this->container->bota->stats('activator')->lifetime_activations ?>
+    <div class="row">
+        <div class="col-12 col-sm-4">
+            <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $stats->activations ?>"><?= $stats->activations ?></p>
+            <p class="accent-1 m-0">Activations</p>
+        </div>
+        <div class="col-12 col-sm-4">
+            <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $stats->bunkers ?>"><?= $stats->bunkers ?></p>
+            <p class="accent-1 m-0">Bunkers</p>
+        </div>
+        <div class="col-12 col-sm-4">
+            <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $stats->hunters ?>"><?= $stats->hunters ?></p>
+            <p class="accent-1 m-0">Hunters</p>
+        </div>
+    </div>
+</div>

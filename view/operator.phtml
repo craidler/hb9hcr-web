@@ -1,0 +1,32 @@
+<?php
+    $status = $this->container->bota->status();
+    $qsos = $this->container->adif->collection(['limit' => 100, 'pagination' => []]);
+?>
+<div class="row">
+    <div class="col-12 col-md-6">
+        <p>Chris here — a Swiss OP, vintage 1980, active on HF, UHF and VHF.</p>
+        <p>Three months of self-study, zero electronics background, and one exam later: HB9 licensed in 2019. Still proud of that one.</p>
+        <p>Then the silence hit. No contacts, no experience, no patience — and just like that, the fire went out.</p>
+        <figure class="polaroid">
+            <picture>
+                <img src="/image/photo/field.960.jpg" alt="Shack">
+            </picture>
+            <figcaption>
+                Shack under the Sky
+            </figcaption>
+        </figure>
+    </div>
+    <div class="col-12 col-md-6">
+        <figure class="polaroid">
+            <picture>
+                <img src="/image/page/herman.gif" alt="OP Herman Munster">
+            </picture>
+            <figcaption>
+                HB9HCR is off the air
+            </figcaption>
+        </figure>
+        <p>At the start of 2026 I joined <a href="https://hb9uf.ch" target="_blank" class="accent">HB9UF</a> and USKA, and lit it back up. My shack? Anywhere under the sky, run&shy;ning up to 100 whiskey.</p>
+        <p>So every QSO you log with me came from outdoors, with real effort behind it.</p>
+    </div>
+</div>
+<?= $this->partial('table.qso.phtml', ['collection' => $this->container->adif->collection(['limit' => 100, 'pagination' => []])]) ?>
