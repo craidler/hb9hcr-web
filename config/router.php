@@ -27,22 +27,7 @@ $routes = [
         'template' => 'campaign',
     ],
     [
-        'label' => 'Limmatstellung',
-        'topic' => 'Intel',
-        'title' => 'Limmatstellung',
-        'route' => '/limmatstellung',
-        'template' => 'limmatstellung',
-    ],
-    [
-        'label' => 'urdorf',
-        'topic' => 'Intel',
-        'title' => 'Sperrstelle Urdorf',
-        'route' => '/urdorf',
-        'template' => 'urdorf',
-    ],
-    [
-        'label' => 'Operations',
-        'topic' => 'Intel',
+        'topic' => 'Campaign',
         'title' => 'Operations',
         'route' => '/operations',
         'template' => 'operations',
@@ -65,7 +50,7 @@ $routes = [
         'topic' => 'Program',
         'title' => 'BOTA - Bunkers On The Air',
         'route' => '/hbbota',
-        'template' => 'hbbota',
+        'template' => 'mission',
     ],
     [
         'topic' => 'Data',
@@ -79,18 +64,27 @@ $routes = [
         'route' => '/log',
         'template' => 'log',
     ],
+    [
+        'topic' => 'Data',
+        'title' => 'Planner',
+        'route' => '/planner',
+        'template' => 'planner',
+    ],
 ];
 
 $operations = (include __DIR__ . '/bota.php')['operations'];
 
 foreach ($operations as $operation) {
-    $routes[] = [
-        'topic' => 'Campaign',
-        'title' => 'Operation ' . ucfirst(strtolower($operation['name'])),
-        'route' => '/operation/' . strtolower($operation['name']),
-        'active' => '/operations',
-        'template' => 'operation',
-    ];
+    if (array_key_exists('route', $operation)) {
+        $routes[] = [
+            'topic' => 'Operation',
+            'title' => $operation['name'],
+            'route' => $operation['route'],
+            'active' => '/operations',
+            'template' => 'operation',
+        ];
+    }
+
 }
 
 return $routes;

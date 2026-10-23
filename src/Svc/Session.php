@@ -2,7 +2,7 @@
 
 namespace HB9HCR\Svc;
 
-use HB9HCR\Mvc\Parameters;
+use HB9HCR\Model\Parameters;
 
 class Session
 {

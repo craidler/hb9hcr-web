@@ -2,7 +2,7 @@ const marker = {
     locator: L.icon({
         iconUrl: '/image/map/Map.Locator.Pulse.svg',
         iconSize: [50, 50],
-        iconAnchor: [25, 25],
+        iconAnchor: [25, 35],
         popupAnchor: [50, 25]
     }),
     pointer: L.icon({
@@ -157,15 +157,17 @@ document.querySelectorAll('.form-file').forEach(el => {
 
 
 function map(el) {
-    let init = el.dataset.init ? JSON.parse(atob(el.dataset.init)) : {};
+    let s = document.querySelector(el.dataset.source), i = s.dataset.init ? JSON.parse(atob(s.dataset.init)) : {};
 
     const m = {
+        locators: L.featureGroup(),
         objects: L.featureGroup(),
         pointer: null,
-        canvas: L.map(el, {preferCanvas:true}).setView([init.lat ?? 46.81, init.lng ?? 8.2], init.zoom ?? 8),
-        source: document.querySelector(el.dataset.source),
+        canvas: L.map(el, {preferCanvas:true}).setView([i.lat ?? 46.81, i.lng ?? 8.2], i.zoom ?? 8),
+        source: s,
         tile: L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19}),
         info: el.dataset.hasOwnProperty('info') ? document.querySelector(el.dataset.info) : null,
+        init: i,
     }
     
     if (m.info) {
@@ -175,11 +177,14 @@ function map(el) {
         });
 
         m.canvas.on('click', e => {
-            let within = [];
+            let within = {
+                unplanned: [],
+                planned: [],
+            };
 
             m.objects.eachLayer(o => {
                 if (1000 < e.latlng.distanceTo(o._latlng)) return;
-                within.push(o.data.reference + ' ' + o.data.bota);
+                within[o.data.planned ? 'planned' : 'unplanned'].push(o);
             });
 
             if (m.pointer) m.canvas.removeLayer(m.pointer);
@@ -191,23 +196,41 @@ function map(el) {
 
             m.info.classList.remove('d-none');
             m.info.querySelector('.map-info-coordinates').innerHTML = [e.latlng.lat.toFixed(6), e.latlng.lng.toFixed(6)].join('/');
-            m.info.querySelector('.map-info-count').innerHTML = within.length;
-            m.info.querySelector('.map-info-list').innerHTML = within.join('<br>');
+            for (const [k, v] of Object.entries(within)) {
+                let c = m.info.querySelector('.' + k), q = c.querySelector('.map-info-count'), l = c.querySelector('.map-info-list');
+
+                if (0 < v.length) {
+                    let i = [];
+
+                    v.forEach(o => {
+                        i.push(o.data.adab + ' ' + o.data.bota);
+                    });
+
+                    q.innerHTML = v.length;
+                    l.innerHTML = i.join('<br>');
+                    c.classList.remove('d-none');
+                    continue;
+                }
+
+                c.classList.add('d-none');
+            }
+
+            m.objects.bringToFront();
         });
     }
 
     m.source.querySelectorAll('[data-locator').forEach(el => {
         let d = JSON.parse(atob(el.dataset.locator));
 
-        L.marker(d.latlng, {
+        L.marker([d.lat, d.lng], {
             icon: marker.locator
         }).addTo(m.canvas);
 
-        L.circle(d.latlng, {
+        L.circle([d.lat, d.lng], {
             color: '#32323244',
             radius: 1000,
             weight: 2
-        }).addTo(m.canvas);
+        }).addTo(m.locators);
     });
 
     m.source.querySelectorAll('[data-object]').forEach(el => {
@@ -217,6 +240,7 @@ function map(el) {
         }).addTo(m.objects);
 
         if (d.hasOwnProperty('popup')) o.bindPopup(d.popup);
+        if (m.info) o.bindTooltip(d.adab + ' ' + d.bota, {offset: [15, 0]});
         o.data = d;
     });
 
@@ -233,7 +257,12 @@ function map(el) {
     });
 
     m.tile.addTo(m.canvas);
-    m.objects.addTo(m.canvas);
+    m.locators.addTo(m.canvas);
+    m.objects.addTo(m.canvas).bringToFront();
+
+    if (m.init.hasOwnProperty('fit')) {
+        m.canvas.fitBounds(m[m.init.fit].getBounds());
+    }
 }
 
 document.querySelectorAll('.map').forEach(el => map(el));

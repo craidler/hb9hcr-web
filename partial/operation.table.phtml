@@ -1,0 +1,44 @@
+<?php
+
+$c = $this->container->campaign;
+
+?>
+<table class="table align-middle">
+    <thead>
+        <tr>
+            <th>Location</th>
+            <th>ADAB</th>
+            <th>BOTA</th>
+            <th class="w-100">Name
+            <th class="text-end">KM</th>
+            <th class="text-end">CW</th>
+            <th class="text-end">SSB</th>
+        </tr>
+    </thead>
+    <?php foreach ($this->operation->location as $l): ?>
+    <tbody>
+        <?php foreach ($l->reference as $i => $r): ?>
+        <tr>
+            <?php if (0 == $i): ?>
+            <td rowspan="<?= count($l->reference) ?>" class="pe-3 location">
+                <p class="h6 fw-bold m-0 position-relative">
+                    <?= $l->name ?>
+                    <?php if ($c->complete($l)): ?>
+                    <span class="rounded bg-info px-1">bravo zulu</span>
+                    <?php endif ?>
+                </p>
+                <p class="opacity-50 m-0"><?= $l->last ?? 'planned' ?></p>
+                <p class="opacity-50 fw-bold m-0"><?= implode(' ', $l->also ?? []) ?></p>
+            </td>
+            <?php endif ?>
+            <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $r->adab ?></td>
+            <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $r->bota ?></td>
+            <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $r->name ?></td>
+            <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?> text-end"><?= $this->number($c->distance([$l->lat, $l->lng], [$r->lat, $r->lng]), ['decimal' => 2]) ?></td>
+            <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?> text-end"><?= $r->qso_cw ?></td>
+            <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?> text-end"><?= $r->qso_ssb ?></td>
+        </tr>
+        <?php endforeach ?>
+    </tbody>
+    <?php endforeach ?>
+</table>

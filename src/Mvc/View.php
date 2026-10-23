@@ -2,6 +2,8 @@
 
 namespace HB9HCR\Mvc;
 
+use HB9HCR\Model\Parameters;
+
 class View
 {
     public object $container;
@@ -24,9 +26,25 @@ class View
         return $instance;
     }
 
+    public function number(float|int $value, object|array $options = []): string
+    {
+        $options = (object)array_merge(['decimal' => 0, 'point' => '.', 'thousand' => '\''], (array)$options);
+        return number_format($value, $options->decimal, $options->point, $options->thousand);
+    }
+
     public function partial(string $template, object|array $variables = []): string
     {
         return (string)static::init($this->container, ['template' => 'partial/' . $template], $variables);
+    }
+
+    public function plural(float|int $value, string $word): string
+    {
+        return sprintf(
+            '%s %s%s',
+            number_format($value, 0, '.', '\''),
+            $word,
+            1 < $value ? 's' : ''
+        );
     }
 
     public function __get(string $name): mixed

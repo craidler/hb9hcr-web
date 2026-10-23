@@ -1,10 +1,9 @@
 <?php
-    $path = ucfirst(basename($this->container->request->path));
-    $operation = null;
 
-    foreach ($this->container->operations as $o) {
-        if ($path == $o->name) $operation = $o;
-    }
+$c = $this->container->campaign;
+$o = $c->operation($this->container->request->path);
+
 ?>
-
-<?= $operation ? $this->partial('operation.phtml', ['operation' => $operation]) : '' ?>
+<?= $this->partial('operation.map.phtml', ['operation' => $o]) ?>
+<?= $this->partial('operation.hunter.phtml', ['operation' => $o]) ?>
+<?= $this->partial('operation.table.phtml', ['operation' => $o]) ?>

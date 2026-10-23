@@ -3,6 +3,7 @@
 namespace HB9HCR\Mvc;
 
 use ArrayObject, ReflectionClass;
+use HB9HCR\Model\Parameters;
 
 class Container extends ArrayObject
 {
@@ -53,6 +54,8 @@ class Container extends ArrayObject
                 $config = $this->application->basedir . '/config/' . strtolower($reflection->getShortName()) . '.php';
                 if ($reflection->hasProperty('config') && is_file($config)) $instance->config = (object)include $config;
                 if ($reflection->hasProperty('container')) $instance->container = $this;
+                if ($reflection->hasProperty('database')) $instance->database = $this->get('database');
+                if ($reflection->hasMethod('init')) $instance->init();
             }
         }
 

@@ -1,5 +1,8 @@
 <?php
 
+$c = $this->container->campaign;
+$s = $c->summary();
+
 $months = [
     'January',
     'February',
@@ -19,8 +22,8 @@ $months = [
 <div class="row">
     <div class="col-12 col-md-8">
         <p>
-            Activating bunkers for the BOTA programme has become my favorite radio activity. I have set my personal <a href="/campaign" class="accent" target="_blank">campaign</a> to personally activate as many objects as possible in the <a href="/limmatstellung" class="accent" target="_blank">Limmatstellung</a>.
-            Doing so, I learn a lot about geography and history of the <a href="/urdorf" class="accent" target="_blank">region</a> I live in.
+            Activating bunkers for the BOTA programme has become my favorite radio activity. I have set my personal <a href="/campaign" class="accent" target="_blank">campaign</a> to personally activate as many objects as possible in the <a href="/campaign#limmatstellung" class="accent" target="_blank">Limmatstellung</a>.
+            Doing so, I learn a lot about geography and history of the <a href="/operation/sperrstelle-urdorf" class="accent" target="_blank">region</a> I live in.
         </p>
         <div class="row">
             <div class="col-12 col-md-2">
@@ -52,29 +55,47 @@ $months = [
         </figure>
     </div>
 </div>
-<div>
-    <h3>§ Awards</h3>
-    <div class="emplace emplace-flex">
-    <?php foreach ($this->container->bota->awards() as $award): ?>
-        <figure class="ribbon <?= $award->level ? '' : 'ribbon-empty' ?>" title="Score: <?= $award->score ?> <?= $award->level ? 'Level: ' . ucfirst($award->level) : '' ?>">
-            <picture>
-            <?php if ($award->level): ?>
-                <img src="/image/ribbon/<?= $award->image ?>.svg" alt="Ribbon">
-            <?php else: ?>
-                <div><?= $award->score ?></div>
-            <?php endif; ?>
-            </picture>
-            <?php if ($award->level): ?>
-                <img src="/image/ribbon/level.<?= $award->level ?>.png" alt="Level">
-            <?php endif; ?>
-            <figcaption>
-                <p><?= $award->description[0] ?></p>
-                <p><?= $award->description[1] ?></p>
-                <p><?= $award->description[2] ?></p>
-            </figcaption>
-        </figure>
-    <?php endforeach; ?>
+<div class="emplace text-center">
+  <div class="row">
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $s->operation ?>"><?= $s->operation ?></p>
+      <p class="accent-1 m-0">Operations</p>
     </div>
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $s->location ?>"><?= $s->location ?></p>
+      <p class="accent-1 m-0">Locations</p>
+    </div>
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $s->planned ?>"><?= $s->planned ?></p>
+      <p class="accent-1 m-0">Objects</p>
+    </div>
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0"><span class="counter-element" data-target="<?= $s->progress ?>"><?= $s->progress ?></span>%</p>
+      <p class="accent-1 m-0">Planned</p>
+    </div>
+  </div>
+</div>
+<h3>§ Awards</h3>
+<div class="emplace emplace-flex">
+<?php foreach ($this->container->bota->awards() as $award): ?>
+    <figure class="ribbon <?= $award->level ? '' : 'ribbon-empty' ?>" title="Score: <?= $award->score ?> <?= $award->level ? 'Level: ' . ucfirst($award->level) : '' ?>">
+        <picture>
+        <?php if ($award->level): ?>
+            <img src="/image/ribbon/<?= $award->image ?>.svg" alt="Ribbon">
+        <?php else: ?>
+            <div><?= $award->score ?></div>
+        <?php endif; ?>
+        </picture>
+        <?php if ($award->level): ?>
+            <img src="/image/ribbon/level.<?= $award->level ?>.png" alt="Level">
+        <?php endif; ?>
+        <figcaption>
+            <p><?= $award->description[0] ?></p>
+            <p><?= $award->description[1] ?></p>
+            <p><?= $award->description[2] ?></p>
+        </figcaption>
+    </figure>
+<?php endforeach; ?>
 </div>
 <div class="row">
 <?php foreach (['activator' => 'hunters', 'hunter' => 'activators'] as $role => $subject): ?>

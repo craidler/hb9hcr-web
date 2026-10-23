@@ -10,16 +10,14 @@ return [
     'bota' => Svc\Bota::class,
     'router' => Mvc\Router::class,
     'database' => Svc\Database::class,
-    'operations' => function (Mvc\Container $container) {
-        return $container->bota->operations();
-    },
+    'campaign' => Model\Campaign::class,
     'session' => Svc\Session::class,
     'request' => function () {
-        return new Mvc\Parameters([
-            'server' => new Mvc\Parameters($_SERVER),
+        return new Model\Parameters([
+            'server' => new Model\Parameters($_SERVER),
             'path' => parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH),
-            'post' => new Mvc\Parameters($_POST),
-            'get' => new Mvc\Parameters($_GET),
+            'post' => new Model\Parameters($_POST),
+            'get' => new Model\Parameters($_GET),
         ]);
     },
     'routes' => function () {
