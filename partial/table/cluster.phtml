@@ -1,0 +1,27 @@
+<?php
+
+$spots = $this->container->bota->spots();
+
+?>
+<table class="table table-hover <?= count($spots) ? '' : 'd-none' ?>">
+    <thead>
+        <tr>
+            <th>UTC</th>
+            <th>Callsign</th>
+            <th>MHZ</th>
+            <th>Mode</th>
+            <th>Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($spots as $item): ?>
+        <tr>
+            <td><?= $item->utc->format('Y-m-d H:i:s') ?></td>
+            <td><?= $item->callsign ?>
+            <td><?= $this->number($item->frequency, ['decimal' => 4]) ?></td>
+            <td><?= $item->mode ?>
+            <td><?= count($item->reference) ?></td>
+        </tr>
+    <?php endforeach ?>
+    </tbody>
+</table>

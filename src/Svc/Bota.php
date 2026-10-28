@@ -3,9 +3,27 @@
 namespace HB9HCR\Svc;
 
 use Exception, CurlHandle, DateTime, DateInterval, ReflectionClass;
+use HB9HCR\Model\Collection;
 
 class Bota
 {
+    public const AWARDS = [
+        '#(roc\d{2})#' => 'hunter.default.event',
+        '#activator_b2b\.lifetime#' => 'activator.b2b.lifetime',
+        '#activator_cw\.lifetime#' => 'activator.cw.lifetime',
+        '#activator\.lifetime#' => 'activator.default.lifetime',
+        '#activator\.(annual.+)#' => 'activator.default.event',
+        '#activator\.(bunkerfest.+)#' => 'activator.default.event',
+        '#activator_dxcc_b2b\.(annual.+)#' => 'activator.b2b.event',
+        '#activator\.(national.+)#' => 'activator.default.event',
+        '#hunter\.lifetime#' => 'hunter.default.lifetime',
+        '#hunter_cw\.lifetime#' => 'hunter.cw.lifetime',
+        '#hunter_dxcc.(annual.+)#' => 'hunter.cw.lifetime',
+        '#hunter\.(national.+)#' => 'hunter.default.event',
+        '#hunter\.(annual.+)#' => 'hunter.default.event',
+        '#hunter\.(bunkerfest.+)#' => 'hunter.default.event',
+    ];
+
     public object $container;
     public object $config;
     protected $connection;
@@ -31,16 +49,34 @@ class Bota
 
         while ($item = $statement->fetchObject()) {
             $k = strtolower(sprintf('%s.%s.%s', $item->scheme, $item->type, $item->award));
+            $image = 'default.default.default';
+            $event = null;
             $item->levels = json_decode($item->levels);
 
-            $collection[] = (object)[
-                'image' => sprintf('%s.%s.%s', strtolower($item->scheme), $item->type, $item->award),
-                'score' => $item->score,
-                'scheme' => $item->scheme,
+            foreach (self::AWARDS as $p => $i) {
+                if (preg_match($p, $item->type . '.' . $item->award, $m)) {
+                    $event = $m[1] ?? $event;
+                    $image = $i;
+                    break;
+                }
+            }
+
+            $collection[] = $a = (object)[
+                'scheme' => strtolower($item->scheme),
                 'levels' => $item->levels,
                 'level' => count($item->levels) ? strtolower($item->levels[count($item->levels) - 1]) : null,
-                'description' => $this->config->awards->{$k} ?? explode('.', $k),
+                'event' => $event,
+                'score' => $item->score,
+                'title' => $item->scheme . ' ' . ucwords(str_replace(['b2b', 'cw', '.', 'default', 'event', '  '], ['B2B', 'CW', ' ', '', $event, ' '], $image)),
+                'image' => $image,
+                'award' => $item->award,
+                'type' => $item->type,
             ];
+
+            $a->level = 1000 <= $a->score ? 'master-1' : $a->level;
+            $a->level = 1500 <= $a->score ? 'master-2' : $a->level;
+            $a->level = 2000 <= $a->score ? 'master-3' : $a->level;
+            $a->title .= ucwords(' ' . $a->level);
         }
 
         return $collection;
@@ -63,60 +99,7 @@ class Bota
 
         return array_slice($c, 0, 10);
     }
-
-    public function operations(): array
-    {
-        $qsos = $this->container->database->sql('wwbota/log.collection.sql');
-        $refs = $this->container->database->sql('wwbota/reference.collection.sql');
-        $ops = (include $this->container->application->basedir . '/config/bota.php')['operations'];
-        
-        foreach ($ops as $i => $o) {
-            $ops[$i] = $o = (object)array_merge($o, ['call' => [], 'ref' => 0, 'loc' => [], 'id' => sha1($o['name']), 'state' => 0]);
-
-            foreach ($o->set as $j => $s) {
-                $o->loc[] = $s[0];
-                $o->set[$j] = $s = (object)['last' => null, 'lat' => explode('/', $s[0])[0], 'lng' => explode('/', $s[0])[1], 'ref' => $s[1], 'state' => 0, 'also' => $s[2] ?? []];
-
-                foreach ($s->ref as $y => $r) {
-                    $qsos->execute(['reference' => $r, 'id' => '%']);
-                    $refs->execute(['reference' => $r]);
-
-                    $o->ref++;
-                    $s->ref[$y] = $r = (object)array_merge($refs->fetch(), ['cw' => 0, 'ssb' => 0, 'ft8' => 0, 'fm' => 0, 'state' => 0]);
-
-                    while ($q = $qsos->fetchObject()) {
-                        foreach (json_decode($q->modes) as $m) $r->{strtolower($m)}++;
-                        $o->call[] = $q->hunter_call;
-                        $s->last = !$s->last || $s->last < $q->time ? $q->time : $s->last;
-                    }
-
-                    $o->state += $r->state = match (true) {
-                        25 <= $r->cw => 2,
-                        0 < $r->cw + $r->ssb + $r->ft8 => 1,
-                        default => 0
-                    };
-                }
-            }
-
-            $o->state = match(true) {
-                $o->ref * 2 == $o->state => 2,
-                0 < $o->state => 1,
-                default => 0
-            };
-
-            $o->call = array_unique($o->call);
-            $o->loc = array_unique($o->loc);
-            foreach ($o->loc as $i => $l) $o->loc[$i] = (object)['lat' => explode('/', $l)[0], 'lng' => explode('/', $l)[1]];
-            sort($o->call);
-        }
-
-        usort($ops, function ($a, $b) {
-            return strcmp($a->name, $b->name);
-        });
-
-        return $ops;
-    }
-
+    
     public function statistics(object|array $options = []): array
     {
         $collection = [];
@@ -126,6 +109,31 @@ class Bota
 
         while ($r = $select->fetchObject()) $collection[] = $r;
         return $collection;
+    }
+
+    public function spots(object|array $options = []): Collection
+    {
+        $options = (object)array_merge(['endpoint' => 'spots/', 'ttl' => 60, 'pipeline' => [
+            function ($data) {
+                $collection = new Collection();
+
+                foreach ($data as $item) {
+                    $collection->append((object)[
+                        'reference' => $item->references,
+                        'frequency' => $item->freq,
+                        'callsign' => $item->call,
+                        'mode' => $item->mode,
+                        'live' => 'live' == strtolower($item->type),
+                        'time' => $item->time,
+                        'utc' => DateTime::createFromFormat('Y-m-d\\TH:i:s', substr($item->time, 0, 19)),
+                    ]);
+                }
+
+                return $collection;
+            },
+        ]], (array)$options);
+
+        return $this->read($options);
     }
 
     public function status(): object

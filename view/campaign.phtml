@@ -2,13 +2,40 @@
 
 $c = $this->container->campaign;
 $s = $c->summary();
-$r = function (int $m) {
-    $r = str_split(substr('12345678', 0, $m));
-    shuffle($r);
-    return $r;
-}
 
 ?>
+<p class="my-3">
+    Switzerland built one of the densest defensive networks in Europe, and most of it went quiet after 1945.
+    Every activation brings one of these objects back on the air for a few hours.
+    Same place, new signal. No fuss, no traces, just a callsign on air.
+</p>
+<?= $this->partial('map/campaign.phtml') ?>
+<p class="opacity-25">
+    The red stamp on the map reads: 
+    <i>No information to third parties.</i>
+    Today it is the other way round, the objects get documented and shared - and remembered in frequency!
+</p>
+<div class="emplace text-center">
+  <div class="row">
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $s->operation ?>"><?= $s->operation ?></p>
+      <p class="accent-1 m-0">Operations</p>
+    </div>
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $s->location ?>"><?= $s->location ?></p>
+      <p class="accent-1 m-0">Locations</p>
+    </div>
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $s->planned ?>"><?= $s->planned ?></p>
+      <p class="accent-1 m-0">Objects</p>
+    </div>
+    <div class="col-12 col-sm-3">
+      <p class="display-1 fw-bold m-0"><span class="counter-element" data-target="<?= $s->progress ?>"><?= $s->progress ?></span>%</p>
+      <p class="accent-1 m-0">Planned</p>
+    </div>
+  </div>
+</div>
+<h3>§ Mobilisation</h3>
 <div class="row">
     <div class="col-12 col-md-5">
         <p>General Henri Guisan issued Opera&shy;tionsbefehl Nr. 2 on October 4, 1939, ordering the Swiss Army to move from readiness positions into the <a href="#limmatstellung" class="accent">Limmatstellung</a> to establish a primary defense line along the strategic axis of Sargans – Walensee – Zürichsee – Limmat – Bözberg – Hauenstein to protect against a potential attack from the north and prevent a circumvention of the French Maginot Line via Swiss territory.</p>
@@ -52,132 +79,14 @@ $r = function (int $m) {
     </div>
     <p class="accent-1 mb-3">Operationsbefehl Nr. 2, 4th October 1939</p>
 </div>
-<h3>§ Overview</h3>
-<p class="my-3">
-    Switzerland built one of the densest defensive networks in Europe, and most of it went quiet after 1945.
-    Every activation brings one of these objects back on the air for a few hours.
-    Same place, new signal. No fuss, no traces, just a callsign on air.
-</p>
-<?= $this->partial('campaign.map.phtml') ?>
-<p class="opacity-25">
-    The red stamp on the map reads: 
-    <i>No information to third parties.</i>
-    Today it is the other way round, the objects get documented and shared - and remembered in frequency!
-</p>
-<div class="emplace pb-0">
-    <div class="row">
-        <?php foreach ($r(4) as $i): ?>
-        <div class="col-12 col-md-3 mb-3">
-            <img src="/image/postal/card.0<?= $i ?>.png">
-        </div>
-        <?php endforeach ?>
-    </div>
-</div>
 <h3 id="limmatstellung">§ Limmatstellung</h3>
 <div class="row">
     <div class="col-12 col-md-7">
-        <figure class="polaroid grayscale">
-            <picture>
-            <?php if ($this->get->has('qrz')): ?>
-                <img src="/image/map/Map.Limmatstellung.png" alt="Map Limmatstellung" style="width:100%;height:300px">
-            <?php else: ?>
-                <div class="map" style="width:100%;height:300px" data-source="#map-limmatstellung-data" data-screenshot="Map.Limmatstellung.png" data-init="<?= base64_encode(json_encode(['zoom' => 7])) ?>"></div>
-                <img src="/image/page/mittheilungen.png" alt="Mittheilungen" class="mittheilungen">
-            <?php endif ?>
-            </picture>
-            <figcaption>Approximate course of the Limmatstellung</figcaption>
-        </figure>
-        <table class="d-none" id="map-limmatstellung-data" data-init="<?= base64_encode(json_encode(['zoom' => 7])) ?>">
-            <tbody data-polyline="<?= base64_encode(json_encode(['weight' => 2, 'color' => '#b14137'])) ?>">
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.49095, 'lng' => 7.72386])) ?>" title="Liestal"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.49259, 'lng' => 7.78300])) ?>" title="Hersberg"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.51593, 'lng' => 7.99693])) ?>" title="Frick"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.50068, 'lng' => 8.23623])) ?>" title="Brugg"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.40568, 'lng' => 8.40494])) ?>" title="Dietikon"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.39091, 'lng' => 8.43456])) ?>" title="Urdorf"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.34289, 'lng' => 8.53110])) ?>" title="Wollishofen"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.26145, 'lng' => 8.59695])) ?>" title="Horgen"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.19554, 'lng' => 8.72490])) ?>" title="Wollerau"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.18270, 'lng' => 8.90069])) ?>" title="Siebnen"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.13609, 'lng' => 9.05996])) ?>" title="Ziegelbrücke"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.09666, 'lng' => 9.34812])) ?>" title="Flums"></tr>
-                <tr data-point="<?= base64_encode(json_encode(['lat' => 47.04556, 'lng' => 9.44541])) ?>" title="Sargans"></tr>
-            </tbody>
-        </table>
+        <?= $this->partial('map/limmatstellung.phtml') ?>
     </div>
     <div class="col-12 col-md-5">
         <p>The deployed troops formed heavily fortified sectors across regions like <a href="/operation/sperrstelle-frick" class="accent" target="_blank">Frick</a>, <a href="/operation/sperrstelle-gebenstorf" class="accent" target="_blank">Gebenstorf</a>, <a href="/operation/sperrstelle-dietikon" class="accent" target="_blank">Dietikon</a> and <a href="/operation/sperrstelle-urdorf" class="accent" target="_blank">Urdorf</a> with extensive trench systems, obstacles, and localized command structures with the order to hold them with the last cartridge.</p>
         <p>After the fall of France in June 1940, the defensive strategy shifted under Guisan toward the Réduit national, making the linear Limmatstellung secondary as troops retreated into the high Alps.</p>
     </div>
 </div>
-<h3>§ Operations</h3>
-<p>
-    From the <?= $this->number($s->reference) ?> objects across the country, I select ones to revisit and form them into my campaign.
-    I organise them into smaller operations, each a group of objects in the same area that can be activated together in sets of maximal 5 references per location.
-</p>
-<div class="emplace row">
-<?php foreach ($c->operations as $o): ?>
-    <div class="col-12 col-md-3 text-center">
-        <a href="<?= $o->route ?><?= $this->get->has('qrz') ? '?qrz=true' : '' ?>" class="operation">
-            <figure>
-                <picture>
-                    <img src="/image/ribbon/campaign.clasp.png">
-                    <p><?= strtok(str_replace('Sperrstelle ', '', $o->name), '-') ?></p>
-                </picture>
-                <figcaption>
-                    <p><?= $this->plural(count($o->location), 'Location') ?></p>
-                    <p><?= $this->plural($c->references($o), 'Object') ?></p>
-                </figcaption>
-            </figure>
-            <?php if ($c->complete($o)): ?>
-            <span class="px-1 bg-info rounded">bravo zulu</span>
-            <?php endif ?>
-        </a>
-    </div>
-<?php endforeach ?>
-</div>
-<div class="row">
-    <div class="col-12 col-md-6">
-        <h3>§ Rules of engagement</h3>
-        <dl>
-            <dt>Respect The Object</dt>
-            <dd>From the outside</dd>
-            <dt>Leave No Trace</dt>
-            <dd>Carried in is carried out</dd>
-            <dt>No Damage</dt>
-            <dd>Nothing is opened, moved or modified</dd>
-            <dt>Low Profile</dt>
-            <dd>Wildlife first</dd>
-            <dt>Safety First</dt>
-            <dd>Routes, weather and daylight planned</dd>
-        </dl>
-    </div>
-    <div class="col-12 col-md-6">
-        <h3>§ Historical context</h3>
-        <dl>
-            <dt>01 Sep 1939</dt>
-            <dd>General mobilisation</dd>
-            <dt>04 Oct 1939</dt>
-            <dd>Operationsbefehl Nr. 2 issued</dd>
-            <dt>1939 - 1940</dt>
-            <dd>Border and Limmat positions built</dd>
-            <dt>Summer 1940</dt>
-            <dd>Strategic shift towards Réduit national</dd>
-            <dt>Today</dt>
-            <dd>Thousands of objects remain</dd>
-        </dl>
-    </div>
-</div>
-<div class="emplace text-center mt-1 pb-0">
-    <div class="row">
-        <?php foreach ($r(8) as $i): ?>
-        <div class="col-12 col-md mb-3">
-            <img src="/image/postal/stamp.0<?= $i ?>.png">
-        </div>
-        <?php endforeach ?>
-    </div>
-    <div>
-        <p class="display-6 fw-bold m-0">SI VIS PACEM PARA BELLUM</p>
-        <p class="accent-1 mt-0">if you want peace prepare for war</p>
-    </div>
-</div>
+<?= $this->partial('emplace/postcard.phtml') ?>

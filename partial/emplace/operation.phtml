@@ -1,0 +1,28 @@
+<?php
+
+$c = $this->container->campaign;
+
+?>
+<div class="emplace row">
+<?php foreach ($c->operations as $o): ?>
+    <div class="col-12 col-md-3 text-center">
+        <a href="<?= $o->route ?><?= $this->get->has('qrz') ? '?qrz=true' : '' ?>" class="operation">
+            <figure>
+                <picture>
+                    <p class="clasp">
+                        <img src="/image/ribbon/campaign.clasp.svg">
+                        <span><?= strtok(str_replace(['Artilleriestellung', 'Sperrstelle'], ['Art', 'Spr'], $o->name), '-') ?></span>
+                    </p>
+                    <?php if ($c->complete($o)): ?>
+                    <span class="bravo-zulu px-1 bg-info rounded">bravo zulu</span>
+                    <?php endif ?>
+                </picture>
+                <figcaption>
+                    <p><?= $this->plural(count($o->location), 'Location') ?></p>
+                    <p><?= $this->plural($c->references($o), 'Object') ?></p>
+                </figcaption>
+            </figure>
+        </a>
+    </div>
+<?php endforeach ?>
+</div>

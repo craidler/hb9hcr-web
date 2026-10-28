@@ -1,0 +1,46 @@
+<?php
+
+$c = $this->container->campaign;
+
+?>
+<table class="table align-middle">
+    <thead>
+        <tr>
+            <th>Location</th>
+            <th class="d-none d-md-table-cell">ADAB</th>
+            <th>BOTA</th>
+            <th class="d-none d-md-table-cell">Type
+            <th class="d-none d-lg-table-cell w-100">Name
+            <th class="d-none d-md-table-cell text-end">KM</th>
+            <th class="text-end">CW</th>
+            <th class="text-end">SSB</th>
+        </tr>
+    </thead>
+    <?php foreach ($this->operation->location as $l): ?>
+    <tbody>
+        <?php foreach ($l->reference as $i => $r): ?>
+        <tr>
+            <?php if (0 == $i): ?>
+            <td rowspan="<?= count($l->reference) ?>" class="pe-3 location">
+                <p class="h6 fw-bold m-0 position-relative">
+                    <?= $l->name ?>
+                    <?php if ($c->complete($l)): ?>
+                    <span class="bravo-zulu">bravo zulu</span>
+                    <?php endif ?>
+                </p>
+                <p class="opacity-50 m-0"><?= $c->last($l) ?? 'planned' ?></p>
+                <p class="opacity-50 fw-bold m-0"><?= implode(' ', $l->also ?? []) ?></p>
+            </td>
+            <?php endif ?>
+            <td class="d-none d-md-table-cell <?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $r->adab ?></td>
+            <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $r->bota ?></td>
+            <td class="d-none d-md-table-cell <?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $c->type($r) ?></td>
+            <td class="d-none d-lg-table-cell <?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $this->truncate($r->name) ?></td>
+            <td class="d-none d-md-table-cell <?= $c->complete($l) ? 'opacity-50' : '' ?> text-end"><?= $this->number($c->distance([$l->lat, $l->lng], [$r->lat, $r->lng]), ['decimal' => 2]) ?></td>
+            <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?> text-end"><?= $r->qso_cw ?></td>
+            <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?> text-end"><?= $r->qso_ssb ?></td>
+        </tr>
+        <?php endforeach ?>
+    </tbody>
+    <?php endforeach ?>
+</table>

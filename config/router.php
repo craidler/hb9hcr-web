@@ -27,6 +27,7 @@ $routes = [
         'template' => 'campaign',
     ],
     [
+        'label' => 'Operations',
         'topic' => 'Campaign',
         'title' => 'Operations',
         'route' => '/operations',
@@ -60,15 +61,15 @@ $routes = [
     ],
     [
         'topic' => 'Data',
-        'title' => 'Log',
-        'route' => '/log',
-        'template' => 'log',
-    ],
-    [
-        'topic' => 'Data',
         'title' => 'Planner',
         'route' => '/planner',
         'template' => 'planner',
+    ],
+    [
+        'topic' => 'Data',
+        'title' => 'Render',
+        'route' => '/render',
+        'template' => 'render',
     ],
 ];
 

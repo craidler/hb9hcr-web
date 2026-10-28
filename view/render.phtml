@@ -1,0 +1,14 @@
+<?php
+
+$c = $this->container->campaign;
+
+?>
+<?= $this->partial('map/campaign.phtml') ?>
+<?php foreach ($c->operations as $o): ?>
+    <?= $this->partial('map/operation.phtml', ['operation' => $o]) ?>
+<?php endforeach ?>
+<div class="row">
+    <div class="col-12 col-md-7">
+        <?= $this->partial('map/limmatstellung.phtml') ?>
+    </div>
+</div>

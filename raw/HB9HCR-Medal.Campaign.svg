@@ -3,12 +3,15 @@
 
 <svg
    width="140"
-   height="100"
-   viewBox="0 0 140 100"
+   height="140"
+   viewBox="0 0 140 140"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
    sodipodi:docname="HB9HCR-Medal.Campaign.svg"
+   inkscape:export-filename="../www/image/ribbon/campaign.ribbon-outline.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -24,16 +27,17 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="px"
-     inkscape:zoom="3.76"
-     inkscape:cx="70.744681"
-     inkscape:cy="66.755319"
-     inkscape:window-width="1728"
-     inkscape:window-height="995"
+     inkscape:zoom="5.317443"
+     inkscape:cx="59.80318"
+     inkscape:cy="48.331501"
+     inkscape:window-width="1920"
+     inkscape:window-height="1131"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
-     showgrid="false" />
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     showguides="true" />
   <defs
      id="defs1">
     <pattern
@@ -78,60 +82,152 @@
          d="M 1.5,0 V 24"
          id="path10-2" />
     </pattern>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter3"
+       x="-0.1295838"
+       y="-0.06047244"
+       width="1.2591676"
+       height="1.1335433">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.800000"
+         flood-color="rgb(0,0,0)"
+         id="feFlood2" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="2.000000"
+         id="feGaussianBlur2" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="0.000000"
+         dy="1.000000"
+         id="feOffset2" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite2" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite3" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter39"
+       x="-0.064791899"
+       y="-0.024396607"
+       width="1.1295838"
+       height="1.0538758">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.800000"
+         flood-color="rgb(0,0,0)"
+         id="feFlood38" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="1.000000"
+         id="feGaussianBlur38" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="0.000000"
+         dy="0.500000"
+         id="feOffset38" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite38" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite39" />
+    </filter>
   </defs>
   <g
-     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:export-filename="../www/image/ribbon/campaign.ribbon.svg"
-     inkscape:export-xdpi="96"
-     inkscape:export-ydpi="96"
-     transform="scale(3.7795274,1.2598425)">
+     id="layer2"
+     inkscape:label="Ribbon"
+     sodipodi:insensitive="true">
+    <path
+       id="path8"
+       style="font-variation-settings:'wght' 700;display:none;opacity:1;vector-effect:non-scaling-stroke;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-miterlimit:8;-inkscape-stroke:hairline;filter:url(#filter39)"
+       d="M 0,0 H 37.041668 V 79.375001 L 30.708556,98.374335 6.3331118,98.374336 0,79.375001 Z"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:label="Shadow"
+       transform="scale(3.7795274,1.2598425)" />
     <path
        id="rect1"
-       style="font-variation-settings:'wght' 700;opacity:1;vector-effect:non-scaling-stroke;fill:#a30000;stroke:none;stroke-width:0.264583;stroke-miterlimit:8;-inkscape-stroke:hairline"
-       d="M 0,0 H 37.041668 V 79.375 H 0 Z" />
-    <path
-       id="rect2"
-       style="font-variation-settings:'wght' 700;opacity:1;vector-effect:non-scaling-stroke;fill:#e6e6e6;stroke:none;stroke-width:0.264583;stroke-miterlimit:8;-inkscape-stroke:hairline"
-       d="M 6.3331118,0 H 8.8663564 V 79.375 H 6.3331118 Z M 28.175311,0 h 2.533244 v 79.375 h -2.533244 z"
-       sodipodi:nodetypes="cccccccccc" />
+       style="font-variation-settings:'wght' 700;display:none;opacity:1;vector-effect:non-scaling-stroke;fill:#a30000;stroke:none;stroke-width:0.264583;stroke-miterlimit:8;-inkscape-stroke:hairline"
+       d="M 0,0 H 37.041668 V 79.375001 L 30.708556,98.374335 6.3331118,98.374336 0,79.375001 Z"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:label="Red"
+       transform="scale(3.7795274,1.2598425)" />
     <path
        id="rect3"
-       style="font-variation-settings:'wght' 700;opacity:1;vector-effect:non-scaling-stroke;fill-opacity:0.302011;stroke:none;stroke-width:0.22186;stroke-miterlimit:8;-inkscape-stroke:hairline"
-       d="M 0,0 H 6.3331118 V 79.375 H 0 Z m 30.708555,0 h 6.333112 v 79.375001 h -6.333112 z"
-       sodipodi:nodetypes="cccccccccc" />
-    <rect
-       style="font-variation-settings:'wght' 700;opacity:0.1;vector-effect:non-scaling-stroke;fill:url(#pattern7);stroke:none;stroke-width:0.458272;stroke-miterlimit:8;-inkscape-stroke:hairline"
-       id="rect4"
-       width="37.041668"
-       height="79.375"
-       x="0"
-       y="0"
-       inkscape:export-filename="../www/image/ribbon/campaign.ribbon.svg"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       style="font-variation-settings:'wght' 700;display:none;opacity:1;vector-effect:non-scaling-stroke;fill-opacity:0.302011;stroke:none;stroke-width:0.22186;stroke-miterlimit:8;-inkscape-stroke:hairline"
+       d="M 0,0 H 6.3331118 V 98.374336 L 0,79.375 Z m 30.708555,0 h 6.333112 v 79.375 l -6.333112,18.999336 z"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:label="Dark Red"
+       transform="scale(3.7795274,1.2598425)" />
+    <path
+       id="rect2"
+       style="font-variation-settings:'wght' 700;display:none;opacity:1;vector-effect:non-scaling-stroke;fill:#e6e6e6;stroke:none;stroke-width:0.264583;stroke-miterlimit:8;-inkscape-stroke:hairline"
+       d="M 6.3331118,0 H 8.8663564 V 98.374336 H 6.3331118 Z M 28.175311,0 h 2.533244 v 98.374336 h -2.533244 z"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:label="White"
+       transform="scale(3.7795274,1.2598425)" />
     <g
-       id="g4"
-       inkscape:label="Shadow"
-       style="display:inline"
-       inkscape:export-filename="/home/craidler/Web/www/image/ribbon/wwbota.activator.lifetime.svg"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"
-       transform="matrix(0.26458334,0,0,0.79375001,6.6145838,-1.1354685e-6)"
-       sodipodi:insensitive="true">
+       inkscape:groupmode="layer"
+       id="layer1"
+       inkscape:label="Bevel"
+       style="display:none;opacity:0.2;mix-blend-mode:normal">
       <path
-         id="rect4-5"
-         style="font-variation-settings:'wght' 500;opacity:1;fill-opacity:0.304721;stroke-width:0.279962;stroke-miterlimit:8"
-         inkscape:label="Dark"
-         d="M 115,1.4305115e-6 113.07813,1.9218764 V 98.078127 H -23.078126 L -25.000001,100 H 115 Z"
-         sodipodi:nodetypes="ccccccc" />
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+         d="M 9.114583e-7,99.999999 0.99999995,99.585938 24.350232,122.93617 H 115.64977 L 139,99.585936 V 0.71428571 L 140,0 V 99.999999 L 116.06383,123.93617 H 23.93617 Z"
+         id="path22"
+         inkscape:label="Bevel Dark" />
       <path
-         id="rect4-7"
-         style="font-variation-settings:'wght' 500;fill:#ffffff;fill-opacity:0.102465;stroke-width:0.283;stroke-miterlimit:8"
-         inkscape:label="Light"
-         d="M -25.000001,1.4305115e-6 V 100 l 1.921875,-1.921873 V 1.9218764 H 113.07812 L 115,1.4305115e-6 Z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+         d="M 140,0 H 0 L 9.114583e-7,99.999999 0.99999995,99.585938 V 0.71429 L 139,0.71428571 Z"
+         id="path23"
+         inkscape:label="Bevel Light"
          sodipodi:nodetypes="ccccccc" />
     </g>
+    <path
+       id="rect4"
+       style="font-variation-settings:'wght' 700;display:none;opacity:0.1;vector-effect:non-scaling-stroke;fill:url(#pattern7);stroke-width:0.458271;stroke-miterlimit:8;-inkscape-stroke:hairline"
+       d="M 0,0 H 37.041668 V 79.375 L 30.708556,98.374336 H 6.3331119 L 0,79.375 Z"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:label="Pattern"
+       transform="scale(3.7795274,1.2598425)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Outline">
+    <path
+       style="opacity:0.2;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="M 116.06383,123.93617 140,100 V 0 H 0 v 100 l 23.93617,23.93617 z"
+       id="path40"
+       inkscape:label="Outline"
+       inkscape:export-filename="../www/image/ribbon/campaign.ribbon-outline.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
 </svg>

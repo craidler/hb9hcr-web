@@ -40,6 +40,9 @@ return [
             'location' => [
                 ['Altenberg A', '47.343067/8.406719', ['B/HB-2501','B/HB-2503','B/HB-2504','B/HB-2505','B/HB-2506']],
             ],
+            'area' => [
+                ['point' => ['47.343677/8.400279','47.349260/8.423187','47.344607/8.425932','47.338384/8.404924']],
+            ],
         ],
         [
             'name' => 'Sperrstelle Uetliberg',
@@ -62,8 +65,8 @@ return [
             ],
         ],
         [
-            'name' => 'Sperrstelle Ringlikon',
-            'route' => '/operation/sperrstelle-ringlikon',
+            'name' => 'Artilleriestellung Ringlikon',
+            'route' => '/operation/artilleriestellung-ringlikon',
             'location' => [
                 ['Ringlikon A', '47.356329/8.466548', ['B/HB-2456','B/HB-2457','B/HB-2458','B/HB-2459','B/HB-2460']],
                 ['Ringlikon B', '47.356329/8.466548', ['B/HB-2461','B/HB-2462','B/HB-2464','B/HB-2465','B/HB-2466']],
@@ -73,17 +76,18 @@ return [
             ],
         ],
         [
-            'name' => 'Sperrstelle Brunegg',
-            'route' => '/operation/sperrstelle-brunegg',
+            'name' => 'Artilleriestellung Hauwald',
+            'route' => '/operation/artilleriestellung-hauwald',
             'location' => [
-                ['Hauwald A', '47.420613/8.222465', ['B/HB-2088','B/HB-2089','B/HB-2090','B/HB-2091','B/HB-2092']],
-                ['Hauwald B', '47.420613/8.222465', ['B/HB-2093','B/HB-2094']],
+                ['Hauwald A', '47.420613/8.222465', ['B/HB-2088','B/HB-2089','B/HB-2090','B/HB-2091']],
+                ['Hauwald B', '47.420613/8.222465', ['B/HB-2092','B/HB-2093','B/HB-2094']],
             ],
         ],
         [
             'name' => 'Sperrstelle Heitersberg',
             'route' => '/operation/sperrstelle-heitersberg',
             'location' => [
+                ['Hasenberg A', '47.373226/8.363855', ['B/HB-2561','B/HB-2571','B/HB-2572','B/HB-2573','B/HB-2574']],
                 ['Heitersberg A', '47.388421/8.362430', ['B/HB-2575','B/HB-2576','B/HB-2578','B/HB-2579','B/HB-2580']],
                 ['Heitersberg B', '47.388421/8.362430', ['B/HB-2577','B/HB-2581','B/HB-2582','B/HB-2583','B/HB-2584']],
                 ['Heitersberg C', '47.388421/8.362430', ['B/HB-2585','B/HB-2586','B/HB-2587','B/HB-2588','B/HB-2589']],
@@ -96,15 +100,14 @@ return [
             'location' => [                
                 ['Friedlisberg A', '47.353282/8.382933', ['B/HB-2539','B/HB-2540','B/HB-2541','B/HB-2542','B/HB-2543']],
                 ['Friedlisberg B', '47.353282/8.382933', ['B/HB-2544','B/HB-2545','B/HB-2546','B/HB-2547','B/HB-2548']],
-                ['Hasenberg A', '47.373226/8.363855', ['B/HB-2561','B/HB-2571','B/HB-2572','B/HB-2573','B/HB-2574']],
                 ['Hasenberg B', '47.373226/8.363855', ['B/HB-2566','B/HB-2567','B/HB-2568','B/HB-2569','B/HB-2570']],
                 ['Rudolfstetten A', '47.370109/8.378431', ['B/HB-2549','B/HB-2550','B/HB-2555','B/HB-2556','B/HB-2557']],
                 ['Rudolfstetten B', '47.370109/8.378431', ['B/HB-2558','B/HB-2559','B/HB-2560','B/HB-2564','B/HB-2565']],
             ],
         ],
         [
-            'name' => 'Sperrstelle Hegnau',
-            'route' => '/operation/sperrstelle-hegnau',
+            'name' => 'Artilleriestellung Hegnau',
+            'route' => '/operation/artilleriestellung-hegnau',
             'location' => [
                 ['Hegnau A', '47.365619/8.326084', ['B/HB-2099','B/HB-2100','B/HB-2101','B/HB-2102'], ['CH-0120']],
                 ['Hegnau B', '47.365619/8.326084', ['B/HB-2103','B/HB-2104','B/HB-2105','B/HB-2106'], ['CH-0120']],
@@ -112,8 +115,16 @@ return [
             ],
         ],
         [
-            'name' => 'Sperrstelle Rammern',
-            'route' => '/sperrstelle-rammern',
+            'name' => 'Artilleriestellung Hausen',
+            'route' => '/operation/artilleriestellung-hausen',
+            'location' => [
+                ['Hausen A(rt)', '47.456924/8.220297', ['B/HB-2074','B/HB-2075','B/HB-2076','B/HB-2077']],
+                ['Hausen B', '47.456924/8.220297', ['B/HB-2078','B/HB-2079','B/HB-2080']],
+            ],
+        ],
+        [
+            'name' => 'Artilleriestellung Rammernwald',
+            'route' => '/artilleriestellung-rammernwald',
             'location' => [
                 ['Rammernwald A', '47.361295/8.445012', ['B/HB-2481','B/HB-2482','B/HB-2483','B/HB-2484','B/HB-2485']],
                 ['Rammernwald B', '47.361295/8.445012', ['B/HB-2486','B/HB-2487','B/HB-2488','B/HB-2489','B/HB-2490']],
@@ -133,7 +144,7 @@ return [
                 ['Schlatt A', '47.381909/8.447130', ['B/HB-2386','B/HB-2387','B/HB-2415','B/HB-2416','B/HB-2420']],
                 ['Schlatt B', '47.381909/8.447130', ['B/HB-2421','B/HB-2422','B/HB-2424','B/HB-2425','B/HB-2426']],
                 ['Schlatt C', '47.381909/8.447130', ['B/HB-2427','B/HB-2428','B/HB-2430','B/HB-2431']],
-                // ['Schlatt D', '47.381909/8.447130', ['B/HB-','B/HB-','B/HB-','B/HB-','B/HB-']], F-Objects
+                ['Schlatt D', '47.381909/8.447130', ['B/HB-4793','B/HB-4794','B/HB-4796','B/HB-4797','B/HB-4798']],
             ],
         ],
         [
@@ -168,6 +179,7 @@ return [
             'location' => [
                 ['Unterreppischtal A', '47.376479/8.397013', ['B/HB-2606','B/HB-2607','B/HB-2608','B/HB-2609','B/HB-2610']],
                 ['Unterreppischtal B', '47.376479/8.397013', ['B/HB-2612','B/HB-2551','B/HB-2552','B/HB-2553','B/HB-2554']],
+                ['Unterreppischtal C', '47.376479/8.397013', ['B/HB-4783','B/HB-4799','B/HB-4800']],
                 ['Oberreppischtal A', '47.355614/8.428936', ['B/HB-2496','B/HB-2497','B/HB-2499','B/HB-2500']],
                 ['Oberreppischtal B', '47.355614/8.428936', ['B/HB-2516','B/HB-2518','B/HB-2519','B/HB-2520']],
                 ['Stierliberg A', '47.354725/8.418172', ['B/HB-2507','B/HB-2508','B/HB-2509','B/HB-2510','B/HB-2511']],
@@ -190,32 +202,32 @@ return [
             ],
         ],
         [
-            'name' => 'Sperrstelle Baden',
-            'route' => '/operation/sperrstelle-baden',
+            'name' => 'Sperrstelle Baden-Münslishausen',
+            'route' => '/operation/sperrstelle-baden-muenzlishausen',
             'location' => [
-                ['Baden A', '47.458313/8.294908', ['B/HB-1999','B/HB-2000','B/HB-2001','B/HB-2002','B/HB-2003']],
-                ['Baden B', '47.458313/8.294908', ['B/HB-2006','B/HB-2008','B/HB-2011','B/HB-2012','B/HB-2013']],
-                ['Baden C', '47.481756/8.280990', ['B/HB-2029','B/HB-2030','B/HB-2031','B/HB-2032','B/HB-2033']],
-                ['Baden D', '47.481756/8.280990', ['B/HB-2034','B/HB-2035','B/HB-2036','B/HB-2037','B/HB-2038']],
+                ['Münzlishausen A', '47.474515/8.278969', ['B/HB-2029','B/HB-2030','B/HB-2031','B/HB-2032','B/HB-2033']],
+                ['Münzlishausen B', '47.474515/8.278969', ['B/HB-2034','B/HB-2035','B/HB-2036','B/HB-2037','B/HB-2038']],
+                ['Meierhof A', '47.466436/8.290739', ['B/HB-2001','B/HB-2002','B/HB-2003','B/HB-2004','B/HB-2005']],
+                ['Meierhof B', '47.466436/8.290739', ['B/HB-2007','B/HB-2008','B/HB-2009','B/HB-2010','B/HB-2011']],
+                ['Meierhof C', '47.466436/8.290739', ['B/HB-2012','B/HB-2013','B/HB-2025','B/HB-2026','B/HB-2027']],
+            ],
+            'area' => [
+                ['point' => ['47.481650/8.267817','47.485710/8.292526','47.475385/8.294243','47.464709/8.309171','47.458674/8.280343','47.472600/8.281888']],
             ],
         ],
         [
-            'name' => 'Sperrstelle Dättwil',
-            'route' => '/operation/sperrstelle-daettwil',
+            'name' => 'Sperrstelle Dättwil-Neuenhof',
+            'route' => '/operation/sperrstelle-daettwil-neuenhof',
             'location' => [
-                ['D', '47.458313/8.294908', ['B/HB-1988','B/HB-1989','B/HB-1990','B/HB-1991','B/HB-1993']], // Sperrstelle Dättwil-Neuenhof
-                ['E', '47.458313/8.294908', ['B/HB-1994','B/HB-1995','B/HB-1996','B/HB-1997','B/HB-1998']], // Sperrstelle Dättwil-Neuenhof
-                ['F', '47.449068/8.285535', ['B/HB-2014','B/HB-2015','B/HB-2016','B/HB-2017']], // Sperrstelle Dättwil-Neuenhof
-                ['G', '47.449068/8.285535', ['B/HB-2018','B/HB-2019','B/HB-2020','B/HB-2021']], // Sperrstelle Dättwil-Neuenhof
-            ],
-        ],
-        [
-            'name' => 'Sperrstelle Neuenhof',
-            'route' => '/operation/sperrstelle-neuenhof',
-            'location' => [
-                ['A', '47.442473/8.315784', ['B/HB-1967','B/HB-1968','B/HB-1969','B/HB-1970','B/HB-1971']], // Sperrstelle Dättwil-Neuenhof
-                ['B', '47.444332/8.326548', ['B/HB-1972','B/HB-1973','B/HB-1974','B/HB-1975','B/HB-1976']], // Sperrstelle Dättwil-Neuenhof
-                ['C', '47.444332/8.326548', ['B/HB-1977','B/HB-1978','B/HB-1979','B/HB-1980','B/HB-1981']], // Sperrstelle Dättwil-Neuenhof
+                ['Baregg A', '47.459775/8.304609', ['B/HB-1988','B/HB-1989','B/HB-1990','B/HB-1991','B/HB-1993']],
+                ['Baregg B', '47.459775/8.304609', ['B/HB-1994','B/HB-1995','B/HB-1996','B/HB-1997','B/HB-1998']],
+                ['Baregg C', '47.459775/8.304609', ['B/HB-1999','B/HB-2000','B/HB-2006']],
+                ['Sommerhalde A', '47.449017/8.285469', ['B/HB-2014','B/HB-2015','B/HB-2016','B/HB-2017']],
+                ['Sommerhalde B', '47.449017/8.285469', ['B/HB-2018','B/HB-2019','B/HB-2020','B/HB-2021']],
+                ['Rüsler A', '47.442544/8.315769', ['B/HB-1967','B/HB-1968','B/HB-1969','B/HB-1970','B/HB-1971']],
+                ['Rüsler B', '47.442544/8.315769', ['B/HB-1972','B/HB-1973','B/HB-1974','B/HB-1975','B/HB-1976']],
+                ['Rüsler C', '47.442544/8.315769', ['B/HB-1977','B/HB-1978','B/HB-1979','B/HB-1980','B/HB-1981']],
+                ['Rüsler D', '47.442544/8.315769', ['B/HB-1982','B/HB-1983','B/HB-1984','B/HB-1985']],
             ],
         ],
         [
@@ -249,6 +261,10 @@ return [
             'location' => [
                 ['Wasserschloss D', '47.489634/8.242487', ['B/HB-2039','B/HB-2040','B/HB-2041','B/HB-2043','B/HB-2044']],
                 ['Wasserschloss E', '47.489634/8.242487', ['B/HB-2045','B/HB-2046','B/HB-2047','B/HB-2048','B/HB-2049']],
+                ['Rebberg A', '47.472468/8.238562', ['B/HB-2057','B/HB-2058','B/HB-2059','B/HB-2060','B/HB-2061']],
+                ['Rebberg B', '47.472468/8.238562', ['B/HB-2068','B/HB-2069','B/HB-2070','B/HB-2071','B/HB-2072']],
+                // ['A', '47.472468/8.238562', ['B/HB-','B/HB-','B/HB-','B/HB-','B/HB-']],
+                // ['B', '47.472468/8.238562', ['B/HB-','B/HB-','B/HB-','B/HB-','B/HB-']],
             ],
         ],
         [
@@ -263,7 +279,8 @@ return [
             'name' => 'Sperrstelle Zeihen-Eichwald',
             'route' => '/operation/sperrstelle-zeihen-eichwald',
             'location' => [
-                ['Eichwald A', '47.467456/8.097200', ['B/HB-1953','B/HB-1954','B/HB-1955','B/HB-1956','B/HB-1957'], ['P/CH-0002']],
+                ['Wideregg A', '47.477289/8.099981', ['B/HB-1948','B/HB-1949','B/HB-1950','B/HB-1951','B/HB-1952'], ['P/CH-0002']],
+                ['Eichwald A', '47.477289/8.099981', ['B/HB-1953','B/HB-1954','B/HB-1955','B/HB-1956','B/HB-1957'], ['P/CH-0002']],
                 ['Eichwald B', '47.467456/8.097200', ['B/HB-1958','B/HB-1959','B/HB-1960','B/HB-1961','B/HB-1965'], ['P/CH-0002']],
             ],
         ],
@@ -317,13 +334,50 @@ return [
                 // ['Tuggen ', [], ['B/HB-','B/HB-','B/HB-','B/HB-','B/HB-']],
             ],
         ],
+        [
+            'name' => 'Sperrstelle Zweidlen-Lätten',
+            'route' => '/operation/sperrstelle-zweidlen-laetten',
+            'location' => [
+                ['Zweidlen A', '47.566074/8.468364', ['B/HB-4551','B/HB-4552','B/HB-4553','B/HB-4554','B/HB-4555']],
+                ['Zweidlen B', '47.566074/8.468364', ['B/HB-4556','B/HB-4557','B/HB-4558','B/HB-4559','B/HB-4560']],
+                ['Zweidlen C', '47.566074/8.468364', ['B/HB-4561','B/HB-2708','B/HB-2709','B/HB-2710','B/HB-2747']],
+            ],
+        ],
+        [
+            'name' => 'Sperrstelle Stadel',
+            'route' => '/operation/sperrstelle-stadel',
+            'location' => [
+                ['Stadel A', '47.533073/8.473835', ['B/HB-2686','B/HB-2687','B/HB-2688','B/HB-2689','B/HB-2850']],
+                ['Stadel B', '47.533073/8.473835', ['B/HB-2851','B/HB-2852','B/HB-4547','B/HB-4548','B/HB-4549']],
+                ['Stadel C', '47.522761/8.492808', ['B/HB-4562','B/HB-4563','B/HB-4802','B/HB-4803','B/HB-4804'], ['P/CH-0137']],
+            ],
+        ],
+        [
+            'name' => 'Sperrstelle Schinznach',
+            'route' => '/operation/sperrstelle-schinznach',
+            'location' => [
+                ['Habsburg', '47.449797/8.176192', ['B/HB-2081','B/HB-2082','B/HB-2083','B/HB-2084']],
+                ['Scherz', '47.449797/8.176192', ['B/HB-2085','B/HB-2086','B/HB-2087']],
+            ],
+        ],
+        [
+            'name' => 'Sperrstelle Stelli-Gallenkirch',
+            'route' => 'sperrstelle-stelli-gallenkirch',
+            'location' => [
+                ['Leisacker', '47.485835/8.158412', ['B/HB-1939','B/HB-1940','B/HB-1941','B/HB-1942','B/HB-1943'],['P/CH-0002']],
+                ['Riemen A', '47.481623/8.127737', ['B/HB-1931','B/HB-1932','B/HB-1933','B/HB-1934','B/HB-1936'],['P/CH-0002']],
+                ['Riemen B', '47.481623/8.127737', ['B/HB-1944','B/HB-1945','B/HB-1946','B/HB-4540','B/HB-4543'],['P/CH-0002']],
+                ['Birch', '47.481392/8.145599', ['B/HB-1935','B/HB-4538','B/HB-4539','B/HB-4544','B/HB-4545'],['P/CH-0002']],
+            ],
+        ],
     ],
 ];
 
 /* template
         [
             'name' => '',
-            'set' => [
+            'route' => '',
+            'location' => [
                 ['', ['B/HB-','B/HB-','B/HB-','B/HB-','B/HB-']],
                 ['', ['B/HB-','B/HB-','B/HB-','B/HB-','B/HB-']],
             ],

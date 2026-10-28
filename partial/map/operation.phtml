@@ -1,0 +1,37 @@
+<?php
+
+$c = $this->container->campaign;
+$o = $this->operation;
+
+?>
+<figure class="polaroid grayscale">
+    <picture>
+    <?php if ($this->get->has('qrz')): ?>
+        <img src="/image/map/Map.<?= $o->id ?>.png" alt="Map">
+    <?php else: ?>
+        <div data-source="#<?= $o->id ?>" data-screenshot="Map.<?= $o->id ?>.png" class="map" style="width:100%;height:400px"></div>
+        <img src="/image/page/mittheilungen.png" alt="Mittheilungen" class="mittheilungen">
+    <?php endif ?>
+    </picture>
+</figure>
+<table data-init="<?= base64_encode(json_encode(['fit' => 'locators'])) ?>" id="<?= $o->id ?>" class="table table-hover">
+    <?php if (isset($o->area)): ?>
+    <tbody>
+        <?php foreach ($o->area as $a): ?>
+        <tr data-area="<?= base64_encode(json_encode($a)) ?>"></tr>
+        <?php endforeach ?>
+    </tbody>
+    <?php endif ?>
+    <tbody>
+    <?php foreach ($c->locations($o, true) as $l): ?>
+        <tr data-locator="<?= base64_encode(json_encode($l)) ?>"></tr>
+    <?php endforeach ?>
+    </tbody>
+    <tbody>
+    <?php foreach ($o->location as $l): ?>
+    <?php foreach ($l->reference as $r): ?>
+        <tr data-object="<?= base64_encode(json_encode($c->colorize($r))) ?>"></tr>
+    <?php endforeach ?>
+    <?php endforeach ?>
+    </tbody>
+</table>

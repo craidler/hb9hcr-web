@@ -1,0 +1,18 @@
+<?php
+
+$r = function (int $m) {
+    $r = str_split(substr('12345678', 0, $m));
+    shuffle($r);
+    return $r;
+}
+
+?>
+<div class="emplace pb-0">
+    <div class="row">
+        <?php foreach ($r(4) as $i): ?>
+        <div class="col-12 col-md-3 mb-3">
+            <img src="/image/postal/card.0<?= $i ?>.png">
+        </div>
+        <?php endforeach ?>
+    </div>
+</div>

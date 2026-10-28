@@ -29,4 +29,4 @@
         <p>So every QSO you log with me came from outdoors, with real effort behind it.</p>
     </div>
 </div>
-<?= $this->partial('table.qso.phtml', ['collection' => $this->container->adif->collection(['limit' => 100, 'pagination' => []])]) ?>
+<?= $this->partial('table/qso.phtml', ['collection' => $this->container->adif->collection(['limit' => 100, 'pagination' => []])]) ?>

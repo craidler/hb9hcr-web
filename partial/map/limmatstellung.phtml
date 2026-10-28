@@ -1,0 +1,28 @@
+<figure class="polaroid grayscale">
+    <picture>
+    <?php if ($this->get->has('qrz')): ?>
+        <img src="/image/map/Map.Limmatstellung.png" alt="Map Limmatstellung">
+    <?php else: ?>
+        <div class="map" style="width:100%;height:300px" data-source="#map-limmatstellung-data" data-screenshot="Map.Limmatstellung.png" data-init="<?= base64_encode(json_encode(['zoom' => 7])) ?>"></div>
+        <img src="/image/page/mittheilungen.png" alt="Mittheilungen" class="mittheilungen">
+    <?php endif ?>
+    </picture>
+    <figcaption>Approximate course of the Limmatstellung</figcaption>
+</figure>
+<table class="d-none" id="map-limmatstellung-data" data-init="<?= base64_encode(json_encode(['zoom' => 7])) ?>">
+    <tbody data-polyline="<?= base64_encode(json_encode(['weight' => 2, 'color' => '#b14137'])) ?>">
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.49095, 'lng' => 7.72386])) ?>" title="Liestal"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.49259, 'lng' => 7.78300])) ?>" title="Hersberg"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.51593, 'lng' => 7.99693])) ?>" title="Frick"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.50068, 'lng' => 8.23623])) ?>" title="Brugg"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.40568, 'lng' => 8.40494])) ?>" title="Dietikon"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.39091, 'lng' => 8.43456])) ?>" title="Urdorf"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.34289, 'lng' => 8.53110])) ?>" title="Wollishofen"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.26145, 'lng' => 8.59695])) ?>" title="Horgen"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.19554, 'lng' => 8.72490])) ?>" title="Wollerau"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.18270, 'lng' => 8.90069])) ?>" title="Siebnen"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.13609, 'lng' => 9.05996])) ?>" title="Ziegelbrücke"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.09666, 'lng' => 9.34812])) ?>" title="Flums"></tr>
+        <tr data-point="<?= base64_encode(json_encode(['lat' => 47.04556, 'lng' => 9.44541])) ?>" title="Sargans"></tr>
+    </tbody>
+</table>

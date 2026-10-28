@@ -1,8 +1,49 @@
 <?php
 
 $c = $this->container->campaign;
+$s = $c->summary();
+$r = function (int $m) {
+    $r = str_split(substr('12345678', 0, $m));
+    shuffle($r);
+    return $r;
+}
 
 ?>
-<?php foreach ($c->operations as $o): ?>
-    <?= $this->partial('operation.map.phtml', ['operation' => $o]) ?>
-<?php endforeach ?>
+<p>
+    From the <?= $this->number($s->reference) ?> objects across the country, I select ones to revisit and form them into my campaign.
+    I organise them into smaller operations, each a group of objects in the same area that can be activated together in sets of maximal 5 references per location.
+</p>
+<?= $this->partial('emplace/operation.phtml') ?>
+<div class="row">
+    <div class="col-12 col-md-6">
+        <h3>§ Rules of engagement</h3>
+        <dl>
+            <dt>Respect The Object</dt>
+            <dd>From the outside</dd>
+            <dt>Leave No Trace</dt>
+            <dd>Carried in is carried out</dd>
+            <dt>No Damage</dt>
+            <dd>Nothing is opened, moved or modified</dd>
+            <dt>Low Profile</dt>
+            <dd>Wildlife first</dd>
+            <dt>Safety First</dt>
+            <dd>Routes, weather and daylight planned</dd>
+        </dl>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3>§ Historical context</h3>
+        <dl>
+            <dt>01 Sep 1939</dt>
+            <dd>General mobilisation</dd>
+            <dt>04 Oct 1939</dt>
+            <dd>Operationsbefehl Nr. 2 issued</dd>
+            <dt>1939 - 1940</dt>
+            <dd>Border and Limmat positions built</dd>
+            <dt>Summer 1940</dt>
+            <dd>Strategic shift towards Réduit national</dd>
+            <dt>Today</dt>
+            <dd>Thousands of objects remain</dd>
+        </dl>
+    </div>
+</div>
+<?= $this->partial('emplace/poststamp.phtml') ?>

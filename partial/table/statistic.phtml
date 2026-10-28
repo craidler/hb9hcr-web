@@ -1,0 +1,36 @@
+<?php
+
+$months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+];
+
+?>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th class="w-100">Month</th>
+            <th class="text-end">Bunkers</th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($this->container->bota->statistics(['role' => $this->role]) as $item): ?>
+        <tr>
+            <td><?= $item->year ?></td>
+            <td><?= $months[$item->month - 1] ?></td>
+            <td class="text-end"><?= $item->bunkers ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>

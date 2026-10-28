@@ -47,6 +47,20 @@ class View
         );
     }
 
+    public function truncate(string $value, object|array $options = []): string
+    {
+        $truncated = '';
+        $options = (object)array_merge(['length' => 30, 'token' => ' '], (array)$options);
+        $token = strtok($value, $options->token);
+
+        while (strlen($truncated) < $options->length && $token) {
+            $truncated .= $options->token . $token;
+            $token = strtok($options->token);
+        }
+
+        return trim($truncated, ' ,');
+    }
+
     public function __get(string $name): mixed
     {
         return $this->variables->get($name);

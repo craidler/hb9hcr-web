@@ -1,0 +1,124 @@
+.operation figure {
+    position: relative;
+    margin: .5rem 0 1rem 0;
+}
+
+.operation:hover img {
+    box-shadow: 0 0 .5rem #ece4d3aa;
+}
+
+.operation figcaption p {
+    margin: .25rem 0 0 0;
+    color: #ffffff44;
+}
+
+.operation:hover figcaption p {
+    color: #ffffff66;
+}
+
+.medal-earned picture {
+    background: url(/image/ribbon/campaign.ribbon.svg);
+}
+
+.medal-earned picture > img {
+    opacity: 0;
+}
+
+.medal {
+    margin: 0;
+}
+
+.medal picture {
+    vertical-align: middle;
+    position: relative;
+    display: table-cell;
+}
+
+.medal picture div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: .5rem;
+}
+
+.clasp {
+    line-height: 1.75rem;
+    text-align: center;
+    position: relative;
+    display: table;
+    margin: 0;
+}
+
+.clasp img {
+    box-shadow: 0 0 .2rem #000000;
+}
+
+.clasp span {
+    text-transform: uppercase;
+    text-shadow: 0 1px 3px #000000;
+    font-weight: bold;
+    line-height: 1.75rem;
+    position: absolute;
+    color: var(--bs-body-color);
+    width: 100%;
+    left: 0;
+    top: 1px;
+}
+
+.ribbon, .ribbon picture, .ribbon img, .ribbon div {
+    text-align: center;
+    width: 90px;
+}
+
+.ribbon picture {
+    line-height: 24px;
+    position: relative;
+    display: block;
+    margin: 0 0 .5rem 0;
+    height: 24px;
+}
+
+.ribbon img:first-of-type {
+    box-shadow: var(--bs-box-shadow);
+}
+
+.ribbon img {
+    position: absolute;
+    height: 24px;
+    left: 0;
+    top: 0;
+}
+
+.ribbon p {
+    margin: 0;
+}
+
+.ribbon div {
+    text-transform: uppercase;
+    border: 1px dashed #666;
+}
+
+.ribbon.wwbota img:first-of-type {
+    background: #135091;
+}
+
+.ribbon.hbbota img:first-of-type {
+    background: #a30000;
+}
+
+.ribbon.ukbota img:first-of-type {
+    background: #5a5e38;
+}
+
+.bravo-zulu {
+    border-radius: var(--bs-border-radius);
+    white-space: nowrap;
+    font-weight: 500;
+    background: var(--bs-secondary-bg);
+    font-size: .75rem;
+    transform: translate(15%, -50%) rotate(15deg) !important;
+    position: absolute;
+    padding: .1rem .25rem;
+    right: 0;
+    top: 0;
+}

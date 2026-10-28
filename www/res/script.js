@@ -42,47 +42,6 @@ document.querySelectorAll('.table-paginate').forEach((el) => {
     });
 });
 
-
-document.querySelectorAll('.map-operation').forEach((el) => {
-    let map = L.map(el, {preferCanvas:true}).setView([0, 0], 13), 
-    data = document.querySelector(el.dataset.source), markers = [], radii = [];
-    
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19}).addTo(map);
-
-    data.querySelectorAll('.map-marker').forEach((el) => {
-        let d = el.dataset, c = ['#b14137', '#2a81cb', '#7ed217'];
-
-        /*
-        radii.push(L.circle([d.lat, d.lon], {
-            color: '#32323244',
-            radius: 1000,
-            weight: 2
-        }));
-        */
-
-        markers.push(L.circle([d.lat, d.lng], {
-            color: c[d.state],
-            radius: 10
-        }));
-    });
-
-    data.querySelectorAll('.map-locator').forEach((el) => {
-        let d = el.dataset;
-        markers.push(L.marker([d.lat, d.lng], {
-            icon: marker.locator
-        }));
-
-        radii.push(L.circle([d.lat, d.lng], {
-            color: '#32323244',
-            radius: 1000,
-            weight: 2
-        }));
-    });
-
-    map.fitBounds(L.featureGroup(markers).addTo(map).getBounds());
-    L.featureGroup(radii).addTo(map);
-});
-
 document.querySelectorAll('.map-qso').forEach((el) => {
     let map = L.map(el, {preferCanvas:true}).setView([46.87, 8.12], 1), lines = [];
 
@@ -227,21 +186,40 @@ function map(el) {
         }).addTo(m.canvas);
 
         L.circle([d.lat, d.lng], {
-            color: '#32323244',
+            color: '#32323266',
+            fillOpacity: 0,
             radius: 1000,
             weight: 2
         }).addTo(m.locators);
     });
 
     m.source.querySelectorAll('[data-object]').forEach(el => {
-        let d = JSON.parse(atob(el.dataset.object)), l = [d.lat, d.lng], o = L.circle(l, {
-            color: d.color ?? '#2a81cb',
-            radius: d.radius ?? 10,
-        }).addTo(m.objects);
+        let d = atob(el.dataset.object);
+        
+        try {
+            d = JSON.parse(d);
 
-        if (d.hasOwnProperty('popup')) o.bindPopup(d.popup);
-        if (m.info) o.bindTooltip(d.adab + ' ' + d.bota, {offset: [15, 0]});
-        o.data = d;
+            let l = [d.lat, d.lng], o = L.circle(l, {
+                color: d.color ?? '#2a81cb',
+                radius: d.radius ?? 10,
+            }).addTo(m.objects);
+
+            if (d.hasOwnProperty('popup')) o.bindPopup(d.popup);
+            if (m.info) o.bindTooltip(d.adab + ' ' + d.bota, {offset: [15, 0]});
+            o.data = d;
+        } catch (error) {
+            console.log(error);
+        }
+    });
+
+    m.source.querySelectorAll('[data-area').forEach(el => {
+        let d = JSON.parse(atob(el.dataset.area)), p = [];
+
+        d.point.forEach(i => {
+            p.push(i.split('/'));
+        });
+
+        L.polygon(p, {color: d.color ?? '#00000000', fillColor: '#000000', fillOpacity: .15, weight: d.weight ?? 2}).addTo(m.canvas);
     });
 
     m.source.querySelectorAll('[data-polyline]').forEach(el => {

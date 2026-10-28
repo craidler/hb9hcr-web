@@ -1,0 +1,22 @@
+<?php
+
+$r = function (int $m) {
+    $r = str_split(substr('12345678', 0, $m));
+    shuffle($r);
+    return $r;
+}
+
+?>
+<div class="emplace text-center mt-1 pb-0">
+    <div class="row">
+        <?php foreach ($r(8) as $i): ?>
+        <div class="col-12 col-md mb-3">
+            <img src="/image/postal/stamp.0<?= $i ?>.png">
+        </div>
+        <?php endforeach ?>
+    </div>
+    <div>
+        <p class="display-6 fw-bold m-0">SI VIS PACEM PARA BELLUM</p>
+        <p class="accent-1 mt-0">if you want peace prepare for war</p>
+    </div>
+</div>

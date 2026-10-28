@@ -29,6 +29,15 @@ class Collection extends ArrayObject
         parent::append($value);
     }
 
+    public function find(callable $callback): object|null
+    {
+        foreach ($this as $item) {
+            if ($callback($item)) return $item;
+        }
+
+        return null;
+    }
+
     public function has(callable $callback): bool
     {
         foreach ($this as $item) {

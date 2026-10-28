@@ -4,6 +4,25 @@ $c = $this->container->campaign;
 $o = $c->operation($this->container->request->path);
 
 ?>
-<?= $this->partial('operation.map.phtml', ['operation' => $o]) ?>
-<?= $this->partial('operation.hunter.phtml', ['operation' => $o]) ?>
-<?= $this->partial('operation.table.phtml', ['operation' => $o]) ?>
+<div class="row">
+    <div class="col-12 col-md-4 col-lg-3">
+        <div class="emplace emplace-flex">
+            <figure class="medal <?= 0 < $c->qsos($o) ? 'medal-earned' : '' ?>">
+                <picture>
+                    <img src="/image/ribbon/campaign.ribbon-outline.svg">
+                    <div>
+                    <?php foreach (preg_split('#[ -]#', $o->name) as $i => $l): ?>
+                        <p class="clasp">
+                            <img src="/image/ribbon/campaign.clasp.svg">
+                            <span><?= $l ?></span>
+                        </p>
+                    <?php endforeach ?>
+                    </div>
+                </picture>
+            </figure>
+        </div>
+    </div>
+</div>
+<?= $this->partial('map/operation.phtml', ['operation' => $o]) ?>
+<?= $this->partial('table/hunter.phtml', ['operation' => $o]) ?>
+<?= $this->partial('table/reference.phtml', ['operation' => $o]) ?>

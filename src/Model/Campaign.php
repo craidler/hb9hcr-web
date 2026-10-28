@@ -12,6 +12,22 @@ class Campaign
     public Collection|null $operations = null;
     public Collection|null $planned = null;
 
+    protected array $types = [
+        '#geschützstand#i' => 'Emplacement Art',
+        '#unterstand#i' => 'Shelter',
+        '#telefon#i' => 'Signal',
+        '#infanteriebunker#i' => 'Bunker',
+        '#infanteriekanonenschild#i' => 'Emplacement Inf',
+        '#ik-stand#i' => 'Emplacement Inf',
+        '#schild#i' => 'Shield',
+        '#mg-werk#i' => 'Bunker MG',
+        '#mg-stand#i' => 'Emplacement MG',
+        '#kp anlage#i' => 'Command',
+        '#beobachter#i' => 'Observation',
+        '#mun-magazin#i' => 'Ammunition',
+        '#schützenstellung#i' => 'Entrenchment',
+    ];
+
     public function init(): void
     {
         $select = $this->database->sql('campaign/reference.collection.sql');
@@ -19,14 +35,9 @@ class Campaign
 
         $this->planned = new Collection();
         $this->operations = new Collection();
-        $this->references = Collection::createWithStatement($select, ['key' => function ($item) {
-            return $item->adab;
-        }]);
-
-        $select->execute(['adab' => '.*', 'bota' => '^B/HB-']);
-        $references = Collection::createWithStatement($select, ['key' => function ($item) {
+        $this->references = Collection::createWithStatement($select, ['callback' => function ($item) {
             $item->qso_hunters = json_decode($item->qso_hunters);
-            return $item->bota;
+            return $item;
         }]);
 
         $ops = json_decode(json_encode((include $this->container->application->basedir . '/config/bota.php')['operations']));
@@ -42,8 +53,11 @@ class Campaign
                 $reference = [];
 
                 foreach ($l[2] as $r) {
-                    $reference[] = $r = $references->offsetGet($r);
-                    $this->planned->offsetSet($r->adab, $r);
+                    $reference[] = $r = $this->references->find(function ($item) use($r) {
+                        return $r == $item->bota;
+                    });
+
+                    $this->planned->append($r);
                 }
 
                 $o->location[$i] = (object)[
@@ -61,18 +75,27 @@ class Campaign
 
     public function colorize(object $reference): object
     {
-        $reference->planned = $this->planned->offsetExists($reference->adab);
+        $reference->planned = (bool)$this->planned->find(function ($item) use ($reference) {
+            return $item->adab == $item->adab && $item->bota == $reference->bota;
+        });
 
-        $c = match(true) {
-            'F' == $reference->adab[0] => '#feee00',
-            'T' == $reference->adab[0] => 'green',
-            default => '#ff6052',
-        };
+        $c = null;
 
-        $c = $reference->bota ? '#b14137ff' : $c;
-        $c = $reference->planned ? '#1a5c95ff' : $c;
-        $c = 0 < $reference->qso_qty ? '#2a81cbff' : $c;
-        $c = 25 <= $reference->qso_cw ? '#35bf6aff' : $c;
+        if ($reference->adab) {
+            $c = match(true) {
+                'F' == $reference->adab[0] => '#feee00',
+                'T' == $reference->adab[0] => 'green',
+                default => '#ff6052',
+            };
+        }
+
+        if ($reference->bota) {
+            $c = 'A' == $reference->name[0] ? '#b14137ff' : $c;
+            $c = 'F' == $reference->name[0] ? '#fedc00' : $c;
+            $c = $reference->planned ? '#1a5c95ff' : $c;
+            $c = 0 < $reference->qso_qty ? '#2a81cbff' : $c;
+            $c = 25 <= $reference->qso_cw ? '#35bf6aff' : $c;
+        }
 
         $reference->color = $c;
 
@@ -136,7 +159,11 @@ class Campaign
         }
 
         if ($object && isset($object->reference)) {
-            foreach ($object->reference as $i) $c = array_merge($c, $i->qso_hunters); 
+            foreach ($object->reference as $i) {
+                if (isset($i->qso_hunters)) {
+                    foreach ($i->qso_hunters as $h) if ($h) $c[] = $h;
+                }
+            }
         }
 
         $c = array_unique($c);
@@ -145,13 +172,60 @@ class Campaign
         return $c;
     }
 
+    public function last(object $object): string|null
+    {
+        $last = null;
+
+        foreach ($object->reference as $r) {
+            $last = $r->qso_last > $last ? substr($r->qso_last, 0, 10) : $last;
+        }
+
+        return $last;
+    }
+
+    public function locations(?object $object = null, bool $unique = false): Collection
+    {
+        $c = new Collection();
+
+        if (!$object) {
+            foreach ($this->operations as $o) $c->append($this->locations($o, $unique));
+            return $c;
+        }
+
+        if (isset($object->location)) {
+            foreach ($object->location as $l) {
+                if ($unique) {
+                    $c->offsetSet(sprintf('%.f6/%.f6', $l->lat, $l->lng), $l);
+                    continue;
+                }
+
+                $c->append($l);
+            }
+        }
+
+        return $c;
+    }
+
     public function operation(string $route): object
     {
-        foreach ($this->container->campaign->operations as $o) {
+        foreach ($this->operations as $o) {
             if ($route == $o->route) return $o;
         }
 
         throw new Exception();
+    }
+
+    public function qsos(object $object): int
+    {
+        foreach (['location', 'reference'] as $k) {
+            if (isset($object->{$k})) {
+                $c = 0;
+                foreach ($object->{$k} as $i) $c += $this->qsos($i);
+                return $c;
+            }
+        }
+
+        return $object->qso_cw + $object->qso_ssb + $object->qso_ft8;
     }
 
     public function references(object $object): int
@@ -179,5 +253,14 @@ class Campaign
             'planned' => count($this->planned),
             'hunter' => count($this->hunters()),
         ];
+    }
+
+    public function type(object $reference): string
+    {
+        foreach ($this->types as $p => $t) {
+            if (preg_match($p, $reference->type)) return $t;
+        }
+
+        return $reference->type;
     }
 }

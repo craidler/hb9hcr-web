@@ -1,0 +1,27 @@
+<?php
+
+$b = $this->container->bota;
+
+?>
+<div class="emplace emplace-flex">
+    <?php foreach ($b->awards() as $a): ?>
+    <figure class="ribbon <?= $a->scheme ?>" title="<?= $a->title ?>">
+    <?php if ($a->level): ?>
+        <picture>
+            <img src="/image/ribbon/<?= $a->image ?>.svg">
+            <img src="/image/ribbon/level.<?= $a->level ?>.svg">
+            <img src="/image/ribbon/overlay.svg">
+        </picture>
+    <?php else: ?>
+        <picture>
+            <div><?= $a->scheme ?></div>
+        </picture>
+    <?php endif ?>
+        <figcaption>
+            <p><?= $this->plural($a->score, 'Pt') ?></p>
+            <p class="d-none"><?= $a->type ?></p>
+            <p class="d-none"><?= $a->award ?></p>
+        </figcaption>
+    </figure>
+    <?php endforeach ?>
+</div>

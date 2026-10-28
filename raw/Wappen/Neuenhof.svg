@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 10.0, SVG Export Plug-In . SVG Version: 3.0.0 Build 77)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg  xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 width="283.465" height="318.897" viewBox="0 0 283.465 318.897"
+	 style="overflow:visible;enable-background:new 0 0 283.465 318.897" xml:space="preserve">
+	<g id="CMYK_Wappen">
+		<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0h283.465v177.165c0,78.278-63.455,141.732-141.732,141.732
+			S0,255.443,0,177.165V0z"/>
+		<g>
+			<path style="fill:#FCDB00;stroke:#FCDB00;stroke-width:0.2835;stroke-miterlimit:3.8637;" d="M184.054,139.143l-16.186-50.225
+				l42.489-31.077l-52.563-0.062L141.495,7.592l-16.3,50.188l-52.563,0.06l42.487,31.079l-16.184,50.225l42.558-30.979
+				L184.054,139.143z M277.209,142.913H6.219V6.26h270.99V142.913z"/>
+			<path style="fill:#FCDB00;stroke:#FCDB00;stroke-width:0.2835;stroke-miterlimit:3.8637;" d="M177.112,277.038l-35.451-25.656
+				l-35.449,25.656l13.48-41.594l-35.391-25.737l43.782-0.05l13.577-41.562l13.577,41.562l43.783,0.051l-35.392,25.736
+				L177.112,277.038z"/>
+		</g>
+		<g>
+			<path style="fill:#F00000;stroke:#F00000;stroke-width:0.2835;stroke-miterlimit:3.8637;" d="M184.054,287.143l-16.186-50.225
+				l42.489-31.077l-52.563-0.062l-16.299-50.188l-16.3,50.188l-52.563,0.06l42.487,31.079l-16.184,50.225l42.558-30.979
+				L184.054,287.143z M277.209,147.165v29.313c0,75.208-60.662,136.174-135.495,136.174S6.219,251.686,6.219,176.478v-29.313
+				H277.209z"/>
+			<path style="fill:#F00000;stroke:#F00000;stroke-width:0.2835;stroke-miterlimit:3.8637;" d="M177.112,129.038l-35.451-25.656
+				l-35.449,25.656l13.48-41.594L84.302,61.708l43.782-0.05l13.577-41.562l13.577,41.562l43.783,0.051L163.63,87.445
+				L177.112,129.038z"/>
+		</g>
+	</g>
+</svg>

@@ -1,3 +1,5 @@
+@import "css/campaign.css";
+
 :root {
     --bs-body-bg: #222;
     --bs-body-color: #ece4d3;
@@ -9,7 +11,14 @@
     --bs-link-color-rgb: 23, 162, 184;
     --bs-link-hover-color-rgb: 23, 162, 184;
     --bs-body-line-height: 1.4;
+    --bs-secondary-rgb: 255, 255, 255;
+    --bs-secondary-bg: #717550;
     --bs-tertiary-bg: #ffffff22;
+    
+    --bs-box-shadow: 0 1px 3px #000;
+    
+    --cr-bg-opacity: .05;
+    --cr-bg-opacity-hover: .1;
 
     --s-accent-color-rgb: 113, 117, 80;
     --s-accent-color: #717550;
@@ -53,10 +62,6 @@
     .container {
         max-width: 960px;
     }
-}
-
-table, figure, p, .emplace {
-    margin: 1rem 0;
 }
 
 caption, caption ul {
@@ -139,7 +144,7 @@ a:hover {
 }
 
 section {
-    background-color: var(--s-bg);
+    background-color: rgba(var(--bs-secondary-rgb), var(--cr-bg-opacity));
     border-radius: var(--bs-border-radius);
     text-align: justify;
     position: relative;
@@ -202,7 +207,7 @@ section {
     border-radius: var(--bs-border-radius);
     font-size: .7rem;
     padding: 1rem;
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
     border: var(--s-border);
     color: rgba(255, 255, 255, .25);
 }
@@ -224,14 +229,14 @@ section {
 }
 
 .polaroid {
-    background-color: var(--s-bg);
+    background-color: rgba(var(--bs-secondary-rgb), var(--cr-bg-opacity));
     border-radius: var(--bs-border-radius);
     padding: .5rem;
     border: var(--s-border);
 }
 
 .polaroid:hover {
-    background-color: var(--s-bg-hover);    
+    background-color: rgba(var(--bs-secondary-rgb), var(--cr-bg-opacity-hover));
 }
 
 .polaroid figcaption {
@@ -281,103 +286,6 @@ section {
 .emplace-bunker img {
     width: auto;
     height: 64px;
-}
-
-.medal {
-    height: 272px !important;
-    margin-top: .75rem;
-}
-
-.medal-bronze {
-    display: table;
-}
-
-.medal-bronze p {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.medal, .medal img, .medal div { 
-    text-align: center;
-    font-size: .7rem;
-    position: relative;
-    height: auto;
-    width: 150px;
-}
-
-.medal picture:first-child img {
-    margin: 0 auto;
-    width: 120px;
-}
-
-.medal div {
-    text-transform: uppercase;
-    text-shadow: -1px 0px 2px #333, 1px 0px 2px #ddd;
-    font-weight: 600;
-    line-height: 26px;
-    position: absolute;
-    color: #555;
-    z-index: 10;
-    top: 0;
-}
-
-.clasp {
-    text-align: center;
-    position: relative;
-}
-
-.clasp img, .clasp div {
-    height: auto;
-    width: 150px;
-}
-
-.clasp div {
-    text-transform: uppercase;
-    text-shadow: -1px 0px 2px #333, 1px 0px 2px #ddd;
-    font-weight: 600;
-    line-height: 26px;
-    position: absolute;
-    color: #555;
-    z-index: 10;
-    top: 0;
-}
-
-.clasp figcaption {
-    margin: .5rem 0 0 0;
-}
-
-.clasp p {
-    margin: 0;
-}
-
-.ribbon {
-    text-align: center;
-    position: relative;
-}
-
-.ribbon img, .ribbon div {
-    line-height: 24px;
-    height: 24px;
-    width: 90px;
-}
-
-.ribbon > img {
-    position: absolute;
-    z-index: 10;
-    left: 0;
-    top: 0;
-}
-
-.ribbon div {
-    border: 1px dashed rgba(255, 255, 255, .1);
-}
-
-.ribbon figcaption {
-    margin: .5rem 0 0 0;
-}
-
-.ribbon p {
-    margin: 0;
 }
 
 .table {
@@ -520,54 +428,6 @@ section {
     top: 0;
 }
 
-.operation {
-    position: relative;
-    display: block;
-}
-
-.operation:hover img {
-    box-shadow: 0 0 .5rem #ece4d3aa;
-}
-
-.operation:hover figcaption p {
-    color: #ffffff66;
-}
-
-.operation img {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.operation picture p {
-    text-transform: uppercase;
-    text-shadow:0 1px 3px #000000;
-    font-weight: bold;
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    left: 0;
-    top: .25rem;
-}
-
-.operation figcaption {
-    padding: 2rem 0 0 0;
-}
-
-.operation figcaption p {
-    margin: 0;
-    color: #ffffff44;
-}
-
-.operation span, .location span {
-    white-space: nowrap;
-    font-weight: 500;
-    font-size: .75rem;
-    transform: translate(15%, -50%) rotate(15deg) !important;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
 
 @keyframes pulse {
     0% {

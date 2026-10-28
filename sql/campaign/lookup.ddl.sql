@@ -1,16 +1,25 @@
-create or replace view campaign_reference_lookup as select
-    a.`reference` as adab,
-    a.`bota` as bota,
-    a.`name`,
-    a.`lat`,
-    a.`lng`,
-    count(l.`id`) as qso_qty,
-    max(l.`time`) as qso_last,
-    json_arrayagg(l.`hunter_call`) as qso_hunters,
-    sum(if(l.`modes` like '%CW%', 1, 0)) as qso_cw,
-    sum(if(l.`modes` like '%SSB%', 1, 0)) as qso_ssb,
-    sum(if(l.`modes` like '%FT8%', 1, 0)) as qso_ft8
-from adab_object as a
-left outer join wwbota_log_activator as l on l.`reference` = a.`bota`
-group by a.`reference`, a.`bota`, a.`name`, a.`lat`, a.`lng`
-order by a.`reference`, a.`bota`;
+drop table if exists campaign_reference;
+
+create table if not exists campaign_reference as select
+    ar.reference as adab,
+    br.reference as bota,
+    ar.name,
+    ar.type,
+    ar.lat,
+    ar.lng
+from adab_reference ar
+left join wwbota_reference br on (ar.`reference` = concat('A0', substring(br.`name`, 2, 4)) and br.`name` like 'A%') or (ar.`reference` = substring(br.`name`, 1, 6) and br.`name` like 'F%')
+having bota is null
+union select
+    ar.`reference` as adab,
+    br.`reference` as bota,
+    br.`name`,
+    br.`type`,
+    br.`lat`,
+    br.`lng`
+from wwbota_reference br
+left join adab_reference ar on (ar.`reference` = concat('A0', substring(br.`name`, 2, 4)) and br.`name` like 'A%') or (ar.`reference` = substring(br.`name`, 1, 6) and br.`name` like 'F%')
+;
+
+ALTER TABLE `campaign_reference` ADD UNIQUE(`adab`, `bota`);
+ALTER TABLE `campaign_reference` RENAME INDEX `adab` TO `REFERENCE`;
