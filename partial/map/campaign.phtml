@@ -3,7 +3,7 @@
 $c = $this->container->campaign;
 
 ?>
-<figure class="polaroid grayscale">
+<figure class="polaroid <?= $this->planner ? 'planner' : 'grayscale' ?>">
     <picture>
     <?php if ($this->get->has('qrz')): ?>
         <img src="/image/map/Map.Campaign.png" alt="Map">
@@ -11,14 +11,14 @@ $c = $this->container->campaign;
         <div class="map" data-source="#map-campaign-data" data-screenshot="Map.Campaign.png" data-info=".map-info" style="width:100%;height:550px"></div>
         <?php if ($this->planner): ?>
         <div class="map-info d-none">
-            <p class="fw-bold text-uppercase" style="background:#00000033"><span>Position</span><i class="fa fa-times map-info-close float-end"></i></p>
+            <p class="map-info-title"><span>Position</span><i class="fa fa-times map-info-close float-end"></i></p>
             <p><span class="map-info-coordinates">0</span></p>
             <div class="unplanned">
-                <p class="fw-bold text-uppercase" style="background:#00000033"><span>Unplanned</span> <span class="map-info-count float-end">0</span></p>
+                <p class="map-info-title"><span>Unplanned</span> <span class="map-info-count float-end">0</span></p>
                 <p class="map-info-list"></p>
             </div>
             <div class="planned">
-                <p class="fw-bold text-uppercase" style="background:#00000033"><span>Planned</span> <span class="map-info-count float-end">0</span></p>
+                <p class="map-info-title"><span>Planned</span> <span class="map-info-count float-end">0</span></p>
                 <p class="map-info-list"></p>
             </div>
         </div>

@@ -37,14 +37,14 @@ class View
         return (string)static::init($this->container, ['template' => 'partial/' . $template], $variables);
     }
 
-    public function plural(float|int $value, string $word): string
+    public function plural(float|int $value, string $word, bool $display = true): string
     {
-        return sprintf(
+        return trim(sprintf(
             '%s %s%s',
-            number_format($value, 0, '.', '\''),
+            $display ? number_format($value, 0, '.', '\'') : '',
             $word,
             1 < $value ? 's' : ''
-        );
+        ));
     }
 
     public function truncate(string $value, object|array $options = []): string

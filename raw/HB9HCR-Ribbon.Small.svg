@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30"
+   height="8"
+   viewBox="0 0 30 8"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="HB9HCR-Ribbon.Small.svg"
+   inkscape:export-filename="/home/craidler/Web/www/image/ribbon/operation.small.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="6.859375"
+     inkscape:cx="-7.7266515"
+     inkscape:cy="4.3735763"
+     inkscape:window-width="1920"
+     inkscape:window-height="1131"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1"
+     showguides="true" />
+  <defs
+     id="defs1">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern10"
+       preserveAspectRatio="xMidYMid"
+       id="pattern17"
+       patternTransform="rotate(90)"
+       x="0"
+       y="0" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="2"
+       height="24"
+       patternTransform="scale(1)"
+       preserveAspectRatio="xMidYMid"
+       id="pattern10"
+       inkscape:label="pattern10">
+      <path
+         style="fill:none;fill-opacity:0.0973402;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+         d="M 0.5,0 V 24"
+         id="path9" />
+      <path
+         style="fill:none;fill-opacity:0.0973402;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:0"
+         d="M 1.5,0 V 24"
+         id="path10" />
+    </pattern>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8"
+       id="linearGradient16"
+       x1="45"
+       y1="-33"
+       x2="45"
+       y2="57"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(0.33333333)" />
+    <linearGradient
+       id="linearGradient8"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0.40317902"
+         id="stop15" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="1"
+         id="stop16" />
+    </linearGradient>
+  </defs>
+  <path
+     id="rect3-5-9"
+     style="display:none;fill:#e6e6e6;stroke-width:1.82226;stroke-linecap:square;stroke-miterlimit:8"
+     inkscape:label="Operation"
+     d="m 3.486328,0 0.666016,1 -1,1.5 1,1.5 -1,1.5 1,1.5 -0.666016,1 h 7.179688 L 10,7 11,5.5 10,4 11,2.5 10,1 10.666016,0 Z M 19.333984,0 20,1 19,2.5 20,4 19,5.5 20,7 19.333984,8 h 7.179688 l -0.666016,-1 1,-1.5 -1,-1.5 1,-1.5 -1,-1.5 0.666016,-1 z"
+     sodipodi:nodetypes="cccccccccccccccccccccccccccccc" />
+  <path
+     id="path3"
+     style="display:inline;fill:#e6e6e6;stroke-width:1.82226;stroke-linecap:square;stroke-miterlimit:8"
+     inkscape:label="Operation"
+     d="m 11.410156,0 0.666016,1 -1,1.5 1,1.5 -1,1.5 1,1.5 -0.666016,1 h 7.179688 l -0.666016,-1 1,-1.5 -1,-1.5 1,-1.5 -1,-1.5 0.666016,-1 z"
+     sodipodi:nodetypes="ccccccccccccccc" />
+  <g
+     id="g3"
+     inkscape:label="Overlay"
+     style="display:none">
+    <rect
+       style="display:inline;opacity:0.1;fill:url(#pattern17);stroke:none;stroke-width:0.333333;stroke-linecap:butt;stroke-miterlimit:8;stroke-dasharray:none"
+       id="rect13"
+       width="30"
+       height="8"
+       x="0"
+       y="0"
+       inkscape:label="Embroidment"
+       sodipodi:insensitive="true"
+       inkscape:export-filename="../www/image/ribbon/wwbota.activator_dxcc_b2b.annual26.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g4"
+       inkscape:label="Shadow"
+       style="display:inline"
+       inkscape:export-filename="/home/craidler/Web/www/image/ribbon/wwbota.activator.lifetime.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         id="rect4"
+         style="font-variation-settings:'wght' 500;display:inline;opacity:1;fill-opacity:0.304721;stroke-width:0.279962;stroke-miterlimit:8"
+         inkscape:label="Dark"
+         d="M 0.99826289,7.001737 H 30.000001 L 30,8 H 0 Z m 28.00429811,-1e-6 -1e-6,-6.00429767 L 30,1.4305115e-6 30.000001,7.001736 Z"
+         sodipodi:nodetypes="cccccccccc" />
+      <path
+         id="rect4-7"
+         style="font-variation-settings:'wght' 500;fill:#ffffff;fill-opacity:0.102465;stroke-width:0.283;stroke-miterlimit:8"
+         inkscape:label="Light"
+         d="M 0,1.4305115e-6 H 30 L 29.001735,0.99826532 H 0.99826389 Z M 0,8 V 1.4305115e-6 L 0.99826389,0.99826532 V 7.001736 Z"
+         sodipodi:nodetypes="cccccccccc" />
+    </g>
+    <rect
+       style="display:inline;fill:url(#linearGradient16);fill-opacity:1;stroke-width:1;stroke-linecap:square;stroke-miterlimit:8"
+       id="rect1"
+       width="30"
+       height="8"
+       x="0"
+       y="0"
+       inkscape:label="Gradient" />
+  </g>
+</svg>

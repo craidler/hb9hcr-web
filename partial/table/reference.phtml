@@ -34,7 +34,14 @@ $c = $this->container->campaign;
             <?php endif ?>
             <td class="d-none d-md-table-cell <?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $r->adab ?></td>
             <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $r->bota ?></td>
-            <td class="d-none d-md-table-cell <?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $c->type($r) ?></td>
+            <td class="d-none d-md-table-cell <?= $c->complete($l) ? 'opacity-50' : '' ?>">
+                <figure class="ribbon ribbon-small <?= 'cold war' == strtolower($c->type($r)) ? 'cw' : 'ww2' ?>" title="<?= $c->type($r) ?>">
+                    <picture>
+                        <img src="/image/ribbon/overlay.small.svg">
+                        <img src="/image/ribbon/operation.small.svg">
+                    </picture>
+                </figure>
+            </td>
             <td class="d-none d-lg-table-cell <?= $c->complete($l) ? 'opacity-50' : '' ?>"><?= $this->truncate($r->name) ?></td>
             <td class="d-none d-md-table-cell <?= $c->complete($l) ? 'opacity-50' : '' ?> text-end"><?= $this->number($c->distance([$l->lat, $l->lng], [$r->lat, $r->lng]), ['decimal' => 2]) ?></td>
             <td class="<?= $c->complete($l) ? 'opacity-50' : '' ?> text-end"><?= $r->qso_cw ?></td>

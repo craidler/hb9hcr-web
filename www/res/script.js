@@ -119,12 +119,16 @@ function map(el) {
     let s = document.querySelector(el.dataset.source), i = s.dataset.init ? JSON.parse(atob(s.dataset.init)) : {};
 
     const m = {
+        perimeters: L.featureGroup(),
         locators: L.featureGroup(),
         objects: L.featureGroup(),
         pointer: null,
-        canvas: L.map(el, {preferCanvas:true}).setView([i.lat ?? 46.81, i.lng ?? 8.2], i.zoom ?? 8),
+        canvas: c = L.map(el, {preferCanvas:true}).setView([i.lat ?? 46.81, i.lng ?? 8.2], i.zoom ?? 8),
         source: s,
-        tile: L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19}),
+        tiles: {
+            SAT: L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {}).addTo(c),
+            OSM: L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19}).addTo(c),
+        },
         info: el.dataset.hasOwnProperty('info') ? document.querySelector(el.dataset.info) : null,
         init: i,
     }
@@ -162,7 +166,7 @@ function map(el) {
                     let i = [];
 
                     v.forEach(o => {
-                        i.push(o.data.adab + ' ' + o.data.bota);
+                        i.push(o.data.bota + ' ' + o.data.name);
                     });
 
                     q.innerHTML = v.length;
@@ -183,14 +187,14 @@ function map(el) {
 
         L.marker([d.lat, d.lng], {
             icon: marker.locator
-        }).addTo(m.canvas);
+        }).addTo(m.locators);
 
         L.circle([d.lat, d.lng], {
             color: '#32323266',
             fillOpacity: 0,
             radius: 1000,
             weight: 2
-        }).addTo(m.locators);
+        }).addTo(m.perimeters);
     });
 
     m.source.querySelectorAll('[data-object]').forEach(el => {
@@ -234,13 +238,15 @@ function map(el) {
         L.polyline(pts, {color: d.color, weight: d.weight}).addTo(m.canvas);
     });
 
-    m.tile.addTo(m.canvas);
+    m.perimeters.addTo(m.canvas);
     m.locators.addTo(m.canvas);
     m.objects.addTo(m.canvas).bringToFront();
 
     if (m.init.hasOwnProperty('fit')) {
         m.canvas.fitBounds(m[m.init.fit].getBounds());
     }
+
+    L.control.layers(m.tiles, {Locator: m.locators, Object: m.objects, Perimeter: m.perimeters}).addTo(m.canvas);
 }
 
 document.querySelectorAll('.map').forEach(el => map(el));

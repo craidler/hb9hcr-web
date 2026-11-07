@@ -1,0 +1,10 @@
+<div class="emplace text-center" style="height:10rem">
+    <div class="row">
+    <?php foreach ($this->metric as $m): ?>
+        <div class="col-12 col-sm-<?= 12 / count($this->metric) ?>">
+            <p class="display-1 fw-bold m-0 counter-element" data-target="<?= $m[1] ?>"><?= $m[1] ?></p>
+            <p class="accent-1 m-0"><?= ucwords($this->plural($m[1], $m[0], false)) ?></p>
+        </div>
+    <?php endforeach ?>
+    </div>
+</div>

@@ -65,13 +65,20 @@
     top: 1px;
 }
 
-.ribbon, .ribbon picture, .ribbon img, .ribbon div {
+.ribbon, .ribbon picture, .ribbon picture img, .ribbon picture div {
     text-align: center;
     width: 90px;
 }
 
+.ribbon-small, .ribbon-small picture, .ribbon-small picture img, .ribbon-small picture div {
+    line-height: 8px;
+    margin: 0 auto;
+    height: 8px;
+    width: 30px;
+}
+
 .ribbon picture {
-    line-height: 24px;
+    line-height: 1.5rem;
     position: relative;
     display: block;
     margin: 0 0 .5rem 0;
@@ -108,6 +115,18 @@
 
 .ribbon.ukbota img:first-of-type {
     background: #5a5e38;
+}
+
+.ribbon.dlbota img:first-of-type {
+    background: linear-gradient(to right, #222 50%, #ffd500 50%);
+}
+
+.ribbon-small.ww2 img:first-of-type {
+    background: #b14137;
+}
+
+.ribbon-small.cw img:first-of-type {
+    background: #fedc00;
 }
 
 .bravo-zulu {

@@ -325,11 +325,16 @@ section {
     font-size: .75rem;
 }
 
-.leaflet-control-container {
+figure.grayscale .leaflet-control-container {
     display: none;
 }
 
-.grayscale picture .leaflet-tile-pane {
+figure .leaflet-control-zoom,
+figure .leaflet-control-attribution {
+    display: none;
+}
+
+figure.grayscale .leaflet-tile-pane {
     filter: brightness(.9) grayscale(1) sepia(.1);
 }
 
@@ -383,15 +388,18 @@ section {
 }
 
 .map-info {
+    border: var(--s-border);
+    border-radius: var(--bs-border-radius);
     z-index: 999;
     position: absolute;
-    width: 25%;
-    height: 100%;
+    width: 50%;
     top: 0;
-    left: 0;
+    left: calc(-50% - 3rem);
     color: #fff;
     font-size: .75rem;
-    background: #00000066;
+    background: var(--s-bg);
+    overflow-x: hidden;
+    white-space: nowrap;
 }
 
 .map-info p {
@@ -404,6 +412,12 @@ section {
     float: right;
     margin: 0 0 0 1rem;
     line-height: 1rem;
+}
+
+.map-info-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    background: var(--s-bg);
 }
 
 .form-file {
@@ -426,6 +440,13 @@ section {
     z-index: 9;
     left: 0;
     top: 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: .75rem;
+    opacity: .25;
+    margin: 0;
 }
 
 

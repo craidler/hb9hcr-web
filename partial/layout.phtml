@@ -22,7 +22,7 @@
     <body id="top">
         <div class="container">
             <?= $this->partial('navigation.phtml') ?>
-            <section id="top" class="mb-5">
+            <section id="top" class="mb-3">
                 <h6 class="header">Field Dossier // <?= $this->page->topic ?></h6>
                 <h2><?= $this->page->title?></h2>
                 <?= $this->content ?>
@@ -43,7 +43,13 @@
                     </p>
                 </h6>
             </section>
-            <p class="text-center opacity-50 small">all content if not otherwise credited<br>&copy; <?= date('Y') ?> Christof Raidler HB9HCR</p>
+            <p class="copyright">
+                all content if not otherwise credited<br>&copy; <?= date('Y') ?> Christof Raidler HB9HCR
+            </p>
+            <p class="copyright">
+                <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>
+                <a href="https://leafletjs.com/" target="_blank">Leaflet</a>
+            </p>
         </div>
         <script src="/res/script.js"></script>
     </body>

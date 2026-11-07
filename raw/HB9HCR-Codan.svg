@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xml:space="preserve"
+   sodipodi:docname="HB9HCR-Codan.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showguides="true"
+     inkscape:zoom="0.30314441"
+     inkscape:cx="-630.06274"
+     inkscape:cy="412.34473"
+     inkscape:window-width="1920"
+     inkscape:window-height="1131"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" /><defs
+     id="defs1" /><g
+     inkscape:label="CODAN"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     sodipodi:insensitive="true"><rect
+       style="font-variation-settings:'wght' 500;display:inline;opacity:1;vector-effect:non-scaling-stroke;fill:#0042a6;fill-opacity:1;stroke:none;stroke-width:3.24891;stroke-linejoin:round;stroke-miterlimit:0;-inkscape-stroke:hairline"
+       id="rect23"
+       width="512"
+       height="512"
+       x="0"
+       y="0"
+       inkscape:label="Background" /><path
+       id="path5"
+       style="font-variation-settings:'wght' 500;display:inline;opacity:1;vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;stroke:none;stroke-linejoin:round;stroke-miterlimit:0;-inkscape-stroke:hairline"
+       d="M 401.62305,67.330078 C 329.12886,67.330639 263.04632,108.86824 231.61328,174.19336 H 66.216797 v 35.42187 H 189.99805 v 92.76758 H 66.216797 v 35.42383 H 231.61328 c 31.43304,65.32512 97.51558,106.86272 170.00977,106.86328 h 40.98242 V 410.22266 H 401.62305 C 316.44839,410.22227 247.40078,341.17466 247.40039,256 c 3.9e-4,-85.17466 69.048,-154.22227 154.22266,-154.22266 h 40.98242 V 67.330078 Z"
+       sodipodi:nodetypes="cccccccccccccccccc"
+       inkscape:label="CODAN" /></g></svg>

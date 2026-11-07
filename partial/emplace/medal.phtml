@@ -1,0 +1,21 @@
+<?php
+
+$c = $this->container->campaign;
+$o = $this->operation;
+
+?>
+<div class="emplace emplace-flex" style="height:10rem">
+    <figure class="medal <?= 0 < $c->qsos($o) ? 'medal-earned' : '' ?>">
+        <picture>
+            <img src="/image/ribbon/campaign.ribbon-outline.svg">
+            <div>
+            <?php foreach (preg_split('#[ -]#', $o->name) as $i => $l): ?>
+                <p class="clasp">
+                    <img src="/image/ribbon/campaign.clasp.svg">
+                    <span><?= $l ?></span>
+                </p>
+            <?php endforeach ?>
+            </div>
+        </picture>
+    </figure>
+</div>

@@ -8,20 +8,20 @@ use HB9HCR\Model\Collection;
 class Bota
 {
     public const AWARDS = [
-        '#(roc\d{2})#' => 'hunter.default.event',
-        '#activator_b2b\.lifetime#' => 'activator.b2b.lifetime',
-        '#activator_cw\.lifetime#' => 'activator.cw.lifetime',
-        '#activator\.lifetime#' => 'activator.default.lifetime',
-        '#activator\.(annual.+)#' => 'activator.default.event',
-        '#activator\.(bunkerfest.+)#' => 'activator.default.event',
-        '#activator_dxcc_b2b\.(annual.+)#' => 'activator.b2b.event',
-        '#activator\.(national.+)#' => 'activator.default.event',
-        '#hunter\.lifetime#' => 'hunter.default.lifetime',
-        '#hunter_cw\.lifetime#' => 'hunter.cw.lifetime',
-        '#hunter_dxcc.(annual.+)#' => 'hunter.cw.lifetime',
-        '#hunter\.(national.+)#' => 'hunter.default.event',
-        '#hunter\.(annual.+)#' => 'hunter.default.event',
-        '#hunter\.(bunkerfest.+)#' => 'hunter.default.event',
+        '#hunter.roc(\d+)#' => ['hunter.default.event', 'Hunter ROC 20{1}'],
+        '#activator_b2b.lifetime#' => ['activator.b2b.lifetime', 'Activator B2B'],
+        '#activator_cw.lifetime#' => ['activator.cw.lifetime', 'Activator CW'],
+        '#activator.lifetime#' => ['activator.default.lifetime', 'Activator'],
+        '#activator.annual(\d+)#' => ['activator.default.event', 'Activator 20{1}'],
+        '#activator.bunkerfest(\d+)#' => ['activator.default.event', 'Activator Bunkerfest 20{1}'],
+        '#activator_dxcc_b2b.annual(\d+)#' => ['activator.b2b.event', 'Activator DXCC 20{1}'],
+        '#activator.national(\d+)#' => ['activator.default.event', 'Activator National 20{1}'],
+        '#hunter.lifetime#' => ['hunter.default.lifetime', 'Hunter'],
+        '#hunter_cw.lifetime#' => ['hunter.cw.lifetime', 'Hunter CW'],
+        '#hunter_dxcc.annual(\d+)#' => ['hunter.default.event', 'Hunter DXCC 20{1}'],
+        '#hunter.national(\d+)#' => ['hunter.default.event', 'Hunter National 20{1}'],
+        '#hunter.annual(\d+)#' => ['hunter.default.event', 'Hunter 20{1}'],
+        '#hunter.bunkerfest(\d+)#' => ['hunter.default.event', 'Hunter Bunkerfest 20{1}'],
     ];
 
     public object $container;
@@ -48,30 +48,29 @@ class Bota
         $statement->execute();
 
         while ($item = $statement->fetchObject()) {
-            $k = strtolower(sprintf('%s.%s.%s', $item->scheme, $item->type, $item->award));
-            $image = 'default.default.default';
-            $event = null;
             $item->levels = json_decode($item->levels);
-
-            foreach (self::AWARDS as $p => $i) {
-                if (preg_match($p, $item->type . '.' . $item->award, $m)) {
-                    $event = $m[1] ?? $event;
-                    $image = $i;
-                    break;
-                }
-            }
 
             $collection[] = $a = (object)[
                 'scheme' => strtolower($item->scheme),
-                'levels' => $item->levels,
                 'level' => count($item->levels) ? strtolower($item->levels[count($item->levels) - 1]) : null,
-                'event' => $event,
                 'score' => $item->score,
-                'title' => $item->scheme . ' ' . ucwords(str_replace(['b2b', 'cw', '.', 'default', 'event', '  '], ['B2B', 'CW', ' ', '', $event, ' '], $image)),
-                'image' => $image,
-                'award' => $item->award,
-                'type' => $item->type,
+                'title' => null,
+                'image' => 'default.default.default',
             ];
+
+            foreach (self::AWARDS as $p => $i) {
+                if (preg_match($p, $item->type . '.' . $item->award, $m)) {
+                    $a->image = $i[0];
+                    $a->title = sprintf(
+                        '%s %s', 
+                        strtoupper($item->scheme),
+                        preg_replace_callback('#{(\d)}#', function ($o) use ($m) {
+                            return $m[$o[1]];
+                        }, $i[1]),
+                    );
+                    break;
+                }
+            }
 
             $a->level = 1000 <= $a->score ? 'master-1' : $a->level;
             $a->level = 1500 <= $a->score ? 'master-2' : $a->level;
@@ -79,6 +78,22 @@ class Bota
             $a->title .= ucwords(' ' . $a->level);
         }
 
+        $collection[] = (object)[
+            'scheme' => 'wwbota',
+            'image' => 'activator.duty.lifetime',
+            'level' => 'silver',
+            'score' => 80,
+            'title' => null,
+        ];
+
+        $collection[] = (object)[
+            'scheme' => 'hbbota',
+            'image' => 'activator.duty.lifetime',
+            'level' => 'bronze',
+            'score' => 41,
+            'title' => null,            
+        ];
+        
         return $collection;
     }
 

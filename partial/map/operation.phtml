@@ -14,7 +14,7 @@ $o = $this->operation;
     <?php endif ?>
     </picture>
 </figure>
-<table data-init="<?= base64_encode(json_encode(['fit' => 'locators'])) ?>" id="<?= $o->id ?>" class="table table-hover">
+<table data-init="<?= base64_encode(json_encode(['fit' => 'perimeters'])) ?>" id="<?= $o->id ?>" class="d-none">
     <?php if (isset($o->area)): ?>
     <tbody>
         <?php foreach ($o->area as $a): ?>

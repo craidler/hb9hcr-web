@@ -73,6 +73,11 @@ class Campaign
         }
     }
 
+    public function callsign(string $callsign): string|null
+    {
+        return preg_match('#(?<![A-Z\d])[A-Z\d]{1,3}\d[A-Z]{1,4}(?![A-Z\d])#', strtoupper($callsign), $m) ? $m[0] : null;
+    }
+
     public function colorize(object $reference): object
     {
         $reference->planned = (bool)$this->planned->find(function ($item) use ($reference) {
@@ -161,7 +166,7 @@ class Campaign
         if ($object && isset($object->reference)) {
             foreach ($object->reference as $i) {
                 if (isset($i->qso_hunters)) {
-                    foreach ($i->qso_hunters as $h) if ($h) $c[] = $h;
+                    foreach ($i->qso_hunters as $h) if ($h) $c[] = $this->callsign($h);
                 }
             }
         }

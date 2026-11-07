@@ -26,7 +26,7 @@ if ($this->post->has('log-upload')) {
             break;
 
         case 'last':
-            $data = array_slice($data, $this->post->get('log-last') * -1);
+            $data = array_slice($data, count($data) - $this->post->get('log-last'));
             break;
 
         default:
@@ -76,45 +76,49 @@ if ($this->post->has('adab-upsert')) {
 $log = $this->container->session->get('log');
 
 ?>
-<form method="post" action="/bota" id="adab"></form>
-<form method="post" action="/bota" id="bota"></form>
-<form method="post" action="/bota" id="log" enctype="multipart/form-data"></form>
+<form method="post" action="/data" id="adab"></form>
+<form method="post" action="/data" id="bota"></form>
+<form method="post" action="/data" id="log" enctype="multipart/form-data"></form>
 
-<h3>§ ADAB</h3>
-<table class="table table-hover table-borderless">
-    <thead>
-        <tr>
-            <th>Ref</th>
-            <th>Type</th>
-            <th>Name</th>
-            <th>Lat</th>
-            <th>Lng</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody class="align-middle">
-        <tr>
-            <td>
-                <input form="adab" type="text" name="reference" pattern="[AFT]0[0-9]{4}" class="form-control form-control-sm" required>
-            </td>
-            <td>
-                <input form="adab" type="text" name="type" class="form-control form-control-sm" required>
-            </td>
-            <td>
-                <input form="adab" type="text" name="name" class="form-control form-control-sm" required>
-            </td>
-            <td>
-                <input form="adab" type="number" name="lat" step=".0000001" class="form-control form-control-sm" required>
-            </td>
-            <td>
-                <input form="adab" type="number" name="lng" step=".0000001" class="form-control form-control-sm" required>
-            </td>
-            <td class="w-100 text-end">
-                <button form="adab" type="submit" name="adab-upsert" class="btn btn-sm btn-primary">upsert</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div class="d-none">
+    <h3>§ ADAB</h3>
+    <table class="table table-hover table-borderless">
+        <thead>
+            <tr>
+                <th>Ref</th>
+                <th>Type</th>
+                <th>Name</th>
+                <th>Lat</th>
+                <th>Lng</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="align-middle">
+            <tr>
+                <td>
+                    <input form="adab" type="text" name="reference" pattern="[AFT]0[0-9]{4}" class="form-control form-control-sm" required>
+                </td>
+                <td>
+                    <input form="adab" type="text" name="type" class="form-control form-control-sm" required>
+                </td>
+                <td>
+                    <input form="adab" type="text" name="name" class="form-control form-control-sm" required>
+                </td>
+                <td>
+                    <input form="adab" type="number" name="lat" step=".0000001" class="form-control form-control-sm" required>
+                </td>
+                <td>
+                    <input form="adab" type="number" name="lng" step=".0000001" class="form-control form-control-sm" required>
+                </td>
+                <td class="w-100 text-end">
+                    <button form="adab" type="submit" name="adab-upsert" class="btn btn-sm btn-primary">upsert</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<h3>§ Cluster</h3>
+<?= $this->partial('table/cluster.phtml') ?>
 <h3>§ Import</h3>
 <table class="table table-hover table-borderless">
     <tbody class="align-middle">
